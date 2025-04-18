@@ -1,0 +1,43 @@
+{
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true
+  },
+  "hide-files.files": [],
+  "editor.tabSize": 2,
+  "editor.indentSize": "tabSize",
+  "editor.insertSpaces": false,
+  "editor.detectIndentation": false,
+  "prettier.configPath": ".prettierrc",
+  "tailwindCSS.experimental.configFile": "./src/styles.scss",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "files.associations": {
+    "*.scss": "tailwindcss",
+    "*.css": "tailwindcss",
+    "*.json": "json"
+  },
+  "[json]": {
+    "editor.quickSuggestions": {
+      "strings": true
+    },
+    "editor.suggest.insertMode": "replace",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "angular-schematics.schematicsDefaultOptions": {
+    "angular-*": {
+      "style": "scss",
+      "externalTemplate": true
+    },
+    "angular-component": {
+      "ngOnInit": true,
+      "skipDisplayBlock": true
+    },
+    "angular-page": {
+      "skipNgOnInit": false
+    }
+  }
+}

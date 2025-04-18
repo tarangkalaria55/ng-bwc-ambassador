@@ -1,0 +1,26 @@
+{
+  "printWidth": 80,
+  "tabWidth": 2,
+  "useTabs": false,
+  "semi": true,
+  "singleQuote": true,
+  "trailingComma": "all",
+  "bracketSpacing": true,
+  "jsxBracketSameLine": false,
+  "arrowParens": "avoid",
+  "requirePragma": false,
+  "insertPragma": false,
+  "proseWrap": "preserve",
+  "bracketSameLine": false,
+  "endOfLine": "crlf",
+  "quoteProps": "as-needed",
+  "htmlWhitespaceSensitivity": "ignore",
+  "overrides": [
+    {
+      "files":"*.html",
+      "options": {
+        "parser":"angular"
+      }
+    }
+  ]
+}
