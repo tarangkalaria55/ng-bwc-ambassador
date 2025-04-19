@@ -1,1382 +1,345 @@
-<div
-  data-lov-id="src/components/layout/AdminLayout.tsx:59:4"
-  data-lov-name="div"
-  data-component-path="src/components/layout/AdminLayout.tsx"
-  data-component-line="59"
-  data-component-file="AdminLayout.tsx"
-  data-component-name="div"
-  data-component-content="%7B%22className%22%3A%22flex%20h-screen%22%7D"
-  class="flex h-screen"
->
-  <div
-    data-lov-id="src/components/layout/AdminSidebar.tsx:46:4"
-    data-lov-name="div"
-    data-component-path="src/components/layout/AdminSidebar.tsx"
-    data-component-line="46"
-    data-component-file="AdminSidebar.tsx"
-    data-component-name="div"
-    data-component-content="%7B%7D"
-    class="relative flex flex-col h-screen bg-[#111111] border-r border-gray-800 text-white transition-all duration-300 w-[240px]"
-  >
-    <div
-      data-lov-id="src/components/layout/AdminSidebar.tsx:52:6"
-      data-lov-name="div"
-      data-component-path="src/components/layout/AdminSidebar.tsx"
-      data-component-line="52"
-      data-component-file="AdminSidebar.tsx"
-      data-component-name="div"
-      data-component-content="%7B%22className%22%3A%22p-4%20flex%20justify-between%20items-center%20border-b%20border-gray-800%22%7D"
-      class="p-4 flex justify-between items-center border-b border-gray-800"
-    >
-      <div
-        data-lov-id="src/components/layout/AdminSidebar.tsx:54:10"
-        data-lov-name="div"
-        data-component-path="src/components/layout/AdminSidebar.tsx"
-        data-component-line="54"
-        data-component-file="AdminSidebar.tsx"
-        data-component-name="div"
-        data-component-content="%7B%22text%22%3A%22BWC%20Admin%22%2C%22className%22%3A%22text-lg%20font-semibold%20text-white%22%7D"
-        class="text-lg font-semibold text-white"
-      >
-        BWC Admin
-      </div>
+<main class="flex-1 overflow-y-auto bg-gray-50">
+  <div class="p-8">
+    <div class="mb-6">
       <button
-        data-lov-id="src/components/layout/AdminSidebar.tsx:56:8"
-        data-lov-name="Button"
-        data-component-path="src/components/layout/AdminSidebar.tsx"
-        data-component-line="56"
-        data-component-file="AdminSidebar.tsx"
-        data-component-name="Button"
-        data-component-content="%7B%22className%22%3A%22h-8%20w-8%20text-white%20hover%3Atext-bwc-gold%22%7D"
-        class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-accent h-8 w-8 text-white hover:text-bwc-gold"
+        class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 mb-4"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
+          width="16"
+          height="16"
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
           stroke-width="2"
           stroke-linecap="round"
           stroke-linejoin="round"
-          class="lucide lucide-chevron-left h-4 w-4"
-          data-lov-id="src/components/layout/AdminSidebar.tsx:65:12"
-          data-lov-name="ChevronLeft"
-          data-component-path="src/components/layout/AdminSidebar.tsx"
-          data-component-line="65"
-          data-component-file="AdminSidebar.tsx"
-          data-component-name="ChevronLeft"
-          data-component-content="%7B%22className%22%3A%22h-4%20w-4%22%7D"
+          class="lucide lucide-arrow-left mr-2"
         >
-          <path d="m15 18-6-6 6-6"></path>
+          <path d="m12 19-7-7 7-7"></path>
+          <path d="M19 12H5"></path>
         </svg>
+        Back to All Influencers
       </button>
     </div>
     <div
-      data-lov-id="src/components/layout/AdminSidebar.tsx:70:6"
-      data-lov-name="div"
-      data-component-path="src/components/layout/AdminSidebar.tsx"
-      data-component-line="70"
-      data-component-file="AdminSidebar.tsx"
-      data-component-name="div"
-      data-component-content="%7B%22className%22%3A%22flex-1%20overflow-y-auto%22%7D"
-      class="flex-1 overflow-y-auto"
+      class="flex flex-col md:flex-row md:items-center md:justify-between mb-8"
     >
-      <div
-        data-lov-id="src/components/layout/AdminSidebar.tsx:71:8"
-        data-lov-name="div"
-        data-component-path="src/components/layout/AdminSidebar.tsx"
-        data-component-line="71"
-        data-component-file="AdminSidebar.tsx"
-        data-component-name="div"
-        data-component-content="%7B%22className%22%3A%22space-y-2%20py-4%22%7D"
-        class="space-y-2 py-4"
-      >
-        <button
-          data-lov-id="src/components/layout/AdminSidebar.tsx:73:12"
-          data-lov-name="Button"
-          data-component-path="src/components/layout/AdminSidebar.tsx"
-          data-component-line="73"
-          data-component-file="AdminSidebar.tsx"
-          data-component-name="Button"
-          data-component-content="%7B%7D"
-          class="inline-flex items-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-10 w-full justify-start px-4 py-2 text-white hover:text-bwc-gold hover:bg-gray-900"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-layout-dashboard h-5 w-5 mr-3"
-            data-lov-id="src/components/layout/AdminSidebar.tsx:83:14"
-            data-lov-name="item.icon"
-            data-component-path="src/components/layout/AdminSidebar.tsx"
-            data-component-line="83"
-            data-component-file="AdminSidebar.tsx"
-            data-component-name="item.icon"
-            data-component-content="%7B%7D"
-          >
-            <rect width="7" height="9" x="3" y="3" rx="1"></rect>
-            <rect width="7" height="5" x="14" y="3" rx="1"></rect>
-            <rect width="7" height="9" x="14" y="12" rx="1"></rect>
-            <rect width="7" height="5" x="3" y="16" rx="1"></rect>
-          </svg>
-          <span
-            data-lov-id="src/components/layout/AdminSidebar.tsx:84:31"
-            data-lov-name="span"
-            data-component-path="src/components/layout/AdminSidebar.tsx"
-            data-component-line="84"
-            data-component-file="AdminSidebar.tsx"
-            data-component-name="span"
-            data-component-content="%7B%7D"
-          >
-            Dashboard
-          </span>
-        </button>
-        <button
-          data-lov-id="src/components/layout/AdminSidebar.tsx:73:12"
-          data-lov-name="Button"
-          data-component-path="src/components/layout/AdminSidebar.tsx"
-          data-component-line="73"
-          data-component-file="AdminSidebar.tsx"
-          data-component-name="Button"
-          data-component-content="%7B%7D"
-          class="inline-flex items-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-10 w-full justify-start px-4 py-2 text-white hover:text-bwc-gold hover:bg-gray-900"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-users h-5 w-5 mr-3"
-            data-lov-id="src/components/layout/AdminSidebar.tsx:83:14"
-            data-lov-name="item.icon"
-            data-component-path="src/components/layout/AdminSidebar.tsx"
-            data-component-line="83"
-            data-component-file="AdminSidebar.tsx"
-            data-component-name="item.icon"
-            data-component-content="%7B%7D"
-          >
-            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
-            <circle cx="9" cy="7" r="4"></circle>
-            <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
-            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-          </svg>
-          <span
-            data-lov-id="src/components/layout/AdminSidebar.tsx:84:31"
-            data-lov-name="span"
-            data-component-path="src/components/layout/AdminSidebar.tsx"
-            data-component-line="84"
-            data-component-file="AdminSidebar.tsx"
-            data-component-name="span"
-            data-component-content="%7B%7D"
-          >
-            All Influencers
-          </span>
-        </button>
-        <button
-          data-lov-id="src/components/layout/AdminSidebar.tsx:73:12"
-          data-lov-name="Button"
-          data-component-path="src/components/layout/AdminSidebar.tsx"
-          data-component-line="73"
-          data-component-file="AdminSidebar.tsx"
-          data-component-name="Button"
-          data-component-content="%7B%7D"
-          class="inline-flex items-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-10 w-full justify-start px-4 py-2 text-white hover:text-bwc-gold hover:bg-gray-900"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-ticket h-5 w-5 mr-3"
-            data-lov-id="src/components/layout/AdminSidebar.tsx:83:14"
-            data-lov-name="item.icon"
-            data-component-path="src/components/layout/AdminSidebar.tsx"
-            data-component-line="83"
-            data-component-file="AdminSidebar.tsx"
-            data-component-name="item.icon"
-            data-component-content="%7B%7D"
-          >
-            <path
-              d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"
-            ></path>
-            <path d="M13 5v2"></path>
-            <path d="M13 17v2"></path>
-            <path d="M13 11v2"></path>
-          </svg>
-          <span
-            data-lov-id="src/components/layout/AdminSidebar.tsx:84:31"
-            data-lov-name="span"
-            data-component-path="src/components/layout/AdminSidebar.tsx"
-            data-component-line="84"
-            data-component-file="AdminSidebar.tsx"
-            data-component-name="span"
-            data-component-content="%7B%7D"
-          >
-            Active Codes
-          </span>
-        </button>
-        <button
-          data-lov-id="src/components/layout/AdminSidebar.tsx:73:12"
-          data-lov-name="Button"
-          data-component-path="src/components/layout/AdminSidebar.tsx"
-          data-component-line="73"
-          data-component-file="AdminSidebar.tsx"
-          data-component-name="Button"
-          data-component-content="%7B%7D"
-          class="inline-flex items-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-10 w-full justify-start px-4 py-2 text-white hover:text-bwc-gold hover:bg-gray-900"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-file-text h-5 w-5 mr-3"
-            data-lov-id="src/components/layout/AdminSidebar.tsx:83:14"
-            data-lov-name="item.icon"
-            data-component-path="src/components/layout/AdminSidebar.tsx"
-            data-component-line="83"
-            data-component-file="AdminSidebar.tsx"
-            data-component-name="item.icon"
-            data-component-content="%7B%7D"
-          >
-            <path
-              d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"
-            ></path>
-            <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
-            <path d="M10 9H8"></path>
-            <path d="M16 13H8"></path>
-            <path d="M16 17H8"></path>
-          </svg>
-          <span
-            data-lov-id="src/components/layout/AdminSidebar.tsx:84:31"
-            data-lov-name="span"
-            data-component-path="src/components/layout/AdminSidebar.tsx"
-            data-component-line="84"
-            data-component-file="AdminSidebar.tsx"
-            data-component-name="span"
-            data-component-content="%7B%7D"
-          >
-            Applications
-          </span>
-        </button>
-        <button
-          data-lov-id="src/components/layout/AdminSidebar.tsx:73:12"
-          data-lov-name="Button"
-          data-component-path="src/components/layout/AdminSidebar.tsx"
-          data-component-line="73"
-          data-component-file="AdminSidebar.tsx"
-          data-component-name="Button"
-          data-component-content="%7B%7D"
-          class="inline-flex items-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-10 w-full justify-start px-4 py-2 text-white hover:text-bwc-gold hover:bg-gray-900"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-pound-sterling h-5 w-5 mr-3"
-            data-lov-id="src/components/layout/AdminSidebar.tsx:83:14"
-            data-lov-name="item.icon"
-            data-component-path="src/components/layout/AdminSidebar.tsx"
-            data-component-line="83"
-            data-component-file="AdminSidebar.tsx"
-            data-component-name="item.icon"
-            data-component-content="%7B%7D"
-          >
-            <path d="M18 7c0-5.333-8-5.333-8 0"></path>
-            <path d="M10 7v14"></path>
-            <path d="M6 21h12"></path>
-            <path d="M6 13h10"></path>
-          </svg>
-          <span
-            data-lov-id="src/components/layout/AdminSidebar.tsx:84:31"
-            data-lov-name="span"
-            data-component-path="src/components/layout/AdminSidebar.tsx"
-            data-component-line="84"
-            data-component-file="AdminSidebar.tsx"
-            data-component-name="span"
-            data-component-content="%7B%7D"
-          >
-            Earnings
-          </span>
-        </button>
-        <button
-          data-lov-id="src/components/layout/AdminSidebar.tsx:73:12"
-          data-lov-name="Button"
-          data-component-path="src/components/layout/AdminSidebar.tsx"
-          data-component-line="73"
-          data-component-file="AdminSidebar.tsx"
-          data-component-name="Button"
-          data-component-content="%7B%7D"
-          class="inline-flex items-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-10 w-full justify-start px-4 py-2 text-white hover:text-bwc-gold hover:bg-gray-900"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-settings h-5 w-5 mr-3"
-            data-lov-id="src/components/layout/AdminSidebar.tsx:83:14"
-            data-lov-name="item.icon"
-            data-component-path="src/components/layout/AdminSidebar.tsx"
-            data-component-line="83"
-            data-component-file="AdminSidebar.tsx"
-            data-component-name="item.icon"
-            data-component-content="%7B%7D"
-          >
-            <path
-              d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"
-            ></path>
-            <circle cx="12" cy="12" r="3"></circle>
-          </svg>
-          <span
-            data-lov-id="src/components/layout/AdminSidebar.tsx:84:31"
-            data-lov-name="span"
-            data-component-path="src/components/layout/AdminSidebar.tsx"
-            data-component-line="84"
-            data-component-file="AdminSidebar.tsx"
-            data-component-name="span"
-            data-component-content="%7B%7D"
-          >
-            Settings
-          </span>
-        </button>
-        <button
-          data-lov-id="src/components/layout/AdminSidebar.tsx:73:12"
-          data-lov-name="Button"
-          data-component-path="src/components/layout/AdminSidebar.tsx"
-          data-component-line="73"
-          data-component-file="AdminSidebar.tsx"
-          data-component-name="Button"
-          data-component-content="%7B%7D"
-          class="inline-flex items-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-10 w-full justify-start px-4 py-2 text-white hover:text-bwc-gold hover:bg-gray-900"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-mail h-5 w-5 mr-3"
-            data-lov-id="src/components/layout/AdminSidebar.tsx:83:14"
-            data-lov-name="item.icon"
-            data-component-path="src/components/layout/AdminSidebar.tsx"
-            data-component-line="83"
-            data-component-file="AdminSidebar.tsx"
-            data-component-name="item.icon"
-            data-component-content="%7B%7D"
-          >
-            <rect width="20" height="16" x="2" y="4" rx="2"></rect>
-            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
-          </svg>
-          <span
-            data-lov-id="src/components/layout/AdminSidebar.tsx:84:31"
-            data-lov-name="span"
-            data-component-path="src/components/layout/AdminSidebar.tsx"
-            data-component-line="84"
-            data-component-file="AdminSidebar.tsx"
-            data-component-name="span"
-            data-component-content="%7B%7D"
-          >
-            Welcome Email
-          </span>
-        </button>
+      <div>
+        <h1 class="text-3xl font-display font-bold text-bwc-charcoal">
+          Add New Influencer
+        </h1>
+        <p class="mt-2 text-bwc-charcoal-light">
+          Create a new influencer profile
+        </p>
       </div>
     </div>
-    <div
-      data-lov-id="src/components/layout/AdminSidebar.tsx:90:6"
-      data-lov-name="div"
-      data-component-path="src/components/layout/AdminSidebar.tsx"
-      data-component-line="90"
-      data-component-file="AdminSidebar.tsx"
-      data-component-name="div"
-      data-component-content="%7B%22className%22%3A%22border-t%20border-gray-800%20p-4%22%7D"
-      class="border-t border-gray-800 p-4"
-    >
-      <button
-        data-lov-id="src/components/layout/AdminSidebar.tsx:91:8"
-        data-lov-name="Button"
-        data-component-path="src/components/layout/AdminSidebar.tsx"
-        data-component-line="91"
-        data-component-file="AdminSidebar.tsx"
-        data-component-name="Button"
-        data-component-content="%7B%7D"
-        class="inline-flex items-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-10 px-4 py-2 w-full justify-start text-white hover:text-bwc-gold hover:bg-gray-900"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="lucide lucide-log-out h-5 w-5 mr-3"
-          data-lov-id="src/components/layout/AdminSidebar.tsx:99:10"
-          data-lov-name="LogOut"
-          data-component-path="src/components/layout/AdminSidebar.tsx"
-          data-component-line="99"
-          data-component-file="AdminSidebar.tsx"
-          data-component-name="LogOut"
-          data-component-content="%7B%7D"
-        >
-          <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
-          <polyline points="16 17 21 12 16 7"></polyline>
-          <line x1="21" x2="9" y1="12" y2="12"></line>
-        </svg>
-        <span
-          data-lov-id="src/components/layout/AdminSidebar.tsx:100:27"
-          data-lov-name="span"
-          data-component-path="src/components/layout/AdminSidebar.tsx"
-          data-component-line="100"
-          data-component-file="AdminSidebar.tsx"
-          data-component-name="span"
-          data-component-content="%7B%22text%22%3A%22Logout%22%7D"
-        >
-          Logout
-        </span>
-      </button>
-    </div>
-  </div>
-  <main
-    data-lov-id="src/components/layout/AdminLayout.tsx:61:6"
-    data-lov-name="main"
-    data-component-path="src/components/layout/AdminLayout.tsx"
-    data-component-line="61"
-    data-component-file="AdminLayout.tsx"
-    data-component-name="main"
-    data-component-content="%7B%7D"
-    class="flex-1 overflow-y-auto bg-gray-50"
-  >
-    <div
-      data-lov-id="src/pages/AddInfluencer.tsx:142:8"
-      data-lov-name="div"
-      data-component-path="src/pages/AddInfluencer.tsx"
-      data-component-line="142"
-      data-component-file="AddInfluencer.tsx"
-      data-component-name="div"
-      data-component-content="%7B%22className%22%3A%22p-8%22%7D"
-      class="p-8"
-    >
-      <div
-        data-lov-id="src/pages/AddInfluencer.tsx:143:10"
-        data-lov-name="div"
-        data-component-path="src/pages/AddInfluencer.tsx"
-        data-component-line="143"
-        data-component-file="AddInfluencer.tsx"
-        data-component-name="div"
-        data-component-content="%7B%22className%22%3A%22mb-6%22%7D"
-        class="mb-6"
-      >
-        <button
-          data-lov-id="src/pages/AddInfluencer.tsx:144:12"
-          data-lov-name="Button"
-          data-component-path="src/pages/AddInfluencer.tsx"
-          data-component-line="144"
-          data-component-file="AddInfluencer.tsx"
-          data-component-name="Button"
-          data-component-content="%7B%22text%22%3A%22Back%20to%20All%20Influencers%22%2C%22className%22%3A%22mb-4%22%7D"
-          class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 mb-4"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-arrow-left mr-2"
-            data-lov-id="src/pages/AddInfluencer.tsx:150:14"
-            data-lov-name="ArrowLeft"
-            data-component-path="src/pages/AddInfluencer.tsx"
-            data-component-line="150"
-            data-component-file="AddInfluencer.tsx"
-            data-component-name="ArrowLeft"
-            data-component-content="%7B%22className%22%3A%22mr-2%22%7D"
-          >
-            <path d="m12 19-7-7 7-7"></path>
-            <path d="M19 12H5"></path>
-          </svg>
-          Back to All Influencers
-        </button>
-      </div>
-      <div
-        data-lov-id="src/pages/AddInfluencer.tsx:154:10"
-        data-lov-name="div"
-        data-component-path="src/pages/AddInfluencer.tsx"
-        data-component-line="154"
-        data-component-file="AddInfluencer.tsx"
-        data-component-name="div"
-        data-component-content="%7B%22className%22%3A%22flex%20flex-col%20md%3Aflex-row%20md%3Aitems-center%20md%3Ajustify-between%20mb-8%22%7D"
-        class="flex flex-col md:flex-row md:items-center md:justify-between mb-8"
-      >
-        <div
-          data-lov-id="src/pages/AddInfluencer.tsx:155:12"
-          data-lov-name="div"
-          data-component-path="src/pages/AddInfluencer.tsx"
-          data-component-line="155"
-          data-component-file="AddInfluencer.tsx"
-          data-component-name="div"
-          data-component-content="%7B%7D"
-        >
-          <h1
-            data-lov-id="src/pages/AddInfluencer.tsx:156:14"
-            data-lov-name="h1"
-            data-component-path="src/pages/AddInfluencer.tsx"
-            data-component-line="156"
-            data-component-file="AddInfluencer.tsx"
-            data-component-name="h1"
-            data-component-content="%7B%22text%22%3A%22Add%20New%20Influencer%22%2C%22className%22%3A%22text-3xl%20font-display%20font-bold%20text-bwc-charcoal%22%7D"
-            class="text-3xl font-display font-bold text-bwc-charcoal"
-          >
-            Add New Influencer
-          </h1>
-          <p
-            data-lov-id="src/pages/AddInfluencer.tsx:159:14"
-            data-lov-name="p"
-            data-component-path="src/pages/AddInfluencer.tsx"
-            data-component-line="159"
-            data-component-file="AddInfluencer.tsx"
-            data-component-name="p"
-            data-component-content="%7B%22text%22%3A%22Create%20a%20new%20influencer%20profile%22%2C%22className%22%3A%22mt-2%20text-bwc-charcoal-light%22%7D"
-            class="mt-2 text-bwc-charcoal-light"
-          >
-            Create a new influencer profile
-          </p>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <div class="rounded-lg border bg-card text-card-foreground shadow-xs z-1">
+        <div class="flex flex-col space-y-1.5 p-6">
+          <h3 class="text-2xl font-semibold leading-none tracking-tight">
+            Basic Information
+          </h3>
+        </div>
+        <div class="p-6 pt-0">
+          <form class="space-y-6">
+            <div class="space-y-4">
+              <div class="space-y-2">
+                <label
+                  class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                  for=":rc:-form-item"
+                >
+                  Name
+                </label>
+                <input
+                  class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-hidden focus:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm"
+                  name="name"
+                  placeholder="Enter influencer name"
+                  id=":rc:-form-item"
+                  aria-describedby=":rc:-form-item-description"
+                  aria-invalid="false"
+                  value=""
+                />
+              </div>
+              <div class="space-y-2">
+                <label
+                  class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                  for=":rd:-form-item"
+                >
+                  Email
+                </label>
+                <input
+                  type="email"
+                  class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-hidden focus:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm"
+                  name="email"
+                  placeholder="Enter email address"
+                  id=":rd:-form-item"
+                  aria-describedby=":rd:-form-item-description"
+                  aria-invalid="false"
+                  value=""
+                />
+              </div>
+              <div class="space-y-2">
+                <label
+                  class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                  for=":re:-form-item"
+                >
+                  Phone Number
+                </label>
+                <input
+                  class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-hidden focus:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm"
+                  name="phone"
+                  placeholder="Enter phone number"
+                  id=":re:-form-item"
+                  aria-describedby=":re:-form-item-description"
+                  aria-invalid="false"
+                  value=""
+                />
+              </div>
+              <div class="space-y-2">
+                <label
+                  class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                  for=":rf:-form-item"
+                >
+                  Bio
+                </label>
+                <textarea
+                  class="flex min-h-[80px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 resize-none"
+                  name="bio"
+                  placeholder="Enter influencer bio"
+                  id=":rf:-form-item"
+                  aria-describedby=":rf:-form-item-description"
+                  aria-invalid="false"
+                ></textarea>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
-      <div
-        data-lov-id="src/pages/AddInfluencer.tsx:165:10"
-        data-lov-name="div"
-        data-component-path="src/pages/AddInfluencer.tsx"
-        data-component-line="165"
-        data-component-file="AddInfluencer.tsx"
-        data-component-name="div"
-        data-component-content="%7B%22className%22%3A%22grid%20grid-cols-1%20lg%3Agrid-cols-2%20gap-8%22%7D"
-        class="grid grid-cols-1 lg:grid-cols-2 gap-8"
-      >
+      <div class="space-y-8">
         <div
-          data-lov-id="src/pages/AddInfluencer.tsx:166:12"
-          data-lov-name="Card"
-          data-component-path="src/pages/AddInfluencer.tsx"
-          data-component-line="166"
-          data-component-file="AddInfluencer.tsx"
-          data-component-name="Card"
-          data-component-content="%7B%7D"
           class="rounded-lg border bg-card text-card-foreground shadow-xs z-1"
         >
-          <div
-            data-lov-id="src/pages/AddInfluencer.tsx:167:14"
-            data-lov-name="CardHeader"
-            data-component-path="src/pages/AddInfluencer.tsx"
-            data-component-line="167"
-            data-component-file="AddInfluencer.tsx"
-            data-component-name="CardHeader"
-            data-component-content="%7B%7D"
-            class="flex flex-col space-y-1.5 p-6"
-          >
-            <h3
-              data-lov-id="src/pages/AddInfluencer.tsx:168:16"
-              data-lov-name="CardTitle"
-              data-component-path="src/pages/AddInfluencer.tsx"
-              data-component-line="168"
-              data-component-file="AddInfluencer.tsx"
-              data-component-name="CardTitle"
-              data-component-content="%7B%22text%22%3A%22Basic%20Information%22%7D"
-              class="text-2xl font-semibold leading-none tracking-tight"
-            >
-              Basic Information
+          <div class="flex flex-col space-y-1.5 p-6">
+            <h3 class="text-2xl font-semibold leading-none tracking-tight">
+              Social Media
             </h3>
           </div>
-          <div
-            data-lov-id="src/pages/AddInfluencer.tsx:170:14"
-            data-lov-name="CardContent"
-            data-component-path="src/pages/AddInfluencer.tsx"
-            data-component-line="170"
-            data-component-file="AddInfluencer.tsx"
-            data-component-name="CardContent"
-            data-component-content="%7B%7D"
-            class="p-6 pt-0"
-          >
-            <form
-              data-lov-id="src/pages/AddInfluencer.tsx:172:18"
-              data-lov-name="form"
-              data-component-path="src/pages/AddInfluencer.tsx"
-              data-component-line="172"
-              data-component-file="AddInfluencer.tsx"
-              data-component-name="form"
-              data-component-content="%7B%22className%22%3A%22space-y-6%22%7D"
-              class="space-y-6"
-            >
-              <div
-                data-lov-id="src/pages/AddInfluencer.tsx:173:20"
-                data-lov-name="div"
-                data-component-path="src/pages/AddInfluencer.tsx"
-                data-component-line="173"
-                data-component-file="AddInfluencer.tsx"
-                data-component-name="div"
-                data-component-content="%7B%22className%22%3A%22space-y-4%22%7D"
-                class="space-y-4"
-              >
-                <div
-                  data-lov-id="src/pages/AddInfluencer.tsx:178:26"
-                  data-lov-name="FormItem"
-                  data-component-path="src/pages/AddInfluencer.tsx"
-                  data-component-line="178"
-                  data-component-file="AddInfluencer.tsx"
-                  data-component-name="FormItem"
-                  data-component-content="%7B%7D"
-                  class="space-y-2"
-                >
+          <div class="p-6 pt-0">
+            <form class="space-y-6">
+              <div class="space-y-4">
+                <div class="space-y-2">
                   <label
-                    data-lov-id="src/pages/AddInfluencer.tsx:179:28"
-                    data-lov-name="FormLabel"
-                    data-component-path="src/pages/AddInfluencer.tsx"
-                    data-component-line="179"
-                    data-component-file="AddInfluencer.tsx"
-                    data-component-name="FormLabel"
-                    data-component-content="%7B%22text%22%3A%22Name%22%7D"
                     class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                    for=":rc:-form-item"
+                    for=":rg:-form-item"
                   >
-                    Name
+                    Instagram Handle
                   </label>
                   <input
-                    data-lov-id="src/pages/AddInfluencer.tsx:181:30"
-                    data-lov-name="Input"
-                    data-component-path="src/pages/AddInfluencer.tsx"
-                    data-component-line="181"
-                    data-component-file="AddInfluencer.tsx"
-                    data-component-name="Input"
-                    data-component-content="%7B%22placeholder%22%3A%22Enter%20influencer%20name%22%7D"
                     class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-hidden focus:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm"
-                    name="name"
-                    placeholder="Enter influencer name"
-                    id=":rc:-form-item"
-                    aria-describedby=":rc:-form-item-description"
+                    name="instagram"
+                    placeholder="@username"
+                    id=":rg:-form-item"
+                    aria-describedby=":rg:-form-item-description"
                     aria-invalid="false"
                     value=""
                   />
                 </div>
-                <div
-                  data-lov-id="src/pages/AddInfluencer.tsx:194:26"
-                  data-lov-name="FormItem"
-                  data-component-path="src/pages/AddInfluencer.tsx"
-                  data-component-line="194"
-                  data-component-file="AddInfluencer.tsx"
-                  data-component-name="FormItem"
-                  data-component-content="%7B%7D"
-                  class="space-y-2"
-                >
+                <div class="space-y-2">
                   <label
-                    data-lov-id="src/pages/AddInfluencer.tsx:195:28"
-                    data-lov-name="FormLabel"
-                    data-component-path="src/pages/AddInfluencer.tsx"
-                    data-component-line="195"
-                    data-component-file="AddInfluencer.tsx"
-                    data-component-name="FormLabel"
-                    data-component-content="%7B%22text%22%3A%22Email%22%7D"
                     class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                    for=":rd:-form-item"
+                    for=":rh:-form-item"
                   >
-                    Email
+                    TikTok Handle
                   </label>
                   <input
-                    data-lov-id="src/pages/AddInfluencer.tsx:197:30"
-                    data-lov-name="Input"
-                    data-component-path="src/pages/AddInfluencer.tsx"
-                    data-component-line="197"
-                    data-component-file="AddInfluencer.tsx"
-                    data-component-name="Input"
-                    data-component-content="%7B%22placeholder%22%3A%22Enter%20email%20address%22%7D"
-                    type="email"
                     class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-hidden focus:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm"
-                    name="email"
-                    placeholder="Enter email address"
-                    id=":rd:-form-item"
-                    aria-describedby=":rd:-form-item-description"
+                    name="tiktok"
+                    placeholder="@username"
+                    id=":rh:-form-item"
+                    aria-describedby=":rh:-form-item-description"
                     aria-invalid="false"
                     value=""
                   />
-                </div>
-                <div
-                  data-lov-id="src/pages/AddInfluencer.tsx:211:26"
-                  data-lov-name="FormItem"
-                  data-component-path="src/pages/AddInfluencer.tsx"
-                  data-component-line="211"
-                  data-component-file="AddInfluencer.tsx"
-                  data-component-name="FormItem"
-                  data-component-content="%7B%7D"
-                  class="space-y-2"
-                >
-                  <label
-                    data-lov-id="src/pages/AddInfluencer.tsx:212:28"
-                    data-lov-name="FormLabel"
-                    data-component-path="src/pages/AddInfluencer.tsx"
-                    data-component-line="212"
-                    data-component-file="AddInfluencer.tsx"
-                    data-component-name="FormLabel"
-                    data-component-content="%7B%22text%22%3A%22Phone%20Number%22%7D"
-                    class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                    for=":re:-form-item"
-                  >
-                    Phone Number
-                  </label>
-                  <input
-                    data-lov-id="src/pages/AddInfluencer.tsx:214:30"
-                    data-lov-name="Input"
-                    data-component-path="src/pages/AddInfluencer.tsx"
-                    data-component-line="214"
-                    data-component-file="AddInfluencer.tsx"
-                    data-component-name="Input"
-                    data-component-content="%7B%22placeholder%22%3A%22Enter%20phone%20number%22%7D"
-                    class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-hidden focus:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm"
-                    name="phone"
-                    placeholder="Enter phone number"
-                    id=":re:-form-item"
-                    aria-describedby=":re:-form-item-description"
-                    aria-invalid="false"
-                    value=""
-                  />
-                </div>
-                <div
-                  data-lov-id="src/pages/AddInfluencer.tsx:227:26"
-                  data-lov-name="FormItem"
-                  data-component-path="src/pages/AddInfluencer.tsx"
-                  data-component-line="227"
-                  data-component-file="AddInfluencer.tsx"
-                  data-component-name="FormItem"
-                  data-component-content="%7B%7D"
-                  class="space-y-2"
-                >
-                  <label
-                    data-lov-id="src/pages/AddInfluencer.tsx:228:28"
-                    data-lov-name="FormLabel"
-                    data-component-path="src/pages/AddInfluencer.tsx"
-                    data-component-line="228"
-                    data-component-file="AddInfluencer.tsx"
-                    data-component-name="FormLabel"
-                    data-component-content="%7B%22text%22%3A%22Bio%22%7D"
-                    class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                    for=":rf:-form-item"
-                  >
-                    Bio
-                  </label>
-                  <textarea
-                    data-lov-id="src/pages/AddInfluencer.tsx:230:30"
-                    data-lov-name="Textarea"
-                    data-component-path="src/pages/AddInfluencer.tsx"
-                    data-component-line="230"
-                    data-component-file="AddInfluencer.tsx"
-                    data-component-name="Textarea"
-                    data-component-content="%7B%22placeholder%22%3A%22Enter%20influencer%20bio%22%2C%22className%22%3A%22resize-none%22%7D"
-                    class="flex min-h-[80px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 resize-none"
-                    name="bio"
-                    placeholder="Enter influencer bio"
-                    id=":rf:-form-item"
-                    aria-describedby=":rf:-form-item-description"
-                    aria-invalid="false"
-                  ></textarea>
                 </div>
               </div>
             </form>
           </div>
         </div>
         <div
-          data-lov-id="src/pages/AddInfluencer.tsx:245:12"
-          data-lov-name="div"
-          data-component-path="src/pages/AddInfluencer.tsx"
-          data-component-line="245"
-          data-component-file="AddInfluencer.tsx"
-          data-component-name="div"
-          data-component-content="%7B%22className%22%3A%22space-y-8%22%7D"
-          class="space-y-8"
+          class="rounded-lg border bg-card text-card-foreground shadow-xs z-1"
         >
-          <div
-            data-lov-id="src/pages/AddInfluencer.tsx:246:14"
-            data-lov-name="Card"
-            data-component-path="src/pages/AddInfluencer.tsx"
-            data-component-line="246"
-            data-component-file="AddInfluencer.tsx"
-            data-component-name="Card"
-            data-component-content="%7B%7D"
-            class="rounded-lg border bg-card text-card-foreground shadow-xs z-1"
-          >
-            <div
-              data-lov-id="src/pages/AddInfluencer.tsx:247:16"
-              data-lov-name="CardHeader"
-              data-component-path="src/pages/AddInfluencer.tsx"
-              data-component-line="247"
-              data-component-file="AddInfluencer.tsx"
-              data-component-name="CardHeader"
-              data-component-content="%7B%7D"
-              class="flex flex-col space-y-1.5 p-6"
-            >
-              <h3
-                data-lov-id="src/pages/AddInfluencer.tsx:248:18"
-                data-lov-name="CardTitle"
-                data-component-path="src/pages/AddInfluencer.tsx"
-                data-component-line="248"
-                data-component-file="AddInfluencer.tsx"
-                data-component-name="CardTitle"
-                data-component-content="%7B%22text%22%3A%22Social%20Media%22%7D"
-                class="text-2xl font-semibold leading-none tracking-tight"
-              >
-                Social Media
-              </h3>
-            </div>
-            <div
-              data-lov-id="src/pages/AddInfluencer.tsx:250:16"
-              data-lov-name="CardContent"
-              data-component-path="src/pages/AddInfluencer.tsx"
-              data-component-line="250"
-              data-component-file="AddInfluencer.tsx"
-              data-component-name="CardContent"
-              data-component-content="%7B%7D"
-              class="p-6 pt-0"
-            >
-              <form
-                data-lov-id="src/pages/AddInfluencer.tsx:252:20"
-                data-lov-name="form"
-                data-component-path="src/pages/AddInfluencer.tsx"
-                data-component-line="252"
-                data-component-file="AddInfluencer.tsx"
-                data-component-name="form"
-                data-component-content="%7B%22className%22%3A%22space-y-6%22%7D"
-                class="space-y-6"
-              >
-                <div
-                  data-lov-id="src/pages/AddInfluencer.tsx:253:22"
-                  data-lov-name="div"
-                  data-component-path="src/pages/AddInfluencer.tsx"
-                  data-component-line="253"
-                  data-component-file="AddInfluencer.tsx"
-                  data-component-name="div"
-                  data-component-content="%7B%22className%22%3A%22space-y-4%22%7D"
-                  class="space-y-4"
-                >
+          <div class="flex flex-col space-y-1.5 p-6">
+            <h3 class="text-2xl font-semibold leading-none tracking-tight">
+              Commission Settings
+            </h3>
+          </div>
+          <div class="p-6 pt-0">
+            <form class="space-y-6">
+              <div class="space-y-4">
+                <div class="space-y-2">
+                  <label
+                    class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                    for=":ri:-form-item"
+                  >
+                    Commission Tier
+                  </label>
+                  <button
+                    type="button"
+                    role="combobox"
+                    aria-controls="radix-:rj:"
+                    aria-expanded="false"
+                    aria-autocomplete="none"
+                    dir="ltr"
+                    data-state="closed"
+                    class="flex h-10 w-full items-center justify-between rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus:outline-hidden focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 [&amp;>span]:line-clamp-1"
+                    id=":ri:-form-item"
+                    aria-describedby=":ri:-form-item-description"
+                    aria-invalid="false"
+                  >
+                    <span style="pointer-events: none">
+                      Tin (0-1,000) - 5% Total
+                    </span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-chevron-down h-4 w-4 opacity-50"
+                      aria-hidden="true"
+                    >
+                      <path d="m6 9 6 6 6-6"></path>
+                    </svg>
+                  </button>
+                  <select
+                    aria-hidden="true"
+                    tabindex="-1"
+                    style="
+                      position: absolute;
+                      border: 0px;
+                      width: 1px;
+                      height: 1px;
+                      padding: 0px;
+                      margin: -1px;
+                      overflow: hidden;
+                      clip: rect(0px, 0px, 0px, 0px);
+                      white-space: nowrap;
+                      overflow-wrap: normal;
+                    "
+                  >
+                    <option value="TIN" selected="">
+                      Tin (0-1,000) - 5% Total
+                    </option>
+                    <option value="BRONZE">
+                      Bronze (1,000-5,000) - 7% Total
+                    </option>
+                    <option value="SILVER">
+                      Silver (5,000-10,000) - 10% Total
+                    </option>
+                    <option value="GOLD">
+                      Gold (10,000-25,000) - 12% Total
+                    </option>
+                    <option value="PLATINUM">
+                      Platinum (25,000-50,000) - 15% Total
+                    </option>
+                    <option value="DIAMOND">
+                      Diamond (50,000-∞) - 20% Total
+                    </option>
+                    <option value="CUSTOM">Custom Rates</option>
+                  </select>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
                   <div
-                    data-lov-id="src/pages/AddInfluencer.tsx:258:28"
-                    data-lov-name="FormItem"
-                    data-component-path="src/pages/AddInfluencer.tsx"
-                    data-component-line="258"
-                    data-component-file="AddInfluencer.tsx"
-                    data-component-name="FormItem"
-                    data-component-content="%7B%7D"
-                    class="space-y-2"
+                    class="rounded-lg border bg-card text-card-foreground shadow-xs z-1 p-4"
                   >
                     <label
-                      data-lov-id="src/pages/AddInfluencer.tsx:259:30"
-                      data-lov-name="FormLabel"
-                      data-component-path="src/pages/AddInfluencer.tsx"
-                      data-component-line="259"
-                      data-component-file="AddInfluencer.tsx"
-                      data-component-name="FormLabel"
-                      data-component-content="%7B%22text%22%3A%22Instagram%20Handle%22%7D"
-                      class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                      for=":rg:-form-item"
+                      class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 mb-2 block"
+                      for="undefined-form-item"
                     >
-                      Instagram Handle
+                      Ambassador Commission
                     </label>
-                    <input
-                      data-lov-id="src/pages/AddInfluencer.tsx:261:32"
-                      data-lov-name="Input"
-                      data-component-path="src/pages/AddInfluencer.tsx"
-                      data-component-line="261"
-                      data-component-file="AddInfluencer.tsx"
-                      data-component-name="Input"
-                      data-component-content="%7B%22placeholder%22%3A%22%40username%22%7D"
-                      class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-hidden focus:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm"
-                      name="instagram"
-                      placeholder="@username"
-                      id=":rg:-form-item"
-                      aria-describedby=":rg:-form-item-description"
-                      aria-invalid="false"
-                      value=""
-                    />
+                    <div class="text-2xl font-semibold text-bwc-gold">3.0%</div>
+                    <p class="text-sm text-muted-foreground mt-1">
+                      Commission rate for the ambassador
+                    </p>
                   </div>
                   <div
-                    data-lov-id="src/pages/AddInfluencer.tsx:271:28"
-                    data-lov-name="FormItem"
-                    data-component-path="src/pages/AddInfluencer.tsx"
-                    data-component-line="271"
-                    data-component-file="AddInfluencer.tsx"
-                    data-component-name="FormItem"
-                    data-component-content="%7B%7D"
-                    class="space-y-2"
+                    class="rounded-lg border bg-card text-card-foreground shadow-xs z-1 p-4"
                   >
                     <label
-                      data-lov-id="src/pages/AddInfluencer.tsx:272:30"
-                      data-lov-name="FormLabel"
-                      data-component-path="src/pages/AddInfluencer.tsx"
-                      data-component-line="272"
-                      data-component-file="AddInfluencer.tsx"
-                      data-component-name="FormLabel"
-                      data-component-content="%7B%22text%22%3A%22TikTok%20Handle%22%7D"
-                      class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                      for=":rh:-form-item"
+                      class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 mb-2 block"
+                      for="undefined-form-item"
                     >
-                      TikTok Handle
+                      Customer Discount
                     </label>
-                    <input
-                      data-lov-id="src/pages/AddInfluencer.tsx:274:32"
-                      data-lov-name="Input"
-                      data-component-path="src/pages/AddInfluencer.tsx"
-                      data-component-line="274"
-                      data-component-file="AddInfluencer.tsx"
-                      data-component-name="Input"
-                      data-component-content="%7B%22placeholder%22%3A%22%40username%22%7D"
-                      class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-hidden focus:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm"
-                      name="tiktok"
-                      placeholder="@username"
-                      id=":rh:-form-item"
-                      aria-describedby=":rh:-form-item-description"
-                      aria-invalid="false"
-                      value=""
-                    />
+                    <div class="text-2xl font-semibold text-bwc-gold">2.0%</div>
+                    <p class="text-sm text-muted-foreground mt-1">
+                      Discount rate for the customer
+                    </p>
                   </div>
                 </div>
-              </form>
-            </div>
-          </div>
-          <div
-            data-lov-id="src/pages/AddInfluencer.tsx:285:14"
-            data-lov-name="Card"
-            data-component-path="src/pages/AddInfluencer.tsx"
-            data-component-line="285"
-            data-component-file="AddInfluencer.tsx"
-            data-component-name="Card"
-            data-component-content="%7B%7D"
-            class="rounded-lg border bg-card text-card-foreground shadow-xs z-1"
-          >
-            <div
-              data-lov-id="src/pages/AddInfluencer.tsx:286:16"
-              data-lov-name="CardHeader"
-              data-component-path="src/pages/AddInfluencer.tsx"
-              data-component-line="286"
-              data-component-file="AddInfluencer.tsx"
-              data-component-name="CardHeader"
-              data-component-content="%7B%7D"
-              class="flex flex-col space-y-1.5 p-6"
-            >
-              <h3
-                data-lov-id="src/pages/AddInfluencer.tsx:287:18"
-                data-lov-name="CardTitle"
-                data-component-path="src/pages/AddInfluencer.tsx"
-                data-component-line="287"
-                data-component-file="AddInfluencer.tsx"
-                data-component-name="CardTitle"
-                data-component-content="%7B%22text%22%3A%22Commission%20Settings%22%7D"
-                class="text-2xl font-semibold leading-none tracking-tight"
-              >
-                Commission Settings
-              </h3>
-            </div>
-            <div
-              data-lov-id="src/pages/AddInfluencer.tsx:289:16"
-              data-lov-name="CardContent"
-              data-component-path="src/pages/AddInfluencer.tsx"
-              data-component-line="289"
-              data-component-file="AddInfluencer.tsx"
-              data-component-name="CardContent"
-              data-component-content="%7B%7D"
-              class="p-6 pt-0"
-            >
-              <form
-                data-lov-id="src/pages/AddInfluencer.tsx:291:20"
-                data-lov-name="form"
-                data-component-path="src/pages/AddInfluencer.tsx"
-                data-component-line="291"
-                data-component-file="AddInfluencer.tsx"
-                data-component-name="form"
-                data-component-content="%7B%22className%22%3A%22space-y-6%22%7D"
-                class="space-y-6"
-              >
                 <div
-                  data-lov-id="src/pages/AddInfluencer.tsx:295:22"
-                  data-lov-name="div"
-                  data-component-path="src/pages/AddInfluencer.tsx"
-                  data-component-line="295"
-                  data-component-file="AddInfluencer.tsx"
-                  data-component-name="div"
-                  data-component-content="%7B%22className%22%3A%22space-y-4%22%7D"
-                  class="space-y-4"
+                  class="space-y-2 flex flex-row items-center justify-between rounded-lg border p-4"
                 >
-                  <div
-                    data-lov-id="src/pages/AddInfluencer.tsx:300:28"
-                    data-lov-name="FormItem"
-                    data-component-path="src/pages/AddInfluencer.tsx"
-                    data-component-line="300"
-                    data-component-file="AddInfluencer.tsx"
-                    data-component-name="FormItem"
-                    data-component-content="%7B%7D"
-                    class="space-y-2"
-                  >
+                  <div class="space-y-0.5">
                     <label
-                      data-lov-id="src/pages/AddInfluencer.tsx:301:30"
-                      data-lov-name="FormLabel"
-                      data-component-path="src/pages/AddInfluencer.tsx"
-                      data-component-line="301"
-                      data-component-file="AddInfluencer.tsx"
-                      data-component-name="FormLabel"
-                      data-component-content="%7B%22text%22%3A%22Commission%20Tier%22%7D"
-                      class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                      for=":ri:-form-item"
+                      class="font-medium peer-disabled:cursor-not-allowed peer-disabled:opacity-70 text-base"
+                      for=":rk:-form-item"
                     >
-                      Commission Tier
+                      Welcome Email
                     </label>
-                    <button
-                      type="button"
-                      role="combobox"
-                      aria-controls="radix-:rj:"
-                      aria-expanded="false"
-                      aria-autocomplete="none"
-                      dir="ltr"
-                      data-state="closed"
-                      data-lov-id="src/pages/AddInfluencer.tsx:329:34"
-                      data-lov-name="SelectTrigger"
-                      data-component-path="src/pages/AddInfluencer.tsx"
-                      data-component-line="329"
-                      data-component-file="AddInfluencer.tsx"
-                      data-component-name="SelectTrigger"
-                      data-component-content="%7B%7D"
-                      class="flex h-10 w-full items-center justify-between rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus:outline-hidden focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 [&amp;>span]:line-clamp-1"
-                      id=":ri:-form-item"
-                      aria-describedby=":ri:-form-item-description"
-                      aria-invalid="false"
-                    >
-                      <span
-                        data-lov-id="src/pages/AddInfluencer.tsx:330:36"
-                        data-lov-name="SelectValue"
-                        data-component-path="src/pages/AddInfluencer.tsx"
-                        data-component-line="330"
-                        data-component-file="AddInfluencer.tsx"
-                        data-component-name="SelectValue"
-                        data-component-content="%7B%22placeholder%22%3A%22Select%20a%20commission%20tier%22%7D"
-                        style="pointer-events: none"
-                      >
-                        Tin (0-1,000) - 5% Total
-                      </span>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="lucide lucide-chevron-down h-4 w-4 opacity-50"
-                        data-lov-id="src/components/ui/select.tsx:27:6"
-                        data-lov-name="ChevronDown"
-                        data-component-path="src/components/ui/select.tsx"
-                        data-component-line="27"
-                        data-component-file="select.tsx"
-                        data-component-name="ChevronDown"
-                        data-component-content="%7B%22className%22%3A%22h-4%20w-4%20opacity-50%22%7D"
-                        aria-hidden="true"
-                      >
-                        <path d="m6 9 6 6 6-6"></path>
-                      </svg>
-                    </button>
-                    <select
-                      aria-hidden="true"
-                      tabindex="-1"
-                      style="
-                        position: absolute;
-                        border: 0px;
-                        width: 1px;
-                        height: 1px;
-                        padding: 0px;
-                        margin: -1px;
-                        overflow: hidden;
-                        clip: rect(0px, 0px, 0px, 0px);
-                        white-space: nowrap;
-                        overflow-wrap: normal;
-                      "
-                    >
-                      <option value="TIN" selected="">
-                        Tin (0-1,000) - 5% Total
-                      </option>
-                      <option value="BRONZE">
-                        Bronze (1,000-5,000) - 7% Total
-                      </option>
-                      <option value="SILVER">
-                        Silver (5,000-10,000) - 10% Total
-                      </option>
-                      <option value="GOLD">
-                        Gold (10,000-25,000) - 12% Total
-                      </option>
-                      <option value="PLATINUM">
-                        Platinum (25,000-50,000) - 15% Total
-                      </option>
-                      <option value="DIAMOND">
-                        Diamond (50,000-∞) - 20% Total
-                      </option>
-                      <option value="CUSTOM">Custom Rates</option>
-                    </select>
                   </div>
-                  <div
-                    data-lov-id="src/pages/AddInfluencer.tsx:415:24"
-                    data-lov-name="div"
-                    data-component-path="src/pages/AddInfluencer.tsx"
-                    data-component-line="415"
-                    data-component-file="AddInfluencer.tsx"
-                    data-component-name="div"
-                    data-component-content="%7B%22className%22%3A%22grid%20grid-cols-2%20gap-4%22%7D"
-                    class="grid grid-cols-2 gap-4"
+                  <button
+                    type="button"
+                    role="switch"
+                    aria-checked="true"
+                    data-state="checked"
+                    value="on"
+                    class="peer inline-flex h-6 w-11 shrink-0 cursor-pointer items-center rounded-full border-2 border-transparent transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-primary data-[state=unchecked]:bg-input"
+                    id=":rk:-form-item"
+                    aria-describedby=":rk:-form-item-description"
+                    aria-invalid="false"
                   >
-                    <div
-                      data-lov-id="src/pages/AddInfluencer.tsx:416:26"
-                      data-lov-name="Card"
-                      data-component-path="src/pages/AddInfluencer.tsx"
-                      data-component-line="416"
-                      data-component-file="AddInfluencer.tsx"
-                      data-component-name="Card"
-                      data-component-content="%7B%22className%22%3A%22p-4%22%7D"
-                      class="rounded-lg border bg-card text-card-foreground shadow-xs z-1 p-4"
-                    >
-                      <label
-                        data-lov-id="src/pages/AddInfluencer.tsx:417:28"
-                        data-lov-name="FormLabel"
-                        data-component-path="src/pages/AddInfluencer.tsx"
-                        data-component-line="417"
-                        data-component-file="AddInfluencer.tsx"
-                        data-component-name="FormLabel"
-                        data-component-content="%7B%22text%22%3A%22Ambassador%20Commission%22%2C%22className%22%3A%22mb-2%20block%22%7D"
-                        class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 mb-2 block"
-                        for="undefined-form-item"
-                      >
-                        Ambassador Commission
-                      </label>
-                      <div
-                        data-lov-id="src/pages/AddInfluencer.tsx:420:28"
-                        data-lov-name="div"
-                        data-component-path="src/pages/AddInfluencer.tsx"
-                        data-component-line="420"
-                        data-component-file="AddInfluencer.tsx"
-                        data-component-name="div"
-                        data-component-content="%7B%22text%22%3A%22%25%22%2C%22className%22%3A%22text-2xl%20font-semibold%20text-bwc-gold%22%7D"
-                        class="text-2xl font-semibold text-bwc-gold"
-                      >
-                        3.0%
-                      </div>
-                      <p
-                        data-lov-id="src/pages/AddInfluencer.tsx:423:28"
-                        data-lov-name="p"
-                        data-component-path="src/pages/AddInfluencer.tsx"
-                        data-component-line="423"
-                        data-component-file="AddInfluencer.tsx"
-                        data-component-name="p"
-                        data-component-content="%7B%22text%22%3A%22Commission%20rate%20for%20the%20ambassador%22%2C%22className%22%3A%22text-sm%20text-muted-foreground%20mt-1%22%7D"
-                        class="text-sm text-muted-foreground mt-1"
-                      >
-                        Commission rate for the ambassador
-                      </p>
-                    </div>
-                    <div
-                      data-lov-id="src/pages/AddInfluencer.tsx:428:26"
-                      data-lov-name="Card"
-                      data-component-path="src/pages/AddInfluencer.tsx"
-                      data-component-line="428"
-                      data-component-file="AddInfluencer.tsx"
-                      data-component-name="Card"
-                      data-component-content="%7B%22className%22%3A%22p-4%22%7D"
-                      class="rounded-lg border bg-card text-card-foreground shadow-xs z-1 p-4"
-                    >
-                      <label
-                        data-lov-id="src/pages/AddInfluencer.tsx:429:28"
-                        data-lov-name="FormLabel"
-                        data-component-path="src/pages/AddInfluencer.tsx"
-                        data-component-line="429"
-                        data-component-file="AddInfluencer.tsx"
-                        data-component-name="FormLabel"
-                        data-component-content="%7B%22text%22%3A%22Customer%20Discount%22%2C%22className%22%3A%22mb-2%20block%22%7D"
-                        class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 mb-2 block"
-                        for="undefined-form-item"
-                      >
-                        Customer Discount
-                      </label>
-                      <div
-                        data-lov-id="src/pages/AddInfluencer.tsx:432:28"
-                        data-lov-name="div"
-                        data-component-path="src/pages/AddInfluencer.tsx"
-                        data-component-line="432"
-                        data-component-file="AddInfluencer.tsx"
-                        data-component-name="div"
-                        data-component-content="%7B%22text%22%3A%22%25%22%2C%22className%22%3A%22text-2xl%20font-semibold%20text-bwc-gold%22%7D"
-                        class="text-2xl font-semibold text-bwc-gold"
-                      >
-                        2.0%
-                      </div>
-                      <p
-                        data-lov-id="src/pages/AddInfluencer.tsx:435:28"
-                        data-lov-name="p"
-                        data-component-path="src/pages/AddInfluencer.tsx"
-                        data-component-line="435"
-                        data-component-file="AddInfluencer.tsx"
-                        data-component-name="p"
-                        data-component-content="%7B%22text%22%3A%22Discount%20rate%20for%20the%20customer%22%2C%22className%22%3A%22text-sm%20text-muted-foreground%20mt-1%22%7D"
-                        class="text-sm text-muted-foreground mt-1"
-                      >
-                        Discount rate for the customer
-                      </p>
-                    </div>
-                  </div>
-                  <div
-                    data-lov-id="src/pages/AddInfluencer.tsx:445:28"
-                    data-lov-name="FormItem"
-                    data-component-path="src/pages/AddInfluencer.tsx"
-                    data-component-line="445"
-                    data-component-file="AddInfluencer.tsx"
-                    data-component-name="FormItem"
-                    data-component-content="%7B%22className%22%3A%22flex%20flex-row%20items-center%20justify-between%20rounded-lg%20border%20p-4%22%7D"
-                    class="space-y-2 flex flex-row items-center justify-between rounded-lg border p-4"
-                  >
-                    <div
-                      data-lov-id="src/pages/AddInfluencer.tsx:446:30"
-                      data-lov-name="div"
-                      data-component-path="src/pages/AddInfluencer.tsx"
-                      data-component-line="446"
-                      data-component-file="AddInfluencer.tsx"
-                      data-component-name="div"
-                      data-component-content="%7B%22className%22%3A%22space-y-0.5%22%7D"
-                      class="space-y-0.5"
-                    >
-                      <label
-                        data-lov-id="src/pages/AddInfluencer.tsx:447:32"
-                        data-lov-name="FormLabel"
-                        data-component-path="src/pages/AddInfluencer.tsx"
-                        data-component-line="447"
-                        data-component-file="AddInfluencer.tsx"
-                        data-component-name="FormLabel"
-                        data-component-content="%7B%22text%22%3A%22Welcome%20Email%22%2C%22className%22%3A%22text-base%22%7D"
-                        class="font-medium peer-disabled:cursor-not-allowed peer-disabled:opacity-70 text-base"
-                        for=":rk:-form-item"
-                      >
-                        Welcome Email
-                      </label>
-                    </div>
-                    <button
-                      type="button"
-                      role="switch"
-                      aria-checked="true"
+                    <span
                       data-state="checked"
-                      value="on"
-                      data-lov-id="src/pages/AddInfluencer.tsx:452:32"
-                      data-lov-name="Switch"
-                      data-component-path="src/pages/AddInfluencer.tsx"
-                      data-component-line="452"
-                      data-component-file="AddInfluencer.tsx"
-                      data-component-name="Switch"
-                      data-component-content="%7B%7D"
-                      class="peer inline-flex h-6 w-11 shrink-0 cursor-pointer items-center rounded-full border-2 border-transparent transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-primary data-[state=unchecked]:bg-input"
-                      id=":rk:-form-item"
-                      aria-describedby=":rk:-form-item-description"
-                      aria-invalid="false"
-                    >
-                      <span
-                        data-state="checked"
-                        data-lov-id="src/components/ui/switch.tsx:18:4"
-                        data-lov-name="SwitchPrimitives.Thumb"
-                        data-component-path="src/components/ui/switch.tsx"
-                        data-component-line="18"
-                        data-component-file="switch.tsx"
-                        data-component-name="SwitchPrimitives.Thumb"
-                        data-component-content="%7B%7D"
-                        class="pointer-events-none block h-5 w-5 rounded-full bg-background shadow-lg ring-0 transition-transform data-[state=checked]:translate-x-5 data-[state=unchecked]:translate-x-0"
-                      ></span>
-                    </button>
-                    <input
-                      type="checkbox"
-                      aria-hidden="true"
-                      tabindex="-1"
-                      value="on"
-                      checked=""
-                      style="
-                        transform: translateX(-100%);
-                        position: absolute;
-                        pointer-events: none;
-                        opacity: 0;
-                        margin: 0px;
-                        width: 44px;
-                        height: 24px;
-                      "
-                    />
-                  </div>
+                      class="pointer-events-none block h-5 w-5 rounded-full bg-background shadow-lg ring-0 transition-transform data-[state=checked]:translate-x-5 data-[state=unchecked]:translate-x-0"
+                    ></span>
+                  </button>
+                  <input
+                    type="checkbox"
+                    aria-hidden="true"
+                    tabindex="-1"
+                    value="on"
+                    checked=""
+                    style="
+                      transform: translateX(-100%);
+                      position: absolute;
+                      pointer-events: none;
+                      opacity: 0;
+                      margin: 0px;
+                      width: 44px;
+                      height: 24px;
+                    "
+                  />
                 </div>
-              </form>
-            </div>
+              </div>
+            </form>
           </div>
-          <div
-            data-lov-id="src/pages/AddInfluencer.tsx:466:14"
-            data-lov-name="div"
-            data-component-path="src/pages/AddInfluencer.tsx"
-            data-component-line="466"
-            data-component-file="AddInfluencer.tsx"
-            data-component-name="div"
-            data-component-content="%7B%22className%22%3A%22flex%20justify-end%22%7D"
-            class="flex justify-end"
+        </div>
+        <div class="flex justify-end">
+          <button
+            class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-10 px-4 py-2 bg-bwc-gold hover:bg-bwc-gold/90 text-white"
+            type="submit"
           >
-            <button
-              data-lov-id="src/pages/AddInfluencer.tsx:467:16"
-              data-lov-name="Button"
-              data-component-path="src/pages/AddInfluencer.tsx"
-              data-component-line="467"
-              data-component-file="AddInfluencer.tsx"
-              data-component-name="Button"
-              data-component-content="%7B%22text%22%3A%22Add%20Influencer%22%2C%22className%22%3A%22bg-bwc-gold%20hover%3Abg-bwc-gold%2F90%20text-white%22%7D"
-              class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-10 px-4 py-2 bg-bwc-gold hover:bg-bwc-gold/90 text-white"
-              type="submit"
-            >
-              Add Influencer
-            </button>
-          </div>
+            Add Influencer
+          </button>
         </div>
       </div>
     </div>
-  </main>
-</div>
+  </div>
+</main>

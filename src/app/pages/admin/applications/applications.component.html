@@ -1,1284 +1,346 @@
-<div
-  data-lov-id="src/components/layout/AdminLayout.tsx:59:4"
-  data-lov-name="div"
-  data-component-path="src/components/layout/AdminLayout.tsx"
-  data-component-line="59"
-  data-component-file="AdminLayout.tsx"
-  data-component-name="div"
-  data-component-content="%7B%22className%22%3A%22flex%20h-screen%22%7D"
-  class="flex h-screen"
->
-  <div
-    data-lov-id="src/components/layout/AdminSidebar.tsx:46:4"
-    data-lov-name="div"
-    data-component-path="src/components/layout/AdminSidebar.tsx"
-    data-component-line="46"
-    data-component-file="AdminSidebar.tsx"
-    data-component-name="div"
-    data-component-content="%7B%7D"
-    class="relative flex flex-col h-screen bg-[#111111] border-r border-gray-800 text-white transition-all duration-300 w-[240px]"
-  >
+<main class="flex-1 overflow-y-auto bg-gray-50">
+  <div class="p-8">
     <div
-      data-lov-id="src/components/layout/AdminSidebar.tsx:52:6"
-      data-lov-name="div"
-      data-component-path="src/components/layout/AdminSidebar.tsx"
-      data-component-line="52"
-      data-component-file="AdminSidebar.tsx"
-      data-component-name="div"
-      data-component-content="%7B%22className%22%3A%22p-4%20flex%20justify-between%20items-center%20border-b%20border-gray-800%22%7D"
-      class="p-4 flex justify-between items-center border-b border-gray-800"
+      class="flex flex-col space-y-4 md:flex-row md:items-center md:justify-between md:space-y-0 mb-8"
     >
-      <div
-        data-lov-id="src/components/layout/AdminSidebar.tsx:54:10"
-        data-lov-name="div"
-        data-component-path="src/components/layout/AdminSidebar.tsx"
-        data-component-line="54"
-        data-component-file="AdminSidebar.tsx"
-        data-component-name="div"
-        data-component-content="%7B%22text%22%3A%22BWC%20Admin%22%2C%22className%22%3A%22text-lg%20font-semibold%20text-white%22%7D"
-        class="text-lg font-semibold text-white"
-      >
-        BWC Admin
+      <div>
+        <h1 class="text-3xl font-display font-bold text-bwc-charcoal">
+          Ambassador Applications
+        </h1>
+        <p class="mt-2 text-bwc-charcoal-light">
+          Review and manage ambassador applications
+        </p>
       </div>
-      <button
-        data-lov-id="src/components/layout/AdminSidebar.tsx:56:8"
-        data-lov-name="Button"
-        data-component-path="src/components/layout/AdminSidebar.tsx"
-        data-component-line="56"
-        data-component-file="AdminSidebar.tsx"
-        data-component-name="Button"
-        data-component-content="%7B%22className%22%3A%22h-8%20w-8%20text-white%20hover%3Atext-bwc-gold%22%7D"
-        class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-accent h-8 w-8 text-white hover:text-bwc-gold"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="lucide lucide-chevron-left h-4 w-4"
-          data-lov-id="src/components/layout/AdminSidebar.tsx:65:12"
-          data-lov-name="ChevronLeft"
-          data-component-path="src/components/layout/AdminSidebar.tsx"
-          data-component-line="65"
-          data-component-file="AdminSidebar.tsx"
-          data-component-name="ChevronLeft"
-          data-component-content="%7B%22className%22%3A%22h-4%20w-4%22%7D"
-        >
-          <path d="m15 18-6-6 6-6"></path>
-        </svg>
-      </button>
-    </div>
-    <div
-      data-lov-id="src/components/layout/AdminSidebar.tsx:70:6"
-      data-lov-name="div"
-      data-component-path="src/components/layout/AdminSidebar.tsx"
-      data-component-line="70"
-      data-component-file="AdminSidebar.tsx"
-      data-component-name="div"
-      data-component-content="%7B%22className%22%3A%22flex-1%20overflow-y-auto%22%7D"
-      class="flex-1 overflow-y-auto"
-    >
-      <div
-        data-lov-id="src/components/layout/AdminSidebar.tsx:71:8"
-        data-lov-name="div"
-        data-component-path="src/components/layout/AdminSidebar.tsx"
-        data-component-line="71"
-        data-component-file="AdminSidebar.tsx"
-        data-component-name="div"
-        data-component-content="%7B%22className%22%3A%22space-y-2%20py-4%22%7D"
-        class="space-y-2 py-4"
-      >
+      <div class="flex items-center space-x-4">
+        <input
+          class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-hidden focus:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm max-w-sm"
+          placeholder="Search by name or email..."
+          value=""
+        />
         <button
-          data-lov-id="src/components/layout/AdminSidebar.tsx:73:12"
-          data-lov-name="Button"
-          data-component-path="src/components/layout/AdminSidebar.tsx"
-          data-component-line="73"
-          data-component-file="AdminSidebar.tsx"
-          data-component-name="Button"
-          data-component-content="%7B%7D"
-          class="inline-flex items-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-10 w-full justify-start px-4 py-2 text-white hover:text-bwc-gold hover:bg-gray-900"
+          class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2"
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-layout-dashboard h-5 w-5 mr-3"
-            data-lov-id="src/components/layout/AdminSidebar.tsx:83:14"
-            data-lov-name="item.icon"
-            data-component-path="src/components/layout/AdminSidebar.tsx"
-            data-component-line="83"
-            data-component-file="AdminSidebar.tsx"
-            data-component-name="item.icon"
-            data-component-content="%7B%7D"
-          >
-            <rect width="7" height="9" x="3" y="3" rx="1"></rect>
-            <rect width="7" height="5" x="14" y="3" rx="1"></rect>
-            <rect width="7" height="9" x="14" y="12" rx="1"></rect>
-            <rect width="7" height="5" x="3" y="16" rx="1"></rect>
-          </svg>
-          <span
-            data-lov-id="src/components/layout/AdminSidebar.tsx:84:31"
-            data-lov-name="span"
-            data-component-path="src/components/layout/AdminSidebar.tsx"
-            data-component-line="84"
-            data-component-file="AdminSidebar.tsx"
-            data-component-name="span"
-            data-component-content="%7B%7D"
-          >
-            Dashboard
-          </span>
-        </button>
-        <button
-          data-lov-id="src/components/layout/AdminSidebar.tsx:73:12"
-          data-lov-name="Button"
-          data-component-path="src/components/layout/AdminSidebar.tsx"
-          data-component-line="73"
-          data-component-file="AdminSidebar.tsx"
-          data-component-name="Button"
-          data-component-content="%7B%7D"
-          class="inline-flex items-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-10 w-full justify-start px-4 py-2 text-white hover:text-bwc-gold hover:bg-gray-900"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-users h-5 w-5 mr-3"
-            data-lov-id="src/components/layout/AdminSidebar.tsx:83:14"
-            data-lov-name="item.icon"
-            data-component-path="src/components/layout/AdminSidebar.tsx"
-            data-component-line="83"
-            data-component-file="AdminSidebar.tsx"
-            data-component-name="item.icon"
-            data-component-content="%7B%7D"
-          >
-            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
-            <circle cx="9" cy="7" r="4"></circle>
-            <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
-            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-          </svg>
-          <span
-            data-lov-id="src/components/layout/AdminSidebar.tsx:84:31"
-            data-lov-name="span"
-            data-component-path="src/components/layout/AdminSidebar.tsx"
-            data-component-line="84"
-            data-component-file="AdminSidebar.tsx"
-            data-component-name="span"
-            data-component-content="%7B%7D"
-          >
-            All Influencers
-          </span>
-        </button>
-        <button
-          data-lov-id="src/components/layout/AdminSidebar.tsx:73:12"
-          data-lov-name="Button"
-          data-component-path="src/components/layout/AdminSidebar.tsx"
-          data-component-line="73"
-          data-component-file="AdminSidebar.tsx"
-          data-component-name="Button"
-          data-component-content="%7B%7D"
-          class="inline-flex items-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-10 w-full justify-start px-4 py-2 text-white hover:text-bwc-gold hover:bg-gray-900"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-ticket h-5 w-5 mr-3"
-            data-lov-id="src/components/layout/AdminSidebar.tsx:83:14"
-            data-lov-name="item.icon"
-            data-component-path="src/components/layout/AdminSidebar.tsx"
-            data-component-line="83"
-            data-component-file="AdminSidebar.tsx"
-            data-component-name="item.icon"
-            data-component-content="%7B%7D"
-          >
-            <path
-              d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"
-            ></path>
-            <path d="M13 5v2"></path>
-            <path d="M13 17v2"></path>
-            <path d="M13 11v2"></path>
-          </svg>
-          <span
-            data-lov-id="src/components/layout/AdminSidebar.tsx:84:31"
-            data-lov-name="span"
-            data-component-path="src/components/layout/AdminSidebar.tsx"
-            data-component-line="84"
-            data-component-file="AdminSidebar.tsx"
-            data-component-name="span"
-            data-component-content="%7B%7D"
-          >
-            Active Codes
-          </span>
-        </button>
-        <button
-          data-lov-id="src/components/layout/AdminSidebar.tsx:73:12"
-          data-lov-name="Button"
-          data-component-path="src/components/layout/AdminSidebar.tsx"
-          data-component-line="73"
-          data-component-file="AdminSidebar.tsx"
-          data-component-name="Button"
-          data-component-content="%7B%7D"
-          class="inline-flex items-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-10 w-full justify-start px-4 py-2 hover:text-bwc-gold hover:bg-gray-900 bg-gray-900 text-bwc-gold"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-file-text h-5 w-5 mr-3"
-            data-lov-id="src/components/layout/AdminSidebar.tsx:83:14"
-            data-lov-name="item.icon"
-            data-component-path="src/components/layout/AdminSidebar.tsx"
-            data-component-line="83"
-            data-component-file="AdminSidebar.tsx"
-            data-component-name="item.icon"
-            data-component-content="%7B%7D"
-          >
-            <path
-              d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"
-            ></path>
-            <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
-            <path d="M10 9H8"></path>
-            <path d="M16 13H8"></path>
-            <path d="M16 17H8"></path>
-          </svg>
-          <span
-            data-lov-id="src/components/layout/AdminSidebar.tsx:84:31"
-            data-lov-name="span"
-            data-component-path="src/components/layout/AdminSidebar.tsx"
-            data-component-line="84"
-            data-component-file="AdminSidebar.tsx"
-            data-component-name="span"
-            data-component-content="%7B%7D"
-          >
-            Applications
-          </span>
-        </button>
-        <button
-          data-lov-id="src/components/layout/AdminSidebar.tsx:73:12"
-          data-lov-name="Button"
-          data-component-path="src/components/layout/AdminSidebar.tsx"
-          data-component-line="73"
-          data-component-file="AdminSidebar.tsx"
-          data-component-name="Button"
-          data-component-content="%7B%7D"
-          class="inline-flex items-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-10 w-full justify-start px-4 py-2 text-white hover:text-bwc-gold hover:bg-gray-900"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-pound-sterling h-5 w-5 mr-3"
-            data-lov-id="src/components/layout/AdminSidebar.tsx:83:14"
-            data-lov-name="item.icon"
-            data-component-path="src/components/layout/AdminSidebar.tsx"
-            data-component-line="83"
-            data-component-file="AdminSidebar.tsx"
-            data-component-name="item.icon"
-            data-component-content="%7B%7D"
-          >
-            <path d="M18 7c0-5.333-8-5.333-8 0"></path>
-            <path d="M10 7v14"></path>
-            <path d="M6 21h12"></path>
-            <path d="M6 13h10"></path>
-          </svg>
-          <span
-            data-lov-id="src/components/layout/AdminSidebar.tsx:84:31"
-            data-lov-name="span"
-            data-component-path="src/components/layout/AdminSidebar.tsx"
-            data-component-line="84"
-            data-component-file="AdminSidebar.tsx"
-            data-component-name="span"
-            data-component-content="%7B%7D"
-          >
-            Earnings
-          </span>
-        </button>
-        <button
-          data-lov-id="src/components/layout/AdminSidebar.tsx:73:12"
-          data-lov-name="Button"
-          data-component-path="src/components/layout/AdminSidebar.tsx"
-          data-component-line="73"
-          data-component-file="AdminSidebar.tsx"
-          data-component-name="Button"
-          data-component-content="%7B%7D"
-          class="inline-flex items-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-10 w-full justify-start px-4 py-2 text-white hover:text-bwc-gold hover:bg-gray-900"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-settings h-5 w-5 mr-3"
-            data-lov-id="src/components/layout/AdminSidebar.tsx:83:14"
-            data-lov-name="item.icon"
-            data-component-path="src/components/layout/AdminSidebar.tsx"
-            data-component-line="83"
-            data-component-file="AdminSidebar.tsx"
-            data-component-name="item.icon"
-            data-component-content="%7B%7D"
-          >
-            <path
-              d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"
-            ></path>
-            <circle cx="12" cy="12" r="3"></circle>
-          </svg>
-          <span
-            data-lov-id="src/components/layout/AdminSidebar.tsx:84:31"
-            data-lov-name="span"
-            data-component-path="src/components/layout/AdminSidebar.tsx"
-            data-component-line="84"
-            data-component-file="AdminSidebar.tsx"
-            data-component-name="span"
-            data-component-content="%7B%7D"
-          >
-            Settings
-          </span>
-        </button>
-        <button
-          data-lov-id="src/components/layout/AdminSidebar.tsx:73:12"
-          data-lov-name="Button"
-          data-component-path="src/components/layout/AdminSidebar.tsx"
-          data-component-line="73"
-          data-component-file="AdminSidebar.tsx"
-          data-component-name="Button"
-          data-component-content="%7B%7D"
-          class="inline-flex items-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-10 w-full justify-start px-4 py-2 text-white hover:text-bwc-gold hover:bg-gray-900"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-mail h-5 w-5 mr-3"
-            data-lov-id="src/components/layout/AdminSidebar.tsx:83:14"
-            data-lov-name="item.icon"
-            data-component-path="src/components/layout/AdminSidebar.tsx"
-            data-component-line="83"
-            data-component-file="AdminSidebar.tsx"
-            data-component-name="item.icon"
-            data-component-content="%7B%7D"
-          >
-            <rect width="20" height="16" x="2" y="4" rx="2"></rect>
-            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
-          </svg>
-          <span
-            data-lov-id="src/components/layout/AdminSidebar.tsx:84:31"
-            data-lov-name="span"
-            data-component-path="src/components/layout/AdminSidebar.tsx"
-            data-component-line="84"
-            data-component-file="AdminSidebar.tsx"
-            data-component-name="span"
-            data-component-content="%7B%7D"
-          >
-            Welcome Email
-          </span>
+          Show Rejected
         </button>
       </div>
     </div>
-    <div
-      data-lov-id="src/components/layout/AdminSidebar.tsx:90:6"
-      data-lov-name="div"
-      data-component-path="src/components/layout/AdminSidebar.tsx"
-      data-component-line="90"
-      data-component-file="AdminSidebar.tsx"
-      data-component-name="div"
-      data-component-content="%7B%22className%22%3A%22border-t%20border-gray-800%20p-4%22%7D"
-      class="border-t border-gray-800 p-4"
-    >
-      <button
-        data-lov-id="src/components/layout/AdminSidebar.tsx:91:8"
-        data-lov-name="Button"
-        data-component-path="src/components/layout/AdminSidebar.tsx"
-        data-component-line="91"
-        data-component-file="AdminSidebar.tsx"
-        data-component-name="Button"
-        data-component-content="%7B%7D"
-        class="inline-flex items-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-10 px-4 py-2 w-full justify-start text-white hover:text-bwc-gold hover:bg-gray-900"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="lucide lucide-log-out h-5 w-5 mr-3"
-          data-lov-id="src/components/layout/AdminSidebar.tsx:99:10"
-          data-lov-name="LogOut"
-          data-component-path="src/components/layout/AdminSidebar.tsx"
-          data-component-line="99"
-          data-component-file="AdminSidebar.tsx"
-          data-component-name="LogOut"
-          data-component-content="%7B%7D"
-        >
-          <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
-          <polyline points="16 17 21 12 16 7"></polyline>
-          <line x1="21" x2="9" y1="12" y2="12"></line>
-        </svg>
-        <span
-          data-lov-id="src/components/layout/AdminSidebar.tsx:100:27"
-          data-lov-name="span"
-          data-component-path="src/components/layout/AdminSidebar.tsx"
-          data-component-line="100"
-          data-component-file="AdminSidebar.tsx"
-          data-component-name="span"
-          data-component-content="%7B%22text%22%3A%22Logout%22%7D"
-        >
-          Logout
-        </span>
-      </button>
+    <div class="rounded-lg border">
+      <div class="relative w-full overflow-auto">
+        <table class="w-full caption-bottom text-sm">
+          <thead class="[&amp;_tr]:border-b">
+            <tr
+              class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
+            >
+              <th
+                class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&amp;:has([role=checkbox])]:pr-0"
+              >
+                Name
+              </th>
+              <th
+                class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&amp;:has([role=checkbox])]:pr-0"
+              >
+                Email
+              </th>
+              <th
+                class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&amp;:has([role=checkbox])]:pr-0"
+              >
+                Phone
+              </th>
+              <th
+                class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&amp;:has([role=checkbox])]:pr-0"
+              >
+                Social Media
+              </th>
+              <th
+                class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&amp;:has([role=checkbox])]:pr-0"
+              >
+                Status
+              </th>
+              <th
+                class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&amp;:has([role=checkbox])]:pr-0"
+              >
+                Submitted
+              </th>
+              <th
+                class="h-12 px-4 align-middle font-medium text-muted-foreground [&amp;:has([role=checkbox])]:pr-0 text-right"
+              >
+                Actions
+              </th>
+            </tr>
+          </thead>
+          <tbody class="[&amp;_tr:last-child]:border-0">
+            <tr
+              class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
+            >
+              <td
+                class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
+              >
+                <button
+                  class="font-medium text-left hover:text-bwc-gold transition-colors"
+                >
+                  Mike Thompson
+                </button>
+              </td>
+              <td
+                class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
+              >
+                mike.t.example.com
+              </td>
+              <td
+                class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
+              >
+                +44 7700 900456
+              </td>
+              <td
+                class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
+              >
+                <div class="flex space-x-2">
+                  <a
+                    href="https://instagram.com/mikestyle"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-pink-600 hover:text-pink-700"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-instagram"
+                    >
+                      <rect
+                        width="20"
+                        height="20"
+                        x="2"
+                        y="2"
+                        rx="5"
+                        ry="5"
+                      ></rect>
+                      <path
+                        d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                      ></path>
+                      <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                    </svg>
+                  </a>
+                  <a
+                    href="https://youtube.com/@mikestylegrooming"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-red-600 hover:text-red-700"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-youtube"
+                    >
+                      <path
+                        d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"
+                      ></path>
+                      <path d="m10 15 5-3-5-3z"></path>
+                    </svg>
+                  </a>
+                </div>
+              </td>
+              <td
+                class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
+              >
+                <div
+                  class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-hidden focus:ring-2 focus:ring-ring focus:ring-offset-2 text-foreground"
+                >
+                  Pending
+                </div>
+              </td>
+              <td
+                class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
+              >
+                Mar 9, 2024
+              </td>
+              <td
+                class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0 text-right"
+              >
+                <div class="flex justify-end space-x-2">
+                  <button
+                    class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-accent h-9 rounded-md px-3 text-green-600 hover:text-green-700"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-circle-check-big"
+                    >
+                      <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                      <path d="m9 11 3 3L22 4"></path>
+                    </svg>
+                  </button>
+                  <button
+                    class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-accent h-9 rounded-md px-3 text-red-600 hover:text-red-700"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-circle-x"
+                    >
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <path d="m15 9-6 6"></path>
+                      <path d="m9 9 6 6"></path>
+                    </svg>
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr
+              class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
+            >
+              <td
+                class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
+              >
+                <button
+                  class="font-medium text-left hover:text-bwc-gold transition-colors"
+                >
+                  Emily Chen
+                </button>
+              </td>
+              <td
+                class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
+              >
+                emily.c.example.com
+              </td>
+              <td
+                class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
+              >
+                +44 7700 900789
+              </td>
+              <td
+                class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
+              >
+                <div class="flex space-x-2">
+                  <a
+                    href="https://instagram.com/emilybeauty"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-pink-600 hover:text-pink-700"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-instagram"
+                    >
+                      <rect
+                        width="20"
+                        height="20"
+                        x="2"
+                        y="2"
+                        rx="5"
+                        ry="5"
+                      ></rect>
+                      <path
+                        d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                      ></path>
+                      <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                    </svg>
+                  </a>
+                  <a
+                    href="https://tiktok.com/@emilyskincare"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-black hover:text-gray-700"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="w-5 h-5"
+                    >
+                      <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path>
+                    </svg>
+                  </a>
+                  <a
+                    href="https://youtube.com/@emilybeautyeducation"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-red-600 hover:text-red-700"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-youtube"
+                    >
+                      <path
+                        d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"
+                      ></path>
+                      <path d="m10 15 5-3-5-3z"></path>
+                    </svg>
+                  </a>
+                </div>
+              </td>
+              <td
+                class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
+              >
+                <div
+                  class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-hidden focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent text-primary-foreground hover:bg-primary/80 bg-green-500"
+                >
+                  Approved
+                </div>
+              </td>
+              <td
+                class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
+              >
+                Mar 8, 2024
+              </td>
+              <td
+                class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0 text-right"
+              >
+                <div class="flex justify-end space-x-2"></div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   </div>
-  <main
-    data-lov-id="src/components/layout/AdminLayout.tsx:61:6"
-    data-lov-name="main"
-    data-component-path="src/components/layout/AdminLayout.tsx"
-    data-component-line="61"
-    data-component-file="AdminLayout.tsx"
-    data-component-name="main"
-    data-component-content="%7B%7D"
-    class="flex-1 overflow-y-auto bg-gray-50"
-  >
-    <div
-      data-lov-id="src/pages/Applications.tsx:96:8"
-      data-lov-name="div"
-      data-component-path="src/pages/Applications.tsx"
-      data-component-line="96"
-      data-component-file="Applications.tsx"
-      data-component-name="div"
-      data-component-content="%7B%22className%22%3A%22p-8%22%7D"
-      class="p-8"
-    >
-      <div
-        data-lov-id="src/pages/Applications.tsx:97:10"
-        data-lov-name="div"
-        data-component-path="src/pages/Applications.tsx"
-        data-component-line="97"
-        data-component-file="Applications.tsx"
-        data-component-name="div"
-        data-component-content="%7B%22className%22%3A%22flex%20flex-col%20space-y-4%20md%3Aflex-row%20md%3Aitems-center%20md%3Ajustify-between%20md%3Aspace-y-0%20mb-8%22%7D"
-        class="flex flex-col space-y-4 md:flex-row md:items-center md:justify-between md:space-y-0 mb-8"
-      >
-        <div
-          data-lov-id="src/pages/Applications.tsx:98:12"
-          data-lov-name="div"
-          data-component-path="src/pages/Applications.tsx"
-          data-component-line="98"
-          data-component-file="Applications.tsx"
-          data-component-name="div"
-          data-component-content="%7B%7D"
-        >
-          <h1
-            data-lov-id="src/pages/Applications.tsx:99:14"
-            data-lov-name="h1"
-            data-component-path="src/pages/Applications.tsx"
-            data-component-line="99"
-            data-component-file="Applications.tsx"
-            data-component-name="h1"
-            data-component-content="%7B%22text%22%3A%22Ambassador%20Applications%22%2C%22className%22%3A%22text-3xl%20font-display%20font-bold%20text-bwc-charcoal%22%7D"
-            class="text-3xl font-display font-bold text-bwc-charcoal"
-          >
-            Ambassador Applications
-          </h1>
-          <p
-            data-lov-id="src/pages/Applications.tsx:102:14"
-            data-lov-name="p"
-            data-component-path="src/pages/Applications.tsx"
-            data-component-line="102"
-            data-component-file="Applications.tsx"
-            data-component-name="p"
-            data-component-content="%7B%22text%22%3A%22Review%20and%20manage%20ambassador%20applications%22%2C%22className%22%3A%22mt-2%20text-bwc-charcoal-light%22%7D"
-            class="mt-2 text-bwc-charcoal-light"
-          >
-            Review and manage ambassador applications
-          </p>
-        </div>
-        <div
-          data-lov-id="src/pages/Applications.tsx:106:12"
-          data-lov-name="div"
-          data-component-path="src/pages/Applications.tsx"
-          data-component-line="106"
-          data-component-file="Applications.tsx"
-          data-component-name="div"
-          data-component-content="%7B%22className%22%3A%22flex%20items-center%20space-x-4%22%7D"
-          class="flex items-center space-x-4"
-        >
-          <input
-            data-lov-id="src/pages/Applications.tsx:107:14"
-            data-lov-name="Input"
-            data-component-path="src/pages/Applications.tsx"
-            data-component-line="107"
-            data-component-file="Applications.tsx"
-            data-component-name="Input"
-            data-component-content="%7B%22placeholder%22%3A%22Search%20by%20name%20or%20email...%22%2C%22className%22%3A%22max-w-sm%22%7D"
-            class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-hidden focus:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm max-w-sm"
-            placeholder="Search by name or email..."
-            value=""
-          />
-          <button
-            data-lov-id="src/pages/Applications.tsx:113:14"
-            data-lov-name="Button"
-            data-component-path="src/pages/Applications.tsx"
-            data-component-line="113"
-            data-component-file="Applications.tsx"
-            data-component-name="Button"
-            data-component-content="%7B%7D"
-            class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2"
-          >
-            Show Rejected
-          </button>
-        </div>
-      </div>
-      <div
-        data-lov-id="src/pages/Applications.tsx:122:10"
-        data-lov-name="div"
-        data-component-path="src/pages/Applications.tsx"
-        data-component-line="122"
-        data-component-file="Applications.tsx"
-        data-component-name="div"
-        data-component-content="%7B%22className%22%3A%22rounded-lg%20border%22%7D"
-        class="rounded-lg border"
-      >
-        <div
-          data-lov-id="src/components/ui/table.tsx:10:2"
-          data-lov-name="div"
-          data-component-path="src/components/ui/table.tsx"
-          data-component-line="10"
-          data-component-file="table.tsx"
-          data-component-name="div"
-          data-component-content="%7B%22className%22%3A%22relative%20w-full%20overflow-auto%22%7D"
-          class="relative w-full overflow-auto"
-        >
-          <table
-            data-lov-id="src/pages/Applications.tsx:123:12"
-            data-lov-name="Table"
-            data-component-path="src/pages/Applications.tsx"
-            data-component-line="123"
-            data-component-file="Applications.tsx"
-            data-component-name="Table"
-            data-component-content="%7B%7D"
-            class="w-full caption-bottom text-sm"
-          >
-            <thead
-              data-lov-id="src/pages/Applications.tsx:124:14"
-              data-lov-name="TableHeader"
-              data-component-path="src/pages/Applications.tsx"
-              data-component-line="124"
-              data-component-file="Applications.tsx"
-              data-component-name="TableHeader"
-              data-component-content="%7B%7D"
-              class="[&amp;_tr]:border-b"
-            >
-              <tr
-                data-lov-id="src/pages/Applications.tsx:125:16"
-                data-lov-name="TableRow"
-                data-component-path="src/pages/Applications.tsx"
-                data-component-line="125"
-                data-component-file="Applications.tsx"
-                data-component-name="TableRow"
-                data-component-content="%7B%7D"
-                class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
-              >
-                <th
-                  data-lov-id="src/pages/Applications.tsx:126:18"
-                  data-lov-name="TableHead"
-                  data-component-path="src/pages/Applications.tsx"
-                  data-component-line="126"
-                  data-component-file="Applications.tsx"
-                  data-component-name="TableHead"
-                  data-component-content="%7B%22text%22%3A%22Name%22%7D"
-                  class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&amp;:has([role=checkbox])]:pr-0"
-                >
-                  Name
-                </th>
-                <th
-                  data-lov-id="src/pages/Applications.tsx:127:18"
-                  data-lov-name="TableHead"
-                  data-component-path="src/pages/Applications.tsx"
-                  data-component-line="127"
-                  data-component-file="Applications.tsx"
-                  data-component-name="TableHead"
-                  data-component-content="%7B%22text%22%3A%22Email%22%7D"
-                  class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&amp;:has([role=checkbox])]:pr-0"
-                >
-                  Email
-                </th>
-                <th
-                  data-lov-id="src/pages/Applications.tsx:128:18"
-                  data-lov-name="TableHead"
-                  data-component-path="src/pages/Applications.tsx"
-                  data-component-line="128"
-                  data-component-file="Applications.tsx"
-                  data-component-name="TableHead"
-                  data-component-content="%7B%22text%22%3A%22Phone%22%7D"
-                  class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&amp;:has([role=checkbox])]:pr-0"
-                >
-                  Phone
-                </th>
-                <th
-                  data-lov-id="src/pages/Applications.tsx:129:18"
-                  data-lov-name="TableHead"
-                  data-component-path="src/pages/Applications.tsx"
-                  data-component-line="129"
-                  data-component-file="Applications.tsx"
-                  data-component-name="TableHead"
-                  data-component-content="%7B%22text%22%3A%22Social%20Media%22%7D"
-                  class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&amp;:has([role=checkbox])]:pr-0"
-                >
-                  Social Media
-                </th>
-                <th
-                  data-lov-id="src/pages/Applications.tsx:130:18"
-                  data-lov-name="TableHead"
-                  data-component-path="src/pages/Applications.tsx"
-                  data-component-line="130"
-                  data-component-file="Applications.tsx"
-                  data-component-name="TableHead"
-                  data-component-content="%7B%22text%22%3A%22Status%22%7D"
-                  class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&amp;:has([role=checkbox])]:pr-0"
-                >
-                  Status
-                </th>
-                <th
-                  data-lov-id="src/pages/Applications.tsx:131:18"
-                  data-lov-name="TableHead"
-                  data-component-path="src/pages/Applications.tsx"
-                  data-component-line="131"
-                  data-component-file="Applications.tsx"
-                  data-component-name="TableHead"
-                  data-component-content="%7B%22text%22%3A%22Submitted%22%7D"
-                  class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&amp;:has([role=checkbox])]:pr-0"
-                >
-                  Submitted
-                </th>
-                <th
-                  data-lov-id="src/pages/Applications.tsx:132:18"
-                  data-lov-name="TableHead"
-                  data-component-path="src/pages/Applications.tsx"
-                  data-component-line="132"
-                  data-component-file="Applications.tsx"
-                  data-component-name="TableHead"
-                  data-component-content="%7B%22text%22%3A%22Actions%22%2C%22className%22%3A%22text-right%22%7D"
-                  class="h-12 px-4 align-middle font-medium text-muted-foreground [&amp;:has([role=checkbox])]:pr-0 text-right"
-                >
-                  Actions
-                </th>
-              </tr>
-            </thead>
-            <tbody
-              data-lov-id="src/pages/Applications.tsx:135:14"
-              data-lov-name="TableBody"
-              data-component-path="src/pages/Applications.tsx"
-              data-component-line="135"
-              data-component-file="Applications.tsx"
-              data-component-name="TableBody"
-              data-component-content="%7B%7D"
-              class="[&amp;_tr:last-child]:border-0"
-            >
-              <tr
-                data-lov-id="src/pages/Applications.tsx:137:18"
-                data-lov-name="TableRow"
-                data-component-path="src/pages/Applications.tsx"
-                data-component-line="137"
-                data-component-file="Applications.tsx"
-                data-component-name="TableRow"
-                data-component-content="%7B%7D"
-                class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
-              >
-                <td
-                  data-lov-id="src/pages/Applications.tsx:138:20"
-                  data-lov-name="TableCell"
-                  data-component-path="src/pages/Applications.tsx"
-                  data-component-line="138"
-                  data-component-file="Applications.tsx"
-                  data-component-name="TableCell"
-                  data-component-content="%7B%7D"
-                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
-                >
-                  <button
-                    data-lov-id="src/pages/Applications.tsx:139:22"
-                    data-lov-name="button"
-                    data-component-path="src/pages/Applications.tsx"
-                    data-component-line="139"
-                    data-component-file="Applications.tsx"
-                    data-component-name="button"
-                    data-component-content="%7B%22className%22%3A%22font-medium%20text-left%20hover%3Atext-bwc-gold%20transition-colors%22%7D"
-                    class="font-medium text-left hover:text-bwc-gold transition-colors"
-                  >
-                    Mike Thompson
-                  </button>
-                </td>
-                <td
-                  data-lov-id="src/pages/Applications.tsx:146:20"
-                  data-lov-name="TableCell"
-                  data-component-path="src/pages/Applications.tsx"
-                  data-component-line="146"
-                  data-component-file="Applications.tsx"
-                  data-component-name="TableCell"
-                  data-component-content="%7B%7D"
-                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
-                >
-                  mike.t.example.com
-                </td>
-                <td
-                  data-lov-id="src/pages/Applications.tsx:147:20"
-                  data-lov-name="TableCell"
-                  data-component-path="src/pages/Applications.tsx"
-                  data-component-line="147"
-                  data-component-file="Applications.tsx"
-                  data-component-name="TableCell"
-                  data-component-content="%7B%7D"
-                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
-                >
-                  +44 7700 900456
-                </td>
-                <td
-                  data-lov-id="src/pages/Applications.tsx:148:20"
-                  data-lov-name="TableCell"
-                  data-component-path="src/pages/Applications.tsx"
-                  data-component-line="148"
-                  data-component-file="Applications.tsx"
-                  data-component-name="TableCell"
-                  data-component-content="%7B%7D"
-                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
-                >
-                  <div
-                    data-lov-id="src/pages/Applications.tsx:149:22"
-                    data-lov-name="div"
-                    data-component-path="src/pages/Applications.tsx"
-                    data-component-line="149"
-                    data-component-file="Applications.tsx"
-                    data-component-name="div"
-                    data-component-content="%7B%22className%22%3A%22flex%20space-x-2%22%7D"
-                    class="flex space-x-2"
-                  >
-                    <a
-                      data-lov-id="src/pages/Applications.tsx:151:26"
-                      data-lov-name="a"
-                      data-component-path="src/pages/Applications.tsx"
-                      data-component-line="151"
-                      data-component-file="Applications.tsx"
-                      data-component-name="a"
-                      data-component-content="%7B%22className%22%3A%22text-pink-600%20hover%3Atext-pink-700%22%7D"
-                      href="https://instagram.com/mikestyle"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="text-pink-600 hover:text-pink-700"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20"
-                        height="20"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="lucide lucide-instagram"
-                        data-lov-id="src/pages/Applications.tsx:160:28"
-                        data-lov-name="Instagram"
-                        data-component-path="src/pages/Applications.tsx"
-                        data-component-line="160"
-                        data-component-file="Applications.tsx"
-                        data-component-name="Instagram"
-                        data-component-content="%7B%7D"
-                      >
-                        <rect
-                          width="20"
-                          height="20"
-                          x="2"
-                          y="2"
-                          rx="5"
-                          ry="5"
-                        ></rect>
-                        <path
-                          d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
-                        ></path>
-                        <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
-                      </svg>
-                    </a>
-                    <a
-                      data-lov-id="src/pages/Applications.tsx:174:26"
-                      data-lov-name="a"
-                      data-component-path="src/pages/Applications.tsx"
-                      data-component-line="174"
-                      data-component-file="Applications.tsx"
-                      data-component-name="a"
-                      data-component-content="%7B%22className%22%3A%22text-red-600%20hover%3Atext-red-700%22%7D"
-                      href="https://youtube.com/@mikestylegrooming"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="text-red-600 hover:text-red-700"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20"
-                        height="20"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="lucide lucide-youtube"
-                        data-lov-id="src/pages/Applications.tsx:180:28"
-                        data-lov-name="Youtube"
-                        data-component-path="src/pages/Applications.tsx"
-                        data-component-line="180"
-                        data-component-file="Applications.tsx"
-                        data-component-name="Youtube"
-                        data-component-content="%7B%7D"
-                      >
-                        <path
-                          d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"
-                        ></path>
-                        <path d="m10 15 5-3-5-3z"></path>
-                      </svg>
-                    </a>
-                  </div>
-                </td>
-                <td
-                  data-lov-id="src/pages/Applications.tsx:185:20"
-                  data-lov-name="TableCell"
-                  data-component-path="src/pages/Applications.tsx"
-                  data-component-line="185"
-                  data-component-file="Applications.tsx"
-                  data-component-name="TableCell"
-                  data-component-content="%7B%7D"
-                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
-                >
-                  <div
-                    data-lov-id="src/pages/Applications.tsx:83:15"
-                    data-lov-name="Badge"
-                    data-component-path="src/pages/Applications.tsx"
-                    data-component-line="83"
-                    data-component-file="Applications.tsx"
-                    data-component-name="Badge"
-                    data-component-content="%7B%22text%22%3A%22Pending%22%7D"
-                    class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-hidden focus:ring-2 focus:ring-ring focus:ring-offset-2 text-foreground"
-                  >
-                    Pending
-                  </div>
-                </td>
-                <td
-                  data-lov-id="src/pages/Applications.tsx:186:20"
-                  data-lov-name="TableCell"
-                  data-component-path="src/pages/Applications.tsx"
-                  data-component-line="186"
-                  data-component-file="Applications.tsx"
-                  data-component-name="TableCell"
-                  data-component-content="%7B%7D"
-                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
-                >
-                  Mar 9, 2024
-                </td>
-                <td
-                  data-lov-id="src/pages/Applications.tsx:189:20"
-                  data-lov-name="TableCell"
-                  data-component-path="src/pages/Applications.tsx"
-                  data-component-line="189"
-                  data-component-file="Applications.tsx"
-                  data-component-name="TableCell"
-                  data-component-content="%7B%22className%22%3A%22text-right%22%7D"
-                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0 text-right"
-                >
-                  <div
-                    data-lov-id="src/pages/Applications.tsx:190:22"
-                    data-lov-name="div"
-                    data-component-path="src/pages/Applications.tsx"
-                    data-component-line="190"
-                    data-component-file="Applications.tsx"
-                    data-component-name="div"
-                    data-component-content="%7B%22className%22%3A%22flex%20justify-end%20space-x-2%22%7D"
-                    class="flex justify-end space-x-2"
-                  >
-                    <button
-                      data-lov-id="src/pages/Applications.tsx:193:28"
-                      data-lov-name="Button"
-                      data-component-path="src/pages/Applications.tsx"
-                      data-component-line="193"
-                      data-component-file="Applications.tsx"
-                      data-component-name="Button"
-                      data-component-content="%7B%22className%22%3A%22text-green-600%20hover%3Atext-green-700%22%7D"
-                      class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-accent h-9 rounded-md px-3 text-green-600 hover:text-green-700"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="18"
-                        height="18"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="lucide lucide-circle-check-big"
-                        data-lov-id="src/pages/Applications.tsx:199:30"
-                        data-lov-name="CheckCircle"
-                        data-component-path="src/pages/Applications.tsx"
-                        data-component-line="199"
-                        data-component-file="Applications.tsx"
-                        data-component-name="CheckCircle"
-                        data-component-content="%7B%7D"
-                      >
-                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
-                        <path d="m9 11 3 3L22 4"></path>
-                      </svg>
-                    </button>
-                    <button
-                      data-lov-id="src/pages/Applications.tsx:201:28"
-                      data-lov-name="Button"
-                      data-component-path="src/pages/Applications.tsx"
-                      data-component-line="201"
-                      data-component-file="Applications.tsx"
-                      data-component-name="Button"
-                      data-component-content="%7B%22className%22%3A%22text-red-600%20hover%3Atext-red-700%22%7D"
-                      class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-accent h-9 rounded-md px-3 text-red-600 hover:text-red-700"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="18"
-                        height="18"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="lucide lucide-circle-x"
-                        data-lov-id="src/pages/Applications.tsx:207:30"
-                        data-lov-name="XCircle"
-                        data-component-path="src/pages/Applications.tsx"
-                        data-component-line="207"
-                        data-component-file="Applications.tsx"
-                        data-component-name="XCircle"
-                        data-component-content="%7B%7D"
-                      >
-                        <circle cx="12" cy="12" r="10"></circle>
-                        <path d="m15 9-6 6"></path>
-                        <path d="m9 9 6 6"></path>
-                      </svg>
-                    </button>
-                  </div>
-                </td>
-              </tr>
-              <tr
-                data-lov-id="src/pages/Applications.tsx:137:18"
-                data-lov-name="TableRow"
-                data-component-path="src/pages/Applications.tsx"
-                data-component-line="137"
-                data-component-file="Applications.tsx"
-                data-component-name="TableRow"
-                data-component-content="%7B%7D"
-                class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
-              >
-                <td
-                  data-lov-id="src/pages/Applications.tsx:138:20"
-                  data-lov-name="TableCell"
-                  data-component-path="src/pages/Applications.tsx"
-                  data-component-line="138"
-                  data-component-file="Applications.tsx"
-                  data-component-name="TableCell"
-                  data-component-content="%7B%7D"
-                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
-                >
-                  <button
-                    data-lov-id="src/pages/Applications.tsx:139:22"
-                    data-lov-name="button"
-                    data-component-path="src/pages/Applications.tsx"
-                    data-component-line="139"
-                    data-component-file="Applications.tsx"
-                    data-component-name="button"
-                    data-component-content="%7B%22className%22%3A%22font-medium%20text-left%20hover%3Atext-bwc-gold%20transition-colors%22%7D"
-                    class="font-medium text-left hover:text-bwc-gold transition-colors"
-                  >
-                    Emily Chen
-                  </button>
-                </td>
-                <td
-                  data-lov-id="src/pages/Applications.tsx:146:20"
-                  data-lov-name="TableCell"
-                  data-component-path="src/pages/Applications.tsx"
-                  data-component-line="146"
-                  data-component-file="Applications.tsx"
-                  data-component-name="TableCell"
-                  data-component-content="%7B%7D"
-                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
-                >
-                  emily.c.example.com
-                </td>
-                <td
-                  data-lov-id="src/pages/Applications.tsx:147:20"
-                  data-lov-name="TableCell"
-                  data-component-path="src/pages/Applications.tsx"
-                  data-component-line="147"
-                  data-component-file="Applications.tsx"
-                  data-component-name="TableCell"
-                  data-component-content="%7B%7D"
-                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
-                >
-                  +44 7700 900789
-                </td>
-                <td
-                  data-lov-id="src/pages/Applications.tsx:148:20"
-                  data-lov-name="TableCell"
-                  data-component-path="src/pages/Applications.tsx"
-                  data-component-line="148"
-                  data-component-file="Applications.tsx"
-                  data-component-name="TableCell"
-                  data-component-content="%7B%7D"
-                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
-                >
-                  <div
-                    data-lov-id="src/pages/Applications.tsx:149:22"
-                    data-lov-name="div"
-                    data-component-path="src/pages/Applications.tsx"
-                    data-component-line="149"
-                    data-component-file="Applications.tsx"
-                    data-component-name="div"
-                    data-component-content="%7B%22className%22%3A%22flex%20space-x-2%22%7D"
-                    class="flex space-x-2"
-                  >
-                    <a
-                      data-lov-id="src/pages/Applications.tsx:151:26"
-                      data-lov-name="a"
-                      data-component-path="src/pages/Applications.tsx"
-                      data-component-line="151"
-                      data-component-file="Applications.tsx"
-                      data-component-name="a"
-                      data-component-content="%7B%22className%22%3A%22text-pink-600%20hover%3Atext-pink-700%22%7D"
-                      href="https://instagram.com/emilybeauty"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="text-pink-600 hover:text-pink-700"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20"
-                        height="20"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="lucide lucide-instagram"
-                        data-lov-id="src/pages/Applications.tsx:160:28"
-                        data-lov-name="Instagram"
-                        data-component-path="src/pages/Applications.tsx"
-                        data-component-line="160"
-                        data-component-file="Applications.tsx"
-                        data-component-name="Instagram"
-                        data-component-content="%7B%7D"
-                      >
-                        <rect
-                          width="20"
-                          height="20"
-                          x="2"
-                          y="2"
-                          rx="5"
-                          ry="5"
-                        ></rect>
-                        <path
-                          d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
-                        ></path>
-                        <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
-                      </svg>
-                    </a>
-                    <a
-                      data-lov-id="src/pages/Applications.tsx:164:26"
-                      data-lov-name="a"
-                      data-component-path="src/pages/Applications.tsx"
-                      data-component-line="164"
-                      data-component-file="Applications.tsx"
-                      data-component-name="a"
-                      data-component-content="%7B%22className%22%3A%22text-black%20hover%3Atext-gray-700%22%7D"
-                      href="https://tiktok.com/@emilyskincare"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="text-black hover:text-gray-700"
-                    >
-                      <svg
-                        data-lov-id="src/pages/Applications.tsx:170:28"
-                        data-lov-name="TiktokIcon"
-                        data-component-path="src/pages/Applications.tsx"
-                        data-component-line="170"
-                        data-component-file="Applications.tsx"
-                        data-component-name="TiktokIcon"
-                        data-component-content="%7B%22className%22%3A%22w-5%20h-5%22%7D"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="w-5 h-5"
-                      >
-                        <path
-                          data-lov-id="src/components/ui/icons/TiktokIcon.tsx:17:6"
-                          data-lov-name="path"
-                          data-component-path="src/components/ui/icons/TiktokIcon.tsx"
-                          data-component-line="17"
-                          data-component-file="TiktokIcon.tsx"
-                          data-component-name="path"
-                          data-component-content="%7B%7D"
-                          d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"
-                        ></path>
-                      </svg>
-                    </a>
-                    <a
-                      data-lov-id="src/pages/Applications.tsx:174:26"
-                      data-lov-name="a"
-                      data-component-path="src/pages/Applications.tsx"
-                      data-component-line="174"
-                      data-component-file="Applications.tsx"
-                      data-component-name="a"
-                      data-component-content="%7B%22className%22%3A%22text-red-600%20hover%3Atext-red-700%22%7D"
-                      href="https://youtube.com/@emilybeautyeducation"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="text-red-600 hover:text-red-700"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20"
-                        height="20"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="lucide lucide-youtube"
-                        data-lov-id="src/pages/Applications.tsx:180:28"
-                        data-lov-name="Youtube"
-                        data-component-path="src/pages/Applications.tsx"
-                        data-component-line="180"
-                        data-component-file="Applications.tsx"
-                        data-component-name="Youtube"
-                        data-component-content="%7B%7D"
-                      >
-                        <path
-                          d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"
-                        ></path>
-                        <path d="m10 15 5-3-5-3z"></path>
-                      </svg>
-                    </a>
-                  </div>
-                </td>
-                <td
-                  data-lov-id="src/pages/Applications.tsx:185:20"
-                  data-lov-name="TableCell"
-                  data-component-path="src/pages/Applications.tsx"
-                  data-component-line="185"
-                  data-component-file="Applications.tsx"
-                  data-component-name="TableCell"
-                  data-component-content="%7B%7D"
-                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
-                >
-                  <div
-                    data-lov-id="src/pages/Applications.tsx:85:15"
-                    data-lov-name="Badge"
-                    data-component-path="src/pages/Applications.tsx"
-                    data-component-line="85"
-                    data-component-file="Applications.tsx"
-                    data-component-name="Badge"
-                    data-component-content="%7B%22text%22%3A%22Approved%22%2C%22className%22%3A%22bg-green-500%22%7D"
-                    class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-hidden focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent text-primary-foreground hover:bg-primary/80 bg-green-500"
-                  >
-                    Approved
-                  </div>
-                </td>
-                <td
-                  data-lov-id="src/pages/Applications.tsx:186:20"
-                  data-lov-name="TableCell"
-                  data-component-path="src/pages/Applications.tsx"
-                  data-component-line="186"
-                  data-component-file="Applications.tsx"
-                  data-component-name="TableCell"
-                  data-component-content="%7B%7D"
-                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
-                >
-                  Mar 8, 2024
-                </td>
-                <td
-                  data-lov-id="src/pages/Applications.tsx:189:20"
-                  data-lov-name="TableCell"
-                  data-component-path="src/pages/Applications.tsx"
-                  data-component-line="189"
-                  data-component-file="Applications.tsx"
-                  data-component-name="TableCell"
-                  data-component-content="%7B%22className%22%3A%22text-right%22%7D"
-                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0 text-right"
-                >
-                  <div
-                    data-lov-id="src/pages/Applications.tsx:190:22"
-                    data-lov-name="div"
-                    data-component-path="src/pages/Applications.tsx"
-                    data-component-line="190"
-                    data-component-file="Applications.tsx"
-                    data-component-name="div"
-                    data-component-content="%7B%22className%22%3A%22flex%20justify-end%20space-x-2%22%7D"
-                    class="flex justify-end space-x-2"
-                  ></div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-  </main>
-</div>
+</main>

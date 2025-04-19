@@ -12,6 +12,9 @@ import {
   styleUrl: './dashboard.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [],
+  host: {
+    class: '',
+  },
 })
 export class DashboardComponent implements OnInit {
   readonly #destroyRef = inject(DestroyRef);

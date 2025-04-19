@@ -12,6 +12,9 @@ import {
   styleUrl: './influencer-performance.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [],
+  host: {
+    class: '',
+  },
 })
 export class InfluencerPerformanceComponent implements OnInit {
   readonly #destroyRef = inject(DestroyRef);

@@ -12,6 +12,9 @@ import {
   styleUrl: './welcome-email.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [],
+  host: {
+    class: '',
+  },
 })
 export class WelcomeEmailComponent implements OnInit {
   readonly #destroyRef = inject(DestroyRef);

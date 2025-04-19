@@ -12,6 +12,9 @@ import {
   styleUrl: './admin-invoice-detail.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [],
+  host: {
+    class: '',
+  },
 })
 export class AdminInvoiceDetailComponent implements OnInit {
   readonly #destroyRef = inject(DestroyRef);

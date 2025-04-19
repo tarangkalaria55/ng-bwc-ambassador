@@ -12,6 +12,9 @@ import {
   styleUrl: './earnings-history.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [],
+  host: {
+    class: '',
+  },
 })
 export class EarningsHistoryComponent implements OnInit {
   readonly #destroyRef = inject(DestroyRef);

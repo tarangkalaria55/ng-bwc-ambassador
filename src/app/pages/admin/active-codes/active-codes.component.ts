@@ -12,6 +12,9 @@ import {
   styleUrl: './active-codes.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [],
+  host: {
+    class: '',
+  },
 })
 export class ActiveCodesComponent implements OnInit {
   readonly #destroyRef = inject(DestroyRef);

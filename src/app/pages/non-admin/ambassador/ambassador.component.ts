@@ -12,6 +12,9 @@ import {
   styleUrl: './ambassador.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [],
+  host: {
+    class: '',
+  },
 })
 export class AmbassadorComponent implements OnInit {
   readonly #destroyRef = inject(DestroyRef);

@@ -3,20 +3,20 @@ import {
   Component,
   DestroyRef,
   inject,
-  OnInit,
+  type OnInit,
 } from '@angular/core';
 
 @Component({
-  selector: 'app-profile',
-  templateUrl: './profile.component.html',
-  styleUrl: './profile.component.scss',
+  selector: 'footer[app-non-admin-footer]',
+  templateUrl: './non-admin-footer.component.html',
+  styleUrl: './non-admin-footer.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [],
   host: {
-    class: '',
+    class: 'bg-bwc-black text-white py-12',
   },
 })
-export class ProfileComponent implements OnInit {
+export class NonAdminFooterComponent implements OnInit {
   readonly #destroyRef = inject(DestroyRef);
 
   ngOnInit(): void {}

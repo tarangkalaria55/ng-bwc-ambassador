@@ -7,7 +7,7 @@ export const routes: Routes = [
 
   {
     path: '',
-    // component: AdminLayoutComponent,
+    component: NonAdminLayoutComponent,
     children: [
       {
         path: 'home',
@@ -56,7 +56,7 @@ export const routes: Routes = [
 
   {
     path: 'admin',
-    // component: NonAdminLayoutComponent,
+    component: AdminLayoutComponent,
     children: [
       { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
       {

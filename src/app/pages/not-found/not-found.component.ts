@@ -12,6 +12,9 @@ import {
   styleUrl: './not-found.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [],
+  host: {
+    class: '',
+  },
 })
 export class NotFoundComponent implements OnInit {
   readonly #destroyRef = inject(DestroyRef);
