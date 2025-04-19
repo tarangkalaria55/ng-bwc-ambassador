@@ -261,7 +261,9 @@ layer(base);
 
   body {
     @apply bg-background text-foreground;
-    font-feature-settings: 'rlig' 1, 'calt' 1;
+    font-feature-settings:
+      'rlig' 1,
+      'calt' 1;
   }
 }
 
@@ -285,7 +287,9 @@ html {
 .page-transition-enter-active {
   opacity: 1;
   transform: translateY(0);
-  transition: opacity 400ms, transform 400ms;
+  transition:
+    opacity 400ms,
+    transform 400ms;
 }
 
 .page-transition-exit {
@@ -296,7 +300,9 @@ html {
 .page-transition-exit-active {
   opacity: 0;
   transform: translateY(-8px);
-  transition: opacity 300ms, transform 300ms;
+  transition:
+    opacity 300ms,
+    transform 300ms;
 }
 
 /* Remove problematic root settings causing layout issues */

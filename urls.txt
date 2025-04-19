@@ -1,0 +1,17 @@
+dashboard
+admin
+add-influencer
+influencer-performance
+influencer-code-details/:influencerName
+all-influencers
+profile
+ambassador
+applications
+earnings-history
+admin-invoices
+admin-invoices/:invoiceId
+influencer/:influencerId
+code-details/:code
+active-codes
+edit-influencer/:id
+welcome-email

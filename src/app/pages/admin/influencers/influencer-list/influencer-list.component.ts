@@ -5,16 +5,15 @@ import {
   inject,
   OnInit,
 } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss',
+  selector: 'app-influencer-list',
+  templateUrl: './influencer-list.component.html',
+  styleUrl: './influencer-list.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [RouterOutlet],
+  imports: [],
 })
-export class AppComponent implements OnInit {
+export class InfluencerListComponent implements OnInit {
   readonly #destroyRef = inject(DestroyRef);
 
   ngOnInit(): void {}

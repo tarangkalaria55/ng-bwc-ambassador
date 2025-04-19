@@ -8,7 +8,9 @@
       "schematics": {
         "@schematics/angular:component": {
           "style": "scss",
-          "skipTests": false
+          "skipTests": false,
+          "displayBlock": false,
+          "changeDetection": "OnPush"
         },
         "@schematics/angular:application": {
           "skipTests": false

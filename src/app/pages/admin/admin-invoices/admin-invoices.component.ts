@@ -5,16 +5,15 @@ import {
   inject,
   OnInit,
 } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss',
+  selector: 'app-admin-invoices',
+  templateUrl: './admin-invoices.component.html',
+  styleUrl: './admin-invoices.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [RouterOutlet],
+  imports: [],
 })
-export class AppComponent implements OnInit {
+export class AdminInvoicesComponent implements OnInit {
   readonly #destroyRef = inject(DestroyRef);
 
   ngOnInit(): void {}

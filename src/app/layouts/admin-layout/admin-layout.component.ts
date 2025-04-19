@@ -8,13 +8,13 @@ import {
 import { RouterOutlet } from '@angular/router';
 
 @Component({
-  selector: 'app-non-admin-layout',
-  templateUrl: './non-admin-layout.component.html',
-  styleUrl: './non-admin-layout.component.scss',
+  selector: 'app-admin-layout',
+  templateUrl: './admin-layout.component.html',
+  styleUrl: './admin-layout.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [RouterOutlet],
 })
-export class NonAdminLayoutComponent implements OnInit {
+export class AdminLayoutComponent implements OnInit {
   readonly #destroyRef = inject(DestroyRef);
 
   ngOnInit(): void {}
