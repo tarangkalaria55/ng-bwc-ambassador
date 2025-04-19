@@ -7,13 +7,13 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'app-ambassador',
+  selector: 'main[app-ambassador]',
   templateUrl: './ambassador.component.html',
   styleUrl: './ambassador.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [],
   host: {
-    class: '',
+    class: 'grow pb-16 px-4',
   },
 })
 export class AmbassadorComponent implements OnInit {

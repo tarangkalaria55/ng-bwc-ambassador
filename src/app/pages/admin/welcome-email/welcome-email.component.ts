@@ -7,13 +7,13 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'app-welcome-email',
+  selector: 'main[app-welcome-email]',
   templateUrl: './welcome-email.component.html',
   styleUrl: './welcome-email.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [],
   host: {
-    class: '',
+    class: 'flex-1 overflow-y-auto bg-gray-50',
   },
 })
 export class WelcomeEmailComponent implements OnInit {

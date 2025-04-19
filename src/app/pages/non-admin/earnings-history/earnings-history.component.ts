@@ -7,13 +7,13 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'app-earnings-history',
+  selector: 'main[app-earnings-history]',
   templateUrl: './earnings-history.component.html',
   styleUrl: './earnings-history.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [],
   host: {
-    class: '',
+    class: 'grow pt-24 pb-20',
   },
 })
 export class EarningsHistoryComponent implements OnInit {

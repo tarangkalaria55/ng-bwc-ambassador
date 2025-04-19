@@ -1,83 +1,490 @@
-<main class="flex-1 overflow-y-auto bg-gray-50">
-  <div class="p-4">
-    <div class="flex items-center gap-4 mb-4">
-      <button
-        class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3"
+<div class="p-4">
+  <div class="flex items-center gap-4 mb-4">
+    <button
+      class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="lucide lucide-arrow-left mr-2"
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="16"
-          height="16"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="lucide lucide-arrow-left mr-2"
-        >
-          <path d="m12 19-7-7 7-7"></path>
-          <path d="M19 12H5"></path>
-        </svg>
-        Back
-      </button>
-    </div>
-    <div class="mb-6">
-      <h1 class="text-2xl font-display font-bold text-bwc-charcoal">
-        Code Details: EMMA10
-      </h1>
-      <p class="text-sm text-bwc-charcoal-light">
-        View detailed usage statistics and booking information
-      </p>
-    </div>
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
-      <div class="rounded-lg border bg-card text-card-foreground shadow-xs z-1">
-        <div class="p-6 pt-6">
-          <div class="text-2xl font-bold">11</div>
-          <div class="text-sm text-muted-foreground">Completed Bookings</div>
-        </div>
-      </div>
-      <div class="rounded-lg border bg-card text-card-foreground shadow-xs z-1">
-        <div class="p-6 pt-6">
-          <div class="text-2xl font-bold">20</div>
-          <div class="text-sm text-muted-foreground">Pending Bookings</div>
-        </div>
-      </div>
-      <div class="rounded-lg border bg-card text-card-foreground shadow-xs z-1">
-        <div class="p-6 pt-6">
-          <div class="text-2xl font-bold">19</div>
-          <div class="text-sm text-muted-foreground">Cancelled Bookings</div>
-        </div>
-      </div>
-      <div class="rounded-lg border bg-card text-card-foreground shadow-xs z-1">
-        <div class="p-6 pt-6">
-          <div class="text-2xl font-bold">£1674</div>
-          <div class="text-sm text-muted-foreground">Total Earnings</div>
-        </div>
+        <path d="m12 19-7-7 7-7"></path>
+        <path d="M19 12H5"></path>
+      </svg>
+      Back
+    </button>
+  </div>
+  <div class="mb-6">
+    <h1 class="text-2xl font-display font-bold text-bwc-charcoal">
+      Code Details: EMMA10
+    </h1>
+    <p class="text-sm text-bwc-charcoal-light">
+      View detailed usage statistics and booking information
+    </p>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
+    <div class="rounded-lg border bg-card text-card-foreground shadow-xs z-1">
+      <div class="p-6 pt-6">
+        <div class="text-2xl font-bold">11</div>
+        <div class="text-sm text-muted-foreground">Completed Bookings</div>
       </div>
     </div>
     <div class="rounded-lg border bg-card text-card-foreground shadow-xs z-1">
-      <div class="p-6">
-        <div class="flex flex-col md:flex-row gap-4 mb-6">
-          <div class="flex-1">
-            <input
-              class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-hidden focus:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm"
-              placeholder="Search by booking ID or date..."
-              value=""
-            />
-          </div>
-          <div class="w-full md:w-48">
-            <button
-              type="button"
-              role="combobox"
-              aria-controls="radix-:r8g:"
-              aria-expanded="false"
-              aria-autocomplete="none"
-              dir="ltr"
-              data-state="closed"
-              class="flex h-10 w-full items-center justify-between rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus:outline-hidden focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 [&amp;>span]:line-clamp-1"
+      <div class="p-6 pt-6">
+        <div class="text-2xl font-bold">20</div>
+        <div class="text-sm text-muted-foreground">Pending Bookings</div>
+      </div>
+    </div>
+    <div class="rounded-lg border bg-card text-card-foreground shadow-xs z-1">
+      <div class="p-6 pt-6">
+        <div class="text-2xl font-bold">19</div>
+        <div class="text-sm text-muted-foreground">Cancelled Bookings</div>
+      </div>
+    </div>
+    <div class="rounded-lg border bg-card text-card-foreground shadow-xs z-1">
+      <div class="p-6 pt-6">
+        <div class="text-2xl font-bold">£1674</div>
+        <div class="text-sm text-muted-foreground">Total Earnings</div>
+      </div>
+    </div>
+  </div>
+  <div class="rounded-lg border bg-card text-card-foreground shadow-xs z-1">
+    <div class="p-6">
+      <div class="flex flex-col md:flex-row gap-4 mb-6">
+        <div class="flex-1">
+          <input
+            class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-hidden focus:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm"
+            placeholder="Search by booking ID or date..."
+            value=""
+          />
+        </div>
+        <div class="w-full md:w-48">
+          <button
+            type="button"
+            role="combobox"
+            aria-controls="radix-:r8g:"
+            aria-expanded="false"
+            aria-autocomplete="none"
+            dir="ltr"
+            data-state="closed"
+            class="flex h-10 w-full items-center justify-between rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus:outline-hidden focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 [&amp;>span]:line-clamp-1"
+          >
+            <span style="pointer-events: none">All Statuses</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-chevron-down h-4 w-4 opacity-50"
+              aria-hidden="true"
             >
-              <span style="pointer-events: none">All Statuses</span>
+              <path d="m6 9 6 6 6-6"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="overflow-x-auto">
+        <div class="relative w-full overflow-auto">
+          <table class="w-full caption-bottom text-sm">
+            <thead class="[&amp;_tr]:border-b">
+              <tr
+                class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
+              >
+                <th
+                  class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&amp;:has([role=checkbox])]:pr-0 py-2 text-xs cursor-pointer"
+                >
+                  Date
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-arrow-up-down inline h-3 w-3 ml-1"
+                  >
+                    <path d="m21 16-4 4-4-4"></path>
+                    <path d="M17 20V4"></path>
+                    <path d="m3 8 4-4 4 4"></path>
+                    <path d="M7 4v16"></path>
+                  </svg>
+                </th>
+                <th
+                  class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&amp;:has([role=checkbox])]:pr-0 py-2 text-xs cursor-pointer"
+                >
+                  Booking ID
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-arrow-up-down inline h-3 w-3 ml-1"
+                  >
+                    <path d="m21 16-4 4-4-4"></path>
+                    <path d="M17 20V4"></path>
+                    <path d="m3 8 4-4 4 4"></path>
+                    <path d="M7 4v16"></path>
+                  </svg>
+                </th>
+                <th
+                  class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&amp;:has([role=checkbox])]:pr-0 py-2 text-xs cursor-pointer"
+                >
+                  Status
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-arrow-up-down inline h-3 w-3 ml-1"
+                  >
+                    <path d="m21 16-4 4-4-4"></path>
+                    <path d="M17 20V4"></path>
+                    <path d="m3 8 4-4 4 4"></path>
+                    <path d="M7 4v16"></path>
+                  </svg>
+                </th>
+                <th
+                  class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&amp;:has([role=checkbox])]:pr-0 py-2 text-xs cursor-pointer"
+                >
+                  Amount
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-arrow-up-down inline h-3 w-3 ml-1"
+                  >
+                    <path d="m21 16-4 4-4-4"></path>
+                    <path d="M17 20V4"></path>
+                    <path d="m3 8 4-4 4 4"></path>
+                    <path d="M7 4v16"></path>
+                  </svg>
+                </th>
+              </tr>
+            </thead>
+            <tbody class="[&amp;_tr:last-child]:border-0">
+              <tr
+                class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
+              >
+                <td
+                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
+                >
+                  4/18/2025
+                </td>
+                <td
+                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
+                >
+                  698949
+                </td>
+                <td
+                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
+                >
+                  <span
+                    class="inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium bg-green-100 text-green-800"
+                  >
+                    completed
+                  </span>
+                </td>
+                <td
+                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0 text-right"
+                >
+                  £183
+                </td>
+              </tr>
+              <tr
+                class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
+              >
+                <td
+                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
+                >
+                  4/17/2025
+                </td>
+                <td
+                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
+                >
+                  241490
+                </td>
+                <td
+                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
+                >
+                  <span
+                    class="inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium bg-red-100 text-red-800"
+                  >
+                    cancelled
+                  </span>
+                </td>
+                <td
+                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0 text-right"
+                >
+                  £0
+                </td>
+              </tr>
+              <tr
+                class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
+              >
+                <td
+                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
+                >
+                  4/17/2025
+                </td>
+                <td
+                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
+                >
+                  761185
+                </td>
+                <td
+                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
+                >
+                  <span
+                    class="inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium bg-yellow-100 text-yellow-800"
+                  >
+                    pending
+                  </span>
+                </td>
+                <td
+                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0 text-right"
+                >
+                  £0
+                </td>
+              </tr>
+              <tr
+                class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
+              >
+                <td
+                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
+                >
+                  4/17/2025
+                </td>
+                <td
+                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
+                >
+                  454836
+                </td>
+                <td
+                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
+                >
+                  <span
+                    class="inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium bg-yellow-100 text-yellow-800"
+                  >
+                    pending
+                  </span>
+                </td>
+                <td
+                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0 text-right"
+                >
+                  £0
+                </td>
+              </tr>
+              <tr
+                class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
+              >
+                <td
+                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
+                >
+                  4/16/2025
+                </td>
+                <td
+                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
+                >
+                  267260
+                </td>
+                <td
+                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
+                >
+                  <span
+                    class="inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium bg-red-100 text-red-800"
+                  >
+                    cancelled
+                  </span>
+                </td>
+                <td
+                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0 text-right"
+                >
+                  £0
+                </td>
+              </tr>
+              <tr
+                class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
+              >
+                <td
+                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
+                >
+                  4/15/2025
+                </td>
+                <td
+                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
+                >
+                  447685
+                </td>
+                <td
+                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
+                >
+                  <span
+                    class="inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium bg-red-100 text-red-800"
+                  >
+                    cancelled
+                  </span>
+                </td>
+                <td
+                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0 text-right"
+                >
+                  £0
+                </td>
+              </tr>
+              <tr
+                class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
+              >
+                <td
+                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
+                >
+                  4/15/2025
+                </td>
+                <td
+                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
+                >
+                  405038
+                </td>
+                <td
+                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
+                >
+                  <span
+                    class="inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium bg-yellow-100 text-yellow-800"
+                  >
+                    pending
+                  </span>
+                </td>
+                <td
+                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0 text-right"
+                >
+                  £0
+                </td>
+              </tr>
+              <tr
+                class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
+              >
+                <td
+                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
+                >
+                  4/15/2025
+                </td>
+                <td
+                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
+                >
+                  199782
+                </td>
+                <td
+                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
+                >
+                  <span
+                    class="inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium bg-red-100 text-red-800"
+                  >
+                    cancelled
+                  </span>
+                </td>
+                <td
+                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0 text-right"
+                >
+                  £0
+                </td>
+              </tr>
+              <tr
+                class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
+              >
+                <td
+                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
+                >
+                  4/14/2025
+                </td>
+                <td
+                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
+                >
+                  945491
+                </td>
+                <td
+                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
+                >
+                  <span
+                    class="inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium bg-red-100 text-red-800"
+                  >
+                    cancelled
+                  </span>
+                </td>
+                <td
+                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0 text-right"
+                >
+                  £0
+                </td>
+              </tr>
+              <tr
+                class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
+              >
+                <td
+                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
+                >
+                  4/14/2025
+                </td>
+                <td
+                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
+                >
+                  504179
+                </td>
+                <td
+                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
+                >
+                  <span
+                    class="inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium bg-green-100 text-green-800"
+                  >
+                    completed
+                  </span>
+                </td>
+                <td
+                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0 text-right"
+                >
+                  £98
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="flex items-center justify-between mt-4">
+          <div class="text-sm text-muted-foreground">
+            Showing 1 to 10 of 50 entries
+          </div>
+          <div class="flex items-center gap-2">
+            <button
+              class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3"
+              disabled=""
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -88,444 +495,35 @@
                 stroke-width="2"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                class="lucide lucide-chevron-down h-4 w-4 opacity-50"
-                aria-hidden="true"
+                class="lucide lucide-chevron-left h-4 w-4"
               >
-                <path d="m6 9 6 6 6-6"></path>
+                <path d="m15 18-6-6 6-6"></path>
+              </svg>
+              Previous
+            </button>
+            <div class="text-sm text-muted-foreground px-2">Page 1 of 5</div>
+            <button
+              class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3"
+            >
+              Next
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-chevron-right h-4 w-4"
+              >
+                <path d="m9 18 6-6-6-6"></path>
               </svg>
             </button>
-          </div>
-        </div>
-        <div class="overflow-x-auto">
-          <div class="relative w-full overflow-auto">
-            <table class="w-full caption-bottom text-sm">
-              <thead class="[&amp;_tr]:border-b">
-                <tr
-                  class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
-                >
-                  <th
-                    class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&amp;:has([role=checkbox])]:pr-0 py-2 text-xs cursor-pointer"
-                  >
-                    Date
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="lucide lucide-arrow-up-down inline h-3 w-3 ml-1"
-                    >
-                      <path d="m21 16-4 4-4-4"></path>
-                      <path d="M17 20V4"></path>
-                      <path d="m3 8 4-4 4 4"></path>
-                      <path d="M7 4v16"></path>
-                    </svg>
-                  </th>
-                  <th
-                    class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&amp;:has([role=checkbox])]:pr-0 py-2 text-xs cursor-pointer"
-                  >
-                    Booking ID
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="lucide lucide-arrow-up-down inline h-3 w-3 ml-1"
-                    >
-                      <path d="m21 16-4 4-4-4"></path>
-                      <path d="M17 20V4"></path>
-                      <path d="m3 8 4-4 4 4"></path>
-                      <path d="M7 4v16"></path>
-                    </svg>
-                  </th>
-                  <th
-                    class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&amp;:has([role=checkbox])]:pr-0 py-2 text-xs cursor-pointer"
-                  >
-                    Status
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="lucide lucide-arrow-up-down inline h-3 w-3 ml-1"
-                    >
-                      <path d="m21 16-4 4-4-4"></path>
-                      <path d="M17 20V4"></path>
-                      <path d="m3 8 4-4 4 4"></path>
-                      <path d="M7 4v16"></path>
-                    </svg>
-                  </th>
-                  <th
-                    class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&amp;:has([role=checkbox])]:pr-0 py-2 text-xs cursor-pointer"
-                  >
-                    Amount
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="lucide lucide-arrow-up-down inline h-3 w-3 ml-1"
-                    >
-                      <path d="m21 16-4 4-4-4"></path>
-                      <path d="M17 20V4"></path>
-                      <path d="m3 8 4-4 4 4"></path>
-                      <path d="M7 4v16"></path>
-                    </svg>
-                  </th>
-                </tr>
-              </thead>
-              <tbody class="[&amp;_tr:last-child]:border-0">
-                <tr
-                  class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
-                >
-                  <td
-                    class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
-                  >
-                    4/18/2025
-                  </td>
-                  <td
-                    class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
-                  >
-                    698949
-                  </td>
-                  <td
-                    class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
-                  >
-                    <span
-                      class="inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium bg-green-100 text-green-800"
-                    >
-                      completed
-                    </span>
-                  </td>
-                  <td
-                    class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0 text-right"
-                  >
-                    £183
-                  </td>
-                </tr>
-                <tr
-                  class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
-                >
-                  <td
-                    class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
-                  >
-                    4/17/2025
-                  </td>
-                  <td
-                    class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
-                  >
-                    241490
-                  </td>
-                  <td
-                    class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
-                  >
-                    <span
-                      class="inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium bg-red-100 text-red-800"
-                    >
-                      cancelled
-                    </span>
-                  </td>
-                  <td
-                    class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0 text-right"
-                  >
-                    £0
-                  </td>
-                </tr>
-                <tr
-                  class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
-                >
-                  <td
-                    class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
-                  >
-                    4/17/2025
-                  </td>
-                  <td
-                    class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
-                  >
-                    761185
-                  </td>
-                  <td
-                    class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
-                  >
-                    <span
-                      class="inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium bg-yellow-100 text-yellow-800"
-                    >
-                      pending
-                    </span>
-                  </td>
-                  <td
-                    class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0 text-right"
-                  >
-                    £0
-                  </td>
-                </tr>
-                <tr
-                  class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
-                >
-                  <td
-                    class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
-                  >
-                    4/17/2025
-                  </td>
-                  <td
-                    class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
-                  >
-                    454836
-                  </td>
-                  <td
-                    class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
-                  >
-                    <span
-                      class="inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium bg-yellow-100 text-yellow-800"
-                    >
-                      pending
-                    </span>
-                  </td>
-                  <td
-                    class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0 text-right"
-                  >
-                    £0
-                  </td>
-                </tr>
-                <tr
-                  class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
-                >
-                  <td
-                    class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
-                  >
-                    4/16/2025
-                  </td>
-                  <td
-                    class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
-                  >
-                    267260
-                  </td>
-                  <td
-                    class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
-                  >
-                    <span
-                      class="inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium bg-red-100 text-red-800"
-                    >
-                      cancelled
-                    </span>
-                  </td>
-                  <td
-                    class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0 text-right"
-                  >
-                    £0
-                  </td>
-                </tr>
-                <tr
-                  class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
-                >
-                  <td
-                    class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
-                  >
-                    4/15/2025
-                  </td>
-                  <td
-                    class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
-                  >
-                    447685
-                  </td>
-                  <td
-                    class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
-                  >
-                    <span
-                      class="inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium bg-red-100 text-red-800"
-                    >
-                      cancelled
-                    </span>
-                  </td>
-                  <td
-                    class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0 text-right"
-                  >
-                    £0
-                  </td>
-                </tr>
-                <tr
-                  class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
-                >
-                  <td
-                    class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
-                  >
-                    4/15/2025
-                  </td>
-                  <td
-                    class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
-                  >
-                    405038
-                  </td>
-                  <td
-                    class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
-                  >
-                    <span
-                      class="inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium bg-yellow-100 text-yellow-800"
-                    >
-                      pending
-                    </span>
-                  </td>
-                  <td
-                    class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0 text-right"
-                  >
-                    £0
-                  </td>
-                </tr>
-                <tr
-                  class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
-                >
-                  <td
-                    class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
-                  >
-                    4/15/2025
-                  </td>
-                  <td
-                    class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
-                  >
-                    199782
-                  </td>
-                  <td
-                    class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
-                  >
-                    <span
-                      class="inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium bg-red-100 text-red-800"
-                    >
-                      cancelled
-                    </span>
-                  </td>
-                  <td
-                    class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0 text-right"
-                  >
-                    £0
-                  </td>
-                </tr>
-                <tr
-                  class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
-                >
-                  <td
-                    class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
-                  >
-                    4/14/2025
-                  </td>
-                  <td
-                    class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
-                  >
-                    945491
-                  </td>
-                  <td
-                    class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
-                  >
-                    <span
-                      class="inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium bg-red-100 text-red-800"
-                    >
-                      cancelled
-                    </span>
-                  </td>
-                  <td
-                    class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0 text-right"
-                  >
-                    £0
-                  </td>
-                </tr>
-                <tr
-                  class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
-                >
-                  <td
-                    class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
-                  >
-                    4/14/2025
-                  </td>
-                  <td
-                    class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
-                  >
-                    504179
-                  </td>
-                  <td
-                    class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
-                  >
-                    <span
-                      class="inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium bg-green-100 text-green-800"
-                    >
-                      completed
-                    </span>
-                  </td>
-                  <td
-                    class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0 text-right"
-                  >
-                    £98
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="flex items-center justify-between mt-4">
-            <div class="text-sm text-muted-foreground">
-              Showing 1 to 10 of 50 entries
-            </div>
-            <div class="flex items-center gap-2">
-              <button
-                class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3"
-                disabled=""
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-chevron-left h-4 w-4"
-                >
-                  <path d="m15 18-6-6 6-6"></path>
-                </svg>
-                Previous
-              </button>
-              <div class="text-sm text-muted-foreground px-2">Page 1 of 5</div>
-              <button
-                class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3"
-              >
-                Next
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-chevron-right h-4 w-4"
-                >
-                  <path d="m9 18 6-6-6-6"></path>
-                </svg>
-              </button>
-            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</main>
+</div>

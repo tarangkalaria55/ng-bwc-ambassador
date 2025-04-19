@@ -1,2124 +1,2110 @@
-<main class="flex-1 overflow-y-auto bg-gray-50">
-  <div class="p-8">
-    <div class="flex flex-col gap-8">
-      <div class="flex flex-col md:flex-row md:items-center md:justify-between">
-        <div>
-          <h1 class="text-3xl font-bold text-bwc-charcoal mb-2">
-            Admin Overview
-          </h1>
-          <p class="text-bwc-charcoal-light">
-            Monitor your influencer program performance
-          </p>
-        </div>
-        <div class="mt-4 md:mt-0">
-          <button
-            class="inline-flex items-center gap-2 whitespace-nowrap rounded-md text-sm ring-offset-background transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 justify-start text-left font-normal"
-            type="button"
-            aria-haspopup="dialog"
-            aria-expanded="false"
-            aria-controls="radix-:r1:"
-            data-state="closed"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-calendar mr-2 h-4 w-4"
-            >
-              <path d="M8 2v4"></path>
-              <path d="M16 2v4"></path>
-              <rect width="18" height="18" x="3" y="4" rx="2"></rect>
-              <path d="M3 10h18"></path>
-            </svg>
-            Mar 01, 2025 - Apr 19, 2025
-          </button>
-        </div>
-      </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        <div
-          class="p-6 rounded-xl glass-card hover-lift flex items-center relative"
-          style="transform: none"
-        >
-          <div class="mr-4 p-3 rounded-lg bg-bwc-gold-light/50 text-bwc-gold">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-users"
-            >
-              <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
-              <circle cx="9" cy="7" r="4"></circle>
-              <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
-              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-            </svg>
-          </div>
-          <div class="relative">
-            <div class="flex items-center">
-              <h3 class="text-sm font-medium text-bwc-charcoal-light">
-                Total Influencers
-              </h3>
-              <button
-                class="ml-1 text-bwc-charcoal-light/70 hover:text-bwc-gold transition-colors"
-                data-state="closed"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="14"
-                  height="14"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-info"
-                >
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <path d="M12 16v-4"></path>
-                  <path d="M12 8h.01"></path>
-                </svg>
-              </button>
-            </div>
-            <div class="flex items-baseline mt-1">
-              <p class="text-2xl font-semibold text-bwc-charcoal">24</p>
-            </div>
-          </div>
-        </div>
-        <div
-          class="p-6 rounded-xl glass-card hover-lift flex items-center relative"
-          style="transform: none"
-        >
-          <div class="mr-4 p-3 rounded-lg bg-bwc-gold-light/50 text-bwc-gold">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-pound-sterling"
-            >
-              <path d="M18 7c0-5.333-8-5.333-8 0"></path>
-              <path d="M10 7v14"></path>
-              <path d="M6 21h12"></path>
-              <path d="M6 13h10"></path>
-            </svg>
-          </div>
-          <div class="relative">
-            <div class="flex items-center">
-              <h3 class="text-sm font-medium text-bwc-charcoal-light">
-                Total Earnings
-              </h3>
-              <button
-                class="ml-1 text-bwc-charcoal-light/70 hover:text-bwc-gold transition-colors"
-                data-state="closed"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="14"
-                  height="14"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-info"
-                >
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <path d="M12 16v-4"></path>
-                  <path d="M12 8h.01"></path>
-                </svg>
-              </button>
-            </div>
-            <div class="flex items-baseline mt-1">
-              <p class="text-2xl font-semibold text-bwc-charcoal">£12,450.00</p>
-            </div>
-          </div>
-        </div>
-        <div
-          class="p-6 rounded-xl glass-card hover-lift flex items-center relative"
-          style="transform: none"
-        >
-          <div class="mr-4 p-3 rounded-lg bg-bwc-gold-light/50 text-bwc-gold">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-receipt"
-            >
-              <path
-                d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z"
-              ></path>
-              <path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"></path>
-              <path d="M12 17.5v-11"></path>
-            </svg>
-          </div>
-          <div class="relative">
-            <div class="flex items-center">
-              <h3 class="text-sm font-medium text-bwc-charcoal-light">
-                Pending Payments
-              </h3>
-              <button
-                class="ml-1 text-bwc-charcoal-light/70 hover:text-bwc-gold transition-colors"
-                data-state="closed"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="14"
-                  height="14"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-info"
-                >
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <path d="M12 16v-4"></path>
-                  <path d="M12 8h.01"></path>
-                </svg>
-              </button>
-            </div>
-            <div class="flex items-baseline mt-1">
-              <p class="text-2xl font-semibold text-bwc-charcoal">£3,280.00</p>
-            </div>
-          </div>
-        </div>
-        <div
-          class="p-6 rounded-xl glass-card hover-lift flex items-center relative"
-          style="transform: none"
-        >
-          <div class="mr-4 p-3 rounded-lg bg-bwc-gold-light/50 text-bwc-gold">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-trending-up"
-            >
-              <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
-              <polyline points="16 7 22 7 22 13"></polyline>
-            </svg>
-          </div>
-          <div class="relative">
-            <div class="flex items-center">
-              <h3 class="text-sm font-medium text-bwc-charcoal-light">
-                Conversion Rate
-              </h3>
-              <button
-                class="ml-1 text-bwc-charcoal-light/70 hover:text-bwc-gold transition-colors"
-                data-state="closed"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="14"
-                  height="14"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-info"
-                >
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <path d="M12 16v-4"></path>
-                  <path d="M12 8h.01"></path>
-                </svg>
-              </button>
-            </div>
-            <div class="flex items-baseline mt-1">
-              <p class="text-2xl font-semibold text-bwc-charcoal">68%</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        <div
-          class="border bg-card text-card-foreground shadow-xs z-1 p-6 rounded-xl glass-card"
-        >
-          <div
-            class="space-y-1.5 p-6 flex flex-row items-center justify-between"
-          >
-            <h3 class="tracking-tight text-lg font-semibold">
-              Monthly Referrals
-            </h3>
-            <button
-              type="button"
-              role="combobox"
-              aria-controls="radix-:r2:"
-              aria-expanded="false"
-              aria-autocomplete="none"
-              dir="ltr"
-              data-state="closed"
-              class="flex h-10 items-center justify-between rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus:outline-hidden focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 [&amp;>span]:line-clamp-1 w-[120px]"
-            >
-              <span style="pointer-events: none">Monthly</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-chevron-down h-4 w-4 opacity-50"
-                aria-hidden="true"
-              >
-                <path d="m6 9 6 6 6-6"></path>
-              </svg>
-            </button>
-          </div>
-          <div class="p-6 pt-0">
-            <div class="h-[300px]">
-              <div
-                class="recharts-responsive-container"
-                style="width: 100%; height: 100%; min-width: 0px"
-              >
-                <div
-                  class="recharts-wrapper"
-                  style="
-                    position: relative;
-                    cursor: default;
-                    width: 100%;
-                    height: 100%;
-                    max-height: 300px;
-                    max-width: 499px;
-                  "
-                >
-                  <svg
-                    class="recharts-surface"
-                    width="499"
-                    height="300"
-                    viewBox="0 0 499 300"
-                    style="width: 100%; height: 100%"
-                  >
-                    <title></title>
-                    <desc></desc>
-                    <defs>
-                      <clipPath id="recharts1-clip">
-                        <rect x="65" y="5" height="260" width="429"></rect>
-                      </clipPath>
-                    </defs>
-                    <g class="recharts-cartesian-grid">
-                      <g class="recharts-cartesian-grid-horizontal">
-                        <line
-                          stroke-dasharray="3 3"
-                          stroke="#ccc"
-                          fill="none"
-                          x="65"
-                          y="5"
-                          width="429"
-                          height="260"
-                          x1="65"
-                          y1="265"
-                          x2="494"
-                          y2="265"
-                        ></line>
-                        <line
-                          stroke-dasharray="3 3"
-                          stroke="#ccc"
-                          fill="none"
-                          x="65"
-                          y="5"
-                          width="429"
-                          height="260"
-                          x1="65"
-                          y1="200"
-                          x2="494"
-                          y2="200"
-                        ></line>
-                        <line
-                          stroke-dasharray="3 3"
-                          stroke="#ccc"
-                          fill="none"
-                          x="65"
-                          y="5"
-                          width="429"
-                          height="260"
-                          x1="65"
-                          y1="135"
-                          x2="494"
-                          y2="135"
-                        ></line>
-                        <line
-                          stroke-dasharray="3 3"
-                          stroke="#ccc"
-                          fill="none"
-                          x="65"
-                          y="5"
-                          width="429"
-                          height="260"
-                          x1="65"
-                          y1="70"
-                          x2="494"
-                          y2="70"
-                        ></line>
-                        <line
-                          stroke-dasharray="3 3"
-                          stroke="#ccc"
-                          fill="none"
-                          x="65"
-                          y="5"
-                          width="429"
-                          height="260"
-                          x1="65"
-                          y1="5"
-                          x2="494"
-                          y2="5"
-                        ></line>
-                      </g>
-                      <g class="recharts-cartesian-grid-vertical">
-                        <line
-                          stroke-dasharray="3 3"
-                          stroke="#ccc"
-                          fill="none"
-                          x="65"
-                          y="5"
-                          width="429"
-                          height="260"
-                          x1="82.875"
-                          y1="5"
-                          x2="82.875"
-                          y2="265"
-                        ></line>
-                        <line
-                          stroke-dasharray="3 3"
-                          stroke="#ccc"
-                          fill="none"
-                          x="65"
-                          y="5"
-                          width="429"
-                          height="260"
-                          x1="118.625"
-                          y1="5"
-                          x2="118.625"
-                          y2="265"
-                        ></line>
-                        <line
-                          stroke-dasharray="3 3"
-                          stroke="#ccc"
-                          fill="none"
-                          x="65"
-                          y="5"
-                          width="429"
-                          height="260"
-                          x1="154.375"
-                          y1="5"
-                          x2="154.375"
-                          y2="265"
-                        ></line>
-                        <line
-                          stroke-dasharray="3 3"
-                          stroke="#ccc"
-                          fill="none"
-                          x="65"
-                          y="5"
-                          width="429"
-                          height="260"
-                          x1="190.125"
-                          y1="5"
-                          x2="190.125"
-                          y2="265"
-                        ></line>
-                        <line
-                          stroke-dasharray="3 3"
-                          stroke="#ccc"
-                          fill="none"
-                          x="65"
-                          y="5"
-                          width="429"
-                          height="260"
-                          x1="225.875"
-                          y1="5"
-                          x2="225.875"
-                          y2="265"
-                        ></line>
-                        <line
-                          stroke-dasharray="3 3"
-                          stroke="#ccc"
-                          fill="none"
-                          x="65"
-                          y="5"
-                          width="429"
-                          height="260"
-                          x1="261.625"
-                          y1="5"
-                          x2="261.625"
-                          y2="265"
-                        ></line>
-                        <line
-                          stroke-dasharray="3 3"
-                          stroke="#ccc"
-                          fill="none"
-                          x="65"
-                          y="5"
-                          width="429"
-                          height="260"
-                          x1="297.375"
-                          y1="5"
-                          x2="297.375"
-                          y2="265"
-                        ></line>
-                        <line
-                          stroke-dasharray="3 3"
-                          stroke="#ccc"
-                          fill="none"
-                          x="65"
-                          y="5"
-                          width="429"
-                          height="260"
-                          x1="333.125"
-                          y1="5"
-                          x2="333.125"
-                          y2="265"
-                        ></line>
-                        <line
-                          stroke-dasharray="3 3"
-                          stroke="#ccc"
-                          fill="none"
-                          x="65"
-                          y="5"
-                          width="429"
-                          height="260"
-                          x1="368.875"
-                          y1="5"
-                          x2="368.875"
-                          y2="265"
-                        ></line>
-                        <line
-                          stroke-dasharray="3 3"
-                          stroke="#ccc"
-                          fill="none"
-                          x="65"
-                          y="5"
-                          width="429"
-                          height="260"
-                          x1="404.625"
-                          y1="5"
-                          x2="404.625"
-                          y2="265"
-                        ></line>
-                        <line
-                          stroke-dasharray="3 3"
-                          stroke="#ccc"
-                          fill="none"
-                          x="65"
-                          y="5"
-                          width="429"
-                          height="260"
-                          x1="440.375"
-                          y1="5"
-                          x2="440.375"
-                          y2="265"
-                        ></line>
-                        <line
-                          stroke-dasharray="3 3"
-                          stroke="#ccc"
-                          fill="none"
-                          x="65"
-                          y="5"
-                          width="429"
-                          height="260"
-                          x1="476.125"
-                          y1="5"
-                          x2="476.125"
-                          y2="265"
-                        ></line>
-                        <line
-                          stroke-dasharray="3 3"
-                          stroke="#ccc"
-                          fill="none"
-                          x="65"
-                          y="5"
-                          width="429"
-                          height="260"
-                          x1="65"
-                          y1="5"
-                          x2="65"
-                          y2="265"
-                        ></line>
-                        <line
-                          stroke-dasharray="3 3"
-                          stroke="#ccc"
-                          fill="none"
-                          x="65"
-                          y="5"
-                          width="429"
-                          height="260"
-                          x1="494"
-                          y1="5"
-                          x2="494"
-                          y2="265"
-                        ></line>
-                      </g>
-                    </g>
-                    <g
-                      class="recharts-layer recharts-cartesian-axis recharts-xAxis xAxis"
-                    >
-                      <g class="recharts-cartesian-axis-ticks">
-                        <g class="recharts-layer recharts-cartesian-axis-tick">
-                          <text
-                            orientation="bottom"
-                            width="429"
-                            height="30"
-                            font-size="12"
-                            stroke="none"
-                            x="82.875"
-                            y="273"
-                            class="recharts-text recharts-cartesian-axis-tick-value"
-                            text-anchor="middle"
-                            fill="#666"
-                          >
-                            <tspan x="82.875" dy="0.71em">Jan</tspan>
-                          </text>
-                        </g>
-                        <g class="recharts-layer recharts-cartesian-axis-tick">
-                          <text
-                            orientation="bottom"
-                            width="429"
-                            height="30"
-                            font-size="12"
-                            stroke="none"
-                            x="118.625"
-                            y="273"
-                            class="recharts-text recharts-cartesian-axis-tick-value"
-                            text-anchor="middle"
-                            fill="#666"
-                          >
-                            <tspan x="118.625" dy="0.71em">Feb</tspan>
-                          </text>
-                        </g>
-                        <g class="recharts-layer recharts-cartesian-axis-tick">
-                          <text
-                            orientation="bottom"
-                            width="429"
-                            height="30"
-                            font-size="12"
-                            stroke="none"
-                            x="154.375"
-                            y="273"
-                            class="recharts-text recharts-cartesian-axis-tick-value"
-                            text-anchor="middle"
-                            fill="#666"
-                          >
-                            <tspan x="154.375" dy="0.71em">Mar</tspan>
-                          </text>
-                        </g>
-                        <g class="recharts-layer recharts-cartesian-axis-tick">
-                          <text
-                            orientation="bottom"
-                            width="429"
-                            height="30"
-                            font-size="12"
-                            stroke="none"
-                            x="190.125"
-                            y="273"
-                            class="recharts-text recharts-cartesian-axis-tick-value"
-                            text-anchor="middle"
-                            fill="#666"
-                          >
-                            <tspan x="190.125" dy="0.71em">Apr</tspan>
-                          </text>
-                        </g>
-                        <g class="recharts-layer recharts-cartesian-axis-tick">
-                          <text
-                            orientation="bottom"
-                            width="429"
-                            height="30"
-                            font-size="12"
-                            stroke="none"
-                            x="225.875"
-                            y="273"
-                            class="recharts-text recharts-cartesian-axis-tick-value"
-                            text-anchor="middle"
-                            fill="#666"
-                          >
-                            <tspan x="225.875" dy="0.71em">May</tspan>
-                          </text>
-                        </g>
-                        <g class="recharts-layer recharts-cartesian-axis-tick">
-                          <text
-                            orientation="bottom"
-                            width="429"
-                            height="30"
-                            font-size="12"
-                            stroke="none"
-                            x="261.625"
-                            y="273"
-                            class="recharts-text recharts-cartesian-axis-tick-value"
-                            text-anchor="middle"
-                            fill="#666"
-                          >
-                            <tspan x="261.625" dy="0.71em">Jun</tspan>
-                          </text>
-                        </g>
-                        <g class="recharts-layer recharts-cartesian-axis-tick">
-                          <text
-                            orientation="bottom"
-                            width="429"
-                            height="30"
-                            font-size="12"
-                            stroke="none"
-                            x="297.375"
-                            y="273"
-                            class="recharts-text recharts-cartesian-axis-tick-value"
-                            text-anchor="middle"
-                            fill="#666"
-                          >
-                            <tspan x="297.375" dy="0.71em">Jul</tspan>
-                          </text>
-                        </g>
-                        <g class="recharts-layer recharts-cartesian-axis-tick">
-                          <text
-                            orientation="bottom"
-                            width="429"
-                            height="30"
-                            font-size="12"
-                            stroke="none"
-                            x="333.125"
-                            y="273"
-                            class="recharts-text recharts-cartesian-axis-tick-value"
-                            text-anchor="middle"
-                            fill="#666"
-                          >
-                            <tspan x="333.125" dy="0.71em">Aug</tspan>
-                          </text>
-                        </g>
-                        <g class="recharts-layer recharts-cartesian-axis-tick">
-                          <text
-                            orientation="bottom"
-                            width="429"
-                            height="30"
-                            font-size="12"
-                            stroke="none"
-                            x="368.875"
-                            y="273"
-                            class="recharts-text recharts-cartesian-axis-tick-value"
-                            text-anchor="middle"
-                            fill="#666"
-                          >
-                            <tspan x="368.875" dy="0.71em">Sep</tspan>
-                          </text>
-                        </g>
-                        <g class="recharts-layer recharts-cartesian-axis-tick">
-                          <text
-                            orientation="bottom"
-                            width="429"
-                            height="30"
-                            font-size="12"
-                            stroke="none"
-                            x="404.625"
-                            y="273"
-                            class="recharts-text recharts-cartesian-axis-tick-value"
-                            text-anchor="middle"
-                            fill="#666"
-                          >
-                            <tspan x="404.625" dy="0.71em">Oct</tspan>
-                          </text>
-                        </g>
-                        <g class="recharts-layer recharts-cartesian-axis-tick">
-                          <text
-                            orientation="bottom"
-                            width="429"
-                            height="30"
-                            font-size="12"
-                            stroke="none"
-                            x="440.375"
-                            y="273"
-                            class="recharts-text recharts-cartesian-axis-tick-value"
-                            text-anchor="middle"
-                            fill="#666"
-                          >
-                            <tspan x="440.375" dy="0.71em">Nov</tspan>
-                          </text>
-                        </g>
-                        <g class="recharts-layer recharts-cartesian-axis-tick">
-                          <text
-                            orientation="bottom"
-                            width="429"
-                            height="30"
-                            font-size="12"
-                            stroke="none"
-                            x="476.125"
-                            y="273"
-                            class="recharts-text recharts-cartesian-axis-tick-value"
-                            text-anchor="middle"
-                            fill="#666"
-                          >
-                            <tspan x="476.125" dy="0.71em">Dec</tspan>
-                          </text>
-                        </g>
-                      </g>
-                    </g>
-                    <g
-                      class="recharts-layer recharts-cartesian-axis recharts-yAxis yAxis"
-                    >
-                      <g class="recharts-cartesian-axis-ticks">
-                        <g class="recharts-layer recharts-cartesian-axis-tick">
-                          <text
-                            orientation="left"
-                            width="60"
-                            height="260"
-                            font-size="12"
-                            stroke="none"
-                            x="57"
-                            y="265"
-                            class="recharts-text recharts-cartesian-axis-tick-value"
-                            text-anchor="end"
-                            fill="#666"
-                          >
-                            <tspan x="57" dy="0.355em">0</tspan>
-                          </text>
-                        </g>
-                        <g class="recharts-layer recharts-cartesian-axis-tick">
-                          <text
-                            orientation="left"
-                            width="60"
-                            height="260"
-                            font-size="12"
-                            stroke="none"
-                            x="57"
-                            y="200"
-                            class="recharts-text recharts-cartesian-axis-tick-value"
-                            text-anchor="end"
-                            fill="#666"
-                          >
-                            <tspan x="57" dy="0.355em">60</tspan>
-                          </text>
-                        </g>
-                        <g class="recharts-layer recharts-cartesian-axis-tick">
-                          <text
-                            orientation="left"
-                            width="60"
-                            height="260"
-                            font-size="12"
-                            stroke="none"
-                            x="57"
-                            y="135"
-                            class="recharts-text recharts-cartesian-axis-tick-value"
-                            text-anchor="end"
-                            fill="#666"
-                          >
-                            <tspan x="57" dy="0.355em">120</tspan>
-                          </text>
-                        </g>
-                        <g class="recharts-layer recharts-cartesian-axis-tick">
-                          <text
-                            orientation="left"
-                            width="60"
-                            height="260"
-                            font-size="12"
-                            stroke="none"
-                            x="57"
-                            y="70"
-                            class="recharts-text recharts-cartesian-axis-tick-value"
-                            text-anchor="end"
-                            fill="#666"
-                          >
-                            <tspan x="57" dy="0.355em">180</tspan>
-                          </text>
-                        </g>
-                        <g class="recharts-layer recharts-cartesian-axis-tick">
-                          <text
-                            orientation="left"
-                            width="60"
-                            height="260"
-                            font-size="12"
-                            stroke="none"
-                            x="57"
-                            y="9"
-                            class="recharts-text recharts-cartesian-axis-tick-value"
-                            text-anchor="end"
-                            fill="#666"
-                          >
-                            <tspan x="57" dy="0.355em">240</tspan>
-                          </text>
-                        </g>
-                      </g>
-                    </g>
-                    <g class="recharts-layer recharts-bar">
-                      <g class="recharts-layer recharts-bar-rectangles">
-                        <g class="recharts-layer">
-                          <g class="recharts-layer recharts-bar-rectangle">
-                            <path
-                              x="68.575"
-                              y="216.25"
-                              width="28"
-                              height="48.75"
-                              radius="4,4,0,0"
-                              fill="#2563EB"
-                              name="Jan"
-                              class="recharts-rectangle"
-                              d="M68.575,220.25A 4,4,0,0,1,72.575,216.25L 92.575,216.25A 4,4,0,0,1,
-        96.575,220.25L 96.575,265L 68.575,265Z"
-                            ></path>
-                          </g>
-                          <g class="recharts-layer recharts-bar-rectangle">
-                            <path
-                              x="104.325"
-                              y="197.83333333333334"
-                              width="28"
-                              height="67.16666666666666"
-                              radius="4,4,0,0"
-                              fill="#2563EB"
-                              name="Feb"
-                              class="recharts-rectangle"
-                              d="M104.325,201.83333333333334A 4,4,0,0,1,108.325,197.83333333333334L 128.325,197.83333333333334A 4,4,0,0,1,
-        132.325,201.83333333333334L 132.325,265L 104.325,265Z"
-                            ></path>
-                          </g>
-                          <g class="recharts-layer recharts-bar-rectangle">
-                            <path
-                              x="140.075"
-                              y="180.5"
-                              width="28"
-                              height="84.5"
-                              radius="4,4,0,0"
-                              fill="#2563EB"
-                              name="Mar"
-                              class="recharts-rectangle"
-                              d="M140.075,184.5A 4,4,0,0,1,144.075,180.5L 164.075,180.5A 4,4,0,0,1,
-        168.075,184.5L 168.075,265L 140.075,265Z"
-                            ></path>
-                          </g>
-                          <g class="recharts-layer recharts-bar-rectangle">
-                            <path
-                              x="175.825"
-                              y="162.08333333333334"
-                              width="28"
-                              height="102.91666666666666"
-                              radius="4,4,0,0"
-                              fill="#2563EB"
-                              name="Apr"
-                              class="recharts-rectangle"
-                              d="M175.825,166.08333333333334A 4,4,0,0,1,179.825,162.08333333333334L 199.825,162.08333333333334A 4,4,0,0,1,
-        203.825,166.08333333333334L 203.825,265L 175.825,265Z"
-                            ></path>
-                          </g>
-                          <g class="recharts-layer recharts-bar-rectangle">
-                            <path
-                              x="211.575"
-                              y="145.83333333333334"
-                              width="28"
-                              height="119.16666666666666"
-                              radius="4,4,0,0"
-                              fill="#2563EB"
-                              name="May"
-                              class="recharts-rectangle"
-                              d="M211.575,149.83333333333334A 4,4,0,0,1,215.575,145.83333333333334L 235.575,145.83333333333334A 4,4,0,0,1,
-        239.575,149.83333333333334L 239.575,265L 211.575,265Z"
-                            ></path>
-                          </g>
-                          <g class="recharts-layer recharts-bar-rectangle">
-                            <path
-                              x="247.325"
-                              y="121.99999999999999"
-                              width="28"
-                              height="143"
-                              radius="4,4,0,0"
-                              fill="#2563EB"
-                              name="Jun"
-                              class="recharts-rectangle"
-                              d="M247.325,125.99999999999999A 4,4,0,0,1,251.325,121.99999999999999L 271.325,121.99999999999999A 4,4,0,0,1,
-        275.325,125.99999999999999L 275.325,265L 247.325,265Z"
-                            ></path>
-                          </g>
-                          <g class="recharts-layer recharts-bar-rectangle">
-                            <path
-                              x="283.075"
-                              y="104.66666666666666"
-                              width="28"
-                              height="160.33333333333334"
-                              radius="4,4,0,0"
-                              fill="#2563EB"
-                              name="Jul"
-                              class="recharts-rectangle"
-                              d="M283.075,108.66666666666666A 4,4,0,0,1,287.075,104.66666666666666L 307.075,104.66666666666666A 4,4,0,0,1,
-        311.075,108.66666666666666L 311.075,265L 283.075,265Z"
-                            ></path>
-                          </g>
-                          <g class="recharts-layer recharts-bar-rectangle">
-                            <path
-                              x="318.825"
-                              y="86.25"
-                              width="28"
-                              height="178.75"
-                              radius="4,4,0,0"
-                              fill="#2563EB"
-                              name="Aug"
-                              class="recharts-rectangle"
-                              d="M318.825,90.25A 4,4,0,0,1,322.825,86.25L 342.825,86.25A 4,4,0,0,1,
-        346.825,90.25L 346.825,265L 318.825,265Z"
-                            ></path>
-                          </g>
-                          <g class="recharts-layer recharts-bar-rectangle">
-                            <path
-                              x="354.575"
-                              y="70"
-                              width="28"
-                              height="195"
-                              radius="4,4,0,0"
-                              fill="#2563EB"
-                              name="Sep"
-                              class="recharts-rectangle"
-                              d="M354.575,74A 4,4,0,0,1,358.575,70L 378.575,70A 4,4,0,0,1,
-        382.575,74L 382.575,265L 354.575,265Z"
-                            ></path>
-                          </g>
-                          <g class="recharts-layer recharts-bar-rectangle">
-                            <path
-                              x="390.325"
-                              y="53.75"
-                              width="28"
-                              height="211.25"
-                              radius="4,4,0,0"
-                              fill="#2563EB"
-                              name="Oct"
-                              class="recharts-rectangle"
-                              d="M390.325,57.75A 4,4,0,0,1,394.325,53.75L 414.325,53.75A 4,4,0,0,1,
-        418.325,57.75L 418.325,265L 390.325,265Z"
-                            ></path>
-                          </g>
-                          <g class="recharts-layer recharts-bar-rectangle">
-                            <path
-                              x="426.075"
-                              y="37.5"
-                              width="28"
-                              height="227.5"
-                              radius="4,4,0,0"
-                              fill="#2563EB"
-                              name="Nov"
-                              class="recharts-rectangle"
-                              d="M426.075,41.5A 4,4,0,0,1,430.075,37.5L 450.075,37.5A 4,4,0,0,1,
-        454.075,41.5L 454.075,265L 426.075,265Z"
-                            ></path>
-                          </g>
-                          <g class="recharts-layer recharts-bar-rectangle">
-                            <path
-                              x="461.825"
-                              y="21.25"
-                              width="28"
-                              height="243.75"
-                              radius="4,4,0,0"
-                              fill="#2563EB"
-                              name="Dec"
-                              class="recharts-rectangle"
-                              d="M461.825,25.25A 4,4,0,0,1,465.825,21.25L 485.825,21.25A 4,4,0,0,1,
-        489.825,25.25L 489.825,265L 461.825,265Z"
-                            ></path>
-                          </g>
-                        </g>
-                      </g>
-                      <g class="recharts-layer"></g>
-                    </g>
-                  </svg>
-                  <div
-                    tabindex="-1"
-                    class="recharts-tooltip-wrapper recharts-tooltip-wrapper-right recharts-tooltip-wrapper-bottom"
-                    style="
-                      visibility: hidden;
-                      pointer-events: none;
-                      position: absolute;
-                      top: 0px;
-                      left: 0px;
-                      transform: translate(164.583px, 18px);
-                    "
-                  >
-                    <div
-                      class="recharts-default-tooltip"
-                      style="
-                        margin: 0px;
-                        padding: 10px;
-                        background-color: rgb(255, 255, 255);
-                        border: 1px solid rgb(204, 204, 204);
-                        white-space: nowrap;
-                      "
-                    >
-                      <p class="recharts-tooltip-label" style="margin: 0px">
-                        Mar
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="border bg-card text-card-foreground shadow-xs z-1 p-6 rounded-xl glass-card"
-        >
-          <div
-            class="space-y-1.5 p-6 flex flex-row items-center justify-between"
-          >
-            <h3 class="tracking-tight text-lg font-semibold">
-              Monthly Revenue
-            </h3>
-            <button
-              type="button"
-              role="combobox"
-              aria-controls="radix-:r3:"
-              aria-expanded="false"
-              aria-autocomplete="none"
-              dir="ltr"
-              data-state="closed"
-              class="flex h-10 items-center justify-between rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus:outline-hidden focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 [&amp;>span]:line-clamp-1 w-[120px]"
-            >
-              <span style="pointer-events: none">Monthly</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-chevron-down h-4 w-4 opacity-50"
-                aria-hidden="true"
-              >
-                <path d="m6 9 6 6 6-6"></path>
-              </svg>
-            </button>
-          </div>
-          <div class="p-6 pt-0">
-            <div class="h-[300px]">
-              <div
-                class="recharts-responsive-container"
-                style="width: 100%; height: 100%; min-width: 0px"
-              >
-                <div
-                  class="recharts-wrapper"
-                  style="
-                    position: relative;
-                    cursor: default;
-                    width: 100%;
-                    height: 100%;
-                    max-height: 300px;
-                    max-width: 499px;
-                  "
-                >
-                  <svg
-                    class="recharts-surface"
-                    width="499"
-                    height="300"
-                    viewBox="0 0 499 300"
-                    style="width: 100%; height: 100%"
-                  >
-                    <title></title>
-                    <desc></desc>
-                    <defs>
-                      <clipPath id="recharts4-clip">
-                        <rect x="65" y="5" height="260" width="429"></rect>
-                      </clipPath>
-                    </defs>
-                    <g class="recharts-cartesian-grid">
-                      <g class="recharts-cartesian-grid-horizontal">
-                        <line
-                          stroke-dasharray="3 3"
-                          stroke="#ccc"
-                          fill="none"
-                          x="65"
-                          y="5"
-                          width="429"
-                          height="260"
-                          x1="65"
-                          y1="265"
-                          x2="494"
-                          y2="265"
-                        ></line>
-                        <line
-                          stroke-dasharray="3 3"
-                          stroke="#ccc"
-                          fill="none"
-                          x="65"
-                          y="5"
-                          width="429"
-                          height="260"
-                          x1="65"
-                          y1="200"
-                          x2="494"
-                          y2="200"
-                        ></line>
-                        <line
-                          stroke-dasharray="3 3"
-                          stroke="#ccc"
-                          fill="none"
-                          x="65"
-                          y="5"
-                          width="429"
-                          height="260"
-                          x1="65"
-                          y1="135"
-                          x2="494"
-                          y2="135"
-                        ></line>
-                        <line
-                          stroke-dasharray="3 3"
-                          stroke="#ccc"
-                          fill="none"
-                          x="65"
-                          y="5"
-                          width="429"
-                          height="260"
-                          x1="65"
-                          y1="70"
-                          x2="494"
-                          y2="70"
-                        ></line>
-                        <line
-                          stroke-dasharray="3 3"
-                          stroke="#ccc"
-                          fill="none"
-                          x="65"
-                          y="5"
-                          width="429"
-                          height="260"
-                          x1="65"
-                          y1="5"
-                          x2="494"
-                          y2="5"
-                        ></line>
-                      </g>
-                      <g class="recharts-cartesian-grid-vertical">
-                        <line
-                          stroke-dasharray="3 3"
-                          stroke="#ccc"
-                          fill="none"
-                          x="65"
-                          y="5"
-                          width="429"
-                          height="260"
-                          x1="82.875"
-                          y1="5"
-                          x2="82.875"
-                          y2="265"
-                        ></line>
-                        <line
-                          stroke-dasharray="3 3"
-                          stroke="#ccc"
-                          fill="none"
-                          x="65"
-                          y="5"
-                          width="429"
-                          height="260"
-                          x1="118.625"
-                          y1="5"
-                          x2="118.625"
-                          y2="265"
-                        ></line>
-                        <line
-                          stroke-dasharray="3 3"
-                          stroke="#ccc"
-                          fill="none"
-                          x="65"
-                          y="5"
-                          width="429"
-                          height="260"
-                          x1="154.375"
-                          y1="5"
-                          x2="154.375"
-                          y2="265"
-                        ></line>
-                        <line
-                          stroke-dasharray="3 3"
-                          stroke="#ccc"
-                          fill="none"
-                          x="65"
-                          y="5"
-                          width="429"
-                          height="260"
-                          x1="190.125"
-                          y1="5"
-                          x2="190.125"
-                          y2="265"
-                        ></line>
-                        <line
-                          stroke-dasharray="3 3"
-                          stroke="#ccc"
-                          fill="none"
-                          x="65"
-                          y="5"
-                          width="429"
-                          height="260"
-                          x1="225.875"
-                          y1="5"
-                          x2="225.875"
-                          y2="265"
-                        ></line>
-                        <line
-                          stroke-dasharray="3 3"
-                          stroke="#ccc"
-                          fill="none"
-                          x="65"
-                          y="5"
-                          width="429"
-                          height="260"
-                          x1="261.625"
-                          y1="5"
-                          x2="261.625"
-                          y2="265"
-                        ></line>
-                        <line
-                          stroke-dasharray="3 3"
-                          stroke="#ccc"
-                          fill="none"
-                          x="65"
-                          y="5"
-                          width="429"
-                          height="260"
-                          x1="297.375"
-                          y1="5"
-                          x2="297.375"
-                          y2="265"
-                        ></line>
-                        <line
-                          stroke-dasharray="3 3"
-                          stroke="#ccc"
-                          fill="none"
-                          x="65"
-                          y="5"
-                          width="429"
-                          height="260"
-                          x1="333.125"
-                          y1="5"
-                          x2="333.125"
-                          y2="265"
-                        ></line>
-                        <line
-                          stroke-dasharray="3 3"
-                          stroke="#ccc"
-                          fill="none"
-                          x="65"
-                          y="5"
-                          width="429"
-                          height="260"
-                          x1="368.875"
-                          y1="5"
-                          x2="368.875"
-                          y2="265"
-                        ></line>
-                        <line
-                          stroke-dasharray="3 3"
-                          stroke="#ccc"
-                          fill="none"
-                          x="65"
-                          y="5"
-                          width="429"
-                          height="260"
-                          x1="404.625"
-                          y1="5"
-                          x2="404.625"
-                          y2="265"
-                        ></line>
-                        <line
-                          stroke-dasharray="3 3"
-                          stroke="#ccc"
-                          fill="none"
-                          x="65"
-                          y="5"
-                          width="429"
-                          height="260"
-                          x1="440.375"
-                          y1="5"
-                          x2="440.375"
-                          y2="265"
-                        ></line>
-                        <line
-                          stroke-dasharray="3 3"
-                          stroke="#ccc"
-                          fill="none"
-                          x="65"
-                          y="5"
-                          width="429"
-                          height="260"
-                          x1="476.125"
-                          y1="5"
-                          x2="476.125"
-                          y2="265"
-                        ></line>
-                        <line
-                          stroke-dasharray="3 3"
-                          stroke="#ccc"
-                          fill="none"
-                          x="65"
-                          y="5"
-                          width="429"
-                          height="260"
-                          x1="65"
-                          y1="5"
-                          x2="65"
-                          y2="265"
-                        ></line>
-                        <line
-                          stroke-dasharray="3 3"
-                          stroke="#ccc"
-                          fill="none"
-                          x="65"
-                          y="5"
-                          width="429"
-                          height="260"
-                          x1="494"
-                          y1="5"
-                          x2="494"
-                          y2="265"
-                        ></line>
-                      </g>
-                    </g>
-                    <g
-                      class="recharts-layer recharts-cartesian-axis recharts-xAxis xAxis"
-                    >
-                      <g class="recharts-cartesian-axis-ticks">
-                        <g class="recharts-layer recharts-cartesian-axis-tick">
-                          <text
-                            orientation="bottom"
-                            width="429"
-                            height="30"
-                            font-size="12"
-                            stroke="none"
-                            x="82.875"
-                            y="273"
-                            class="recharts-text recharts-cartesian-axis-tick-value"
-                            text-anchor="middle"
-                            fill="#666"
-                          >
-                            <tspan x="82.875" dy="0.71em">Jan</tspan>
-                          </text>
-                        </g>
-                        <g class="recharts-layer recharts-cartesian-axis-tick">
-                          <text
-                            orientation="bottom"
-                            width="429"
-                            height="30"
-                            font-size="12"
-                            stroke="none"
-                            x="118.625"
-                            y="273"
-                            class="recharts-text recharts-cartesian-axis-tick-value"
-                            text-anchor="middle"
-                            fill="#666"
-                          >
-                            <tspan x="118.625" dy="0.71em">Feb</tspan>
-                          </text>
-                        </g>
-                        <g class="recharts-layer recharts-cartesian-axis-tick">
-                          <text
-                            orientation="bottom"
-                            width="429"
-                            height="30"
-                            font-size="12"
-                            stroke="none"
-                            x="154.375"
-                            y="273"
-                            class="recharts-text recharts-cartesian-axis-tick-value"
-                            text-anchor="middle"
-                            fill="#666"
-                          >
-                            <tspan x="154.375" dy="0.71em">Mar</tspan>
-                          </text>
-                        </g>
-                        <g class="recharts-layer recharts-cartesian-axis-tick">
-                          <text
-                            orientation="bottom"
-                            width="429"
-                            height="30"
-                            font-size="12"
-                            stroke="none"
-                            x="190.125"
-                            y="273"
-                            class="recharts-text recharts-cartesian-axis-tick-value"
-                            text-anchor="middle"
-                            fill="#666"
-                          >
-                            <tspan x="190.125" dy="0.71em">Apr</tspan>
-                          </text>
-                        </g>
-                        <g class="recharts-layer recharts-cartesian-axis-tick">
-                          <text
-                            orientation="bottom"
-                            width="429"
-                            height="30"
-                            font-size="12"
-                            stroke="none"
-                            x="225.875"
-                            y="273"
-                            class="recharts-text recharts-cartesian-axis-tick-value"
-                            text-anchor="middle"
-                            fill="#666"
-                          >
-                            <tspan x="225.875" dy="0.71em">May</tspan>
-                          </text>
-                        </g>
-                        <g class="recharts-layer recharts-cartesian-axis-tick">
-                          <text
-                            orientation="bottom"
-                            width="429"
-                            height="30"
-                            font-size="12"
-                            stroke="none"
-                            x="261.625"
-                            y="273"
-                            class="recharts-text recharts-cartesian-axis-tick-value"
-                            text-anchor="middle"
-                            fill="#666"
-                          >
-                            <tspan x="261.625" dy="0.71em">Jun</tspan>
-                          </text>
-                        </g>
-                        <g class="recharts-layer recharts-cartesian-axis-tick">
-                          <text
-                            orientation="bottom"
-                            width="429"
-                            height="30"
-                            font-size="12"
-                            stroke="none"
-                            x="297.375"
-                            y="273"
-                            class="recharts-text recharts-cartesian-axis-tick-value"
-                            text-anchor="middle"
-                            fill="#666"
-                          >
-                            <tspan x="297.375" dy="0.71em">Jul</tspan>
-                          </text>
-                        </g>
-                        <g class="recharts-layer recharts-cartesian-axis-tick">
-                          <text
-                            orientation="bottom"
-                            width="429"
-                            height="30"
-                            font-size="12"
-                            stroke="none"
-                            x="333.125"
-                            y="273"
-                            class="recharts-text recharts-cartesian-axis-tick-value"
-                            text-anchor="middle"
-                            fill="#666"
-                          >
-                            <tspan x="333.125" dy="0.71em">Aug</tspan>
-                          </text>
-                        </g>
-                        <g class="recharts-layer recharts-cartesian-axis-tick">
-                          <text
-                            orientation="bottom"
-                            width="429"
-                            height="30"
-                            font-size="12"
-                            stroke="none"
-                            x="368.875"
-                            y="273"
-                            class="recharts-text recharts-cartesian-axis-tick-value"
-                            text-anchor="middle"
-                            fill="#666"
-                          >
-                            <tspan x="368.875" dy="0.71em">Sep</tspan>
-                          </text>
-                        </g>
-                        <g class="recharts-layer recharts-cartesian-axis-tick">
-                          <text
-                            orientation="bottom"
-                            width="429"
-                            height="30"
-                            font-size="12"
-                            stroke="none"
-                            x="404.625"
-                            y="273"
-                            class="recharts-text recharts-cartesian-axis-tick-value"
-                            text-anchor="middle"
-                            fill="#666"
-                          >
-                            <tspan x="404.625" dy="0.71em">Oct</tspan>
-                          </text>
-                        </g>
-                        <g class="recharts-layer recharts-cartesian-axis-tick">
-                          <text
-                            orientation="bottom"
-                            width="429"
-                            height="30"
-                            font-size="12"
-                            stroke="none"
-                            x="440.375"
-                            y="273"
-                            class="recharts-text recharts-cartesian-axis-tick-value"
-                            text-anchor="middle"
-                            fill="#666"
-                          >
-                            <tspan x="440.375" dy="0.71em">Nov</tspan>
-                          </text>
-                        </g>
-                        <g class="recharts-layer recharts-cartesian-axis-tick">
-                          <text
-                            orientation="bottom"
-                            width="429"
-                            height="30"
-                            font-size="12"
-                            stroke="none"
-                            x="476.125"
-                            y="273"
-                            class="recharts-text recharts-cartesian-axis-tick-value"
-                            text-anchor="middle"
-                            fill="#666"
-                          >
-                            <tspan x="476.125" dy="0.71em">Dec</tspan>
-                          </text>
-                        </g>
-                      </g>
-                    </g>
-                    <g
-                      class="recharts-layer recharts-cartesian-axis recharts-yAxis yAxis"
-                    >
-                      <g class="recharts-cartesian-axis-ticks">
-                        <g class="recharts-layer recharts-cartesian-axis-tick">
-                          <text
-                            orientation="left"
-                            width="60"
-                            height="260"
-                            font-size="12"
-                            stroke="none"
-                            x="57"
-                            y="265"
-                            class="recharts-text recharts-cartesian-axis-tick-value"
-                            text-anchor="end"
-                            fill="#666"
-                          >
-                            <tspan x="57" dy="0.355em">0</tspan>
-                          </text>
-                        </g>
-                        <g class="recharts-layer recharts-cartesian-axis-tick">
-                          <text
-                            orientation="left"
-                            width="60"
-                            height="260"
-                            font-size="12"
-                            stroke="none"
-                            x="57"
-                            y="200"
-                            class="recharts-text recharts-cartesian-axis-tick-value"
-                            text-anchor="end"
-                            fill="#666"
-                          >
-                            <tspan x="57" dy="0.355em">6000</tspan>
-                          </text>
-                        </g>
-                        <g class="recharts-layer recharts-cartesian-axis-tick">
-                          <text
-                            orientation="left"
-                            width="60"
-                            height="260"
-                            font-size="12"
-                            stroke="none"
-                            x="57"
-                            y="135"
-                            class="recharts-text recharts-cartesian-axis-tick-value"
-                            text-anchor="end"
-                            fill="#666"
-                          >
-                            <tspan x="57" dy="0.355em">12000</tspan>
-                          </text>
-                        </g>
-                        <g class="recharts-layer recharts-cartesian-axis-tick">
-                          <text
-                            orientation="left"
-                            width="60"
-                            height="260"
-                            font-size="12"
-                            stroke="none"
-                            x="57"
-                            y="70"
-                            class="recharts-text recharts-cartesian-axis-tick-value"
-                            text-anchor="end"
-                            fill="#666"
-                          >
-                            <tspan x="57" dy="0.355em">18000</tspan>
-                          </text>
-                        </g>
-                        <g class="recharts-layer recharts-cartesian-axis-tick">
-                          <text
-                            orientation="left"
-                            width="60"
-                            height="260"
-                            font-size="12"
-                            stroke="none"
-                            x="57"
-                            y="9"
-                            class="recharts-text recharts-cartesian-axis-tick-value"
-                            text-anchor="end"
-                            fill="#666"
-                          >
-                            <tspan x="57" dy="0.355em">24000</tspan>
-                          </text>
-                        </g>
-                      </g>
-                    </g>
-                    <g class="recharts-layer recharts-bar">
-                      <g class="recharts-layer recharts-bar-rectangles">
-                        <g class="recharts-layer">
-                          <g class="recharts-layer recharts-bar-rectangle">
-                            <path
-                              x="68.575"
-                              y="216.25"
-                              width="28"
-                              height="48.75"
-                              radius="4,4,0,0"
-                              fill="#4CAF50"
-                              name="Jan"
-                              class="recharts-rectangle"
-                              d="M68.575,220.25A 4,4,0,0,1,72.575,216.25L 92.575,216.25A 4,4,0,0,1,
-        96.575,220.25L 96.575,265L 68.575,265Z"
-                            ></path>
-                          </g>
-                          <g class="recharts-layer recharts-bar-rectangle">
-                            <path
-                              x="104.325"
-                              y="197.83333333333334"
-                              width="28"
-                              height="67.16666666666666"
-                              radius="4,4,0,0"
-                              fill="#4CAF50"
-                              name="Feb"
-                              class="recharts-rectangle"
-                              d="M104.325,201.83333333333334A 4,4,0,0,1,108.325,197.83333333333334L 128.325,197.83333333333334A 4,4,0,0,1,
-        132.325,201.83333333333334L 132.325,265L 104.325,265Z"
-                            ></path>
-                          </g>
-                          <g class="recharts-layer recharts-bar-rectangle">
-                            <path
-                              x="140.075"
-                              y="180.5"
-                              width="28"
-                              height="84.5"
-                              radius="4,4,0,0"
-                              fill="#4CAF50"
-                              name="Mar"
-                              class="recharts-rectangle"
-                              d="M140.075,184.5A 4,4,0,0,1,144.075,180.5L 164.075,180.5A 4,4,0,0,1,
-        168.075,184.5L 168.075,265L 140.075,265Z"
-                            ></path>
-                          </g>
-                          <g class="recharts-layer recharts-bar-rectangle">
-                            <path
-                              x="175.825"
-                              y="162.08333333333334"
-                              width="28"
-                              height="102.91666666666666"
-                              radius="4,4,0,0"
-                              fill="#4CAF50"
-                              name="Apr"
-                              class="recharts-rectangle"
-                              d="M175.825,166.08333333333334A 4,4,0,0,1,179.825,162.08333333333334L 199.825,162.08333333333334A 4,4,0,0,1,
-        203.825,166.08333333333334L 203.825,265L 175.825,265Z"
-                            ></path>
-                          </g>
-                          <g class="recharts-layer recharts-bar-rectangle">
-                            <path
-                              x="211.575"
-                              y="145.83333333333334"
-                              width="28"
-                              height="119.16666666666666"
-                              radius="4,4,0,0"
-                              fill="#4CAF50"
-                              name="May"
-                              class="recharts-rectangle"
-                              d="M211.575,149.83333333333334A 4,4,0,0,1,215.575,145.83333333333334L 235.575,145.83333333333334A 4,4,0,0,1,
-        239.575,149.83333333333334L 239.575,265L 211.575,265Z"
-                            ></path>
-                          </g>
-                          <g class="recharts-layer recharts-bar-rectangle">
-                            <path
-                              x="247.325"
-                              y="121.99999999999999"
-                              width="28"
-                              height="143"
-                              radius="4,4,0,0"
-                              fill="#4CAF50"
-                              name="Jun"
-                              class="recharts-rectangle"
-                              d="M247.325,125.99999999999999A 4,4,0,0,1,251.325,121.99999999999999L 271.325,121.99999999999999A 4,4,0,0,1,
-        275.325,125.99999999999999L 275.325,265L 247.325,265Z"
-                            ></path>
-                          </g>
-                          <g class="recharts-layer recharts-bar-rectangle">
-                            <path
-                              x="283.075"
-                              y="104.66666666666666"
-                              width="28"
-                              height="160.33333333333334"
-                              radius="4,4,0,0"
-                              fill="#4CAF50"
-                              name="Jul"
-                              class="recharts-rectangle"
-                              d="M283.075,108.66666666666666A 4,4,0,0,1,287.075,104.66666666666666L 307.075,104.66666666666666A 4,4,0,0,1,
-        311.075,108.66666666666666L 311.075,265L 283.075,265Z"
-                            ></path>
-                          </g>
-                          <g class="recharts-layer recharts-bar-rectangle">
-                            <path
-                              x="318.825"
-                              y="86.25"
-                              width="28"
-                              height="178.75"
-                              radius="4,4,0,0"
-                              fill="#4CAF50"
-                              name="Aug"
-                              class="recharts-rectangle"
-                              d="M318.825,90.25A 4,4,0,0,1,322.825,86.25L 342.825,86.25A 4,4,0,0,1,
-        346.825,90.25L 346.825,265L 318.825,265Z"
-                            ></path>
-                          </g>
-                          <g class="recharts-layer recharts-bar-rectangle">
-                            <path
-                              x="354.575"
-                              y="70"
-                              width="28"
-                              height="195"
-                              radius="4,4,0,0"
-                              fill="#4CAF50"
-                              name="Sep"
-                              class="recharts-rectangle"
-                              d="M354.575,74A 4,4,0,0,1,358.575,70L 378.575,70A 4,4,0,0,1,
-        382.575,74L 382.575,265L 354.575,265Z"
-                            ></path>
-                          </g>
-                          <g class="recharts-layer recharts-bar-rectangle">
-                            <path
-                              x="390.325"
-                              y="53.75"
-                              width="28"
-                              height="211.25"
-                              radius="4,4,0,0"
-                              fill="#4CAF50"
-                              name="Oct"
-                              class="recharts-rectangle"
-                              d="M390.325,57.75A 4,4,0,0,1,394.325,53.75L 414.325,53.75A 4,4,0,0,1,
-        418.325,57.75L 418.325,265L 390.325,265Z"
-                            ></path>
-                          </g>
-                          <g class="recharts-layer recharts-bar-rectangle">
-                            <path
-                              x="426.075"
-                              y="37.5"
-                              width="28"
-                              height="227.5"
-                              radius="4,4,0,0"
-                              fill="#4CAF50"
-                              name="Nov"
-                              class="recharts-rectangle"
-                              d="M426.075,41.5A 4,4,0,0,1,430.075,37.5L 450.075,37.5A 4,4,0,0,1,
-        454.075,41.5L 454.075,265L 426.075,265Z"
-                            ></path>
-                          </g>
-                          <g class="recharts-layer recharts-bar-rectangle">
-                            <path
-                              x="461.825"
-                              y="21.25"
-                              width="28"
-                              height="243.75"
-                              radius="4,4,0,0"
-                              fill="#4CAF50"
-                              name="Dec"
-                              class="recharts-rectangle"
-                              d="M461.825,25.25A 4,4,0,0,1,465.825,21.25L 485.825,21.25A 4,4,0,0,1,
-        489.825,25.25L 489.825,265L 461.825,265Z"
-                            ></path>
-                          </g>
-                        </g>
-                      </g>
-                      <g class="recharts-layer"></g>
-                    </g>
-                  </svg>
-                  <div
-                    tabindex="-1"
-                    class="recharts-tooltip-wrapper recharts-tooltip-wrapper-right recharts-tooltip-wrapper-bottom"
-                    style="
-                      visibility: hidden;
-                      pointer-events: none;
-                      position: absolute;
-                      top: 0px;
-                      left: 0px;
-                      transform: translate(92.9167px, 10px);
-                    "
-                  >
-                    <div
-                      class="recharts-default-tooltip"
-                      style="
-                        margin: 0px;
-                        padding: 10px;
-                        background-color: rgb(255, 255, 255);
-                        border: 1px solid rgb(204, 204, 204);
-                        white-space: nowrap;
-                      "
-                    >
-                      <p class="recharts-tooltip-label" style="margin: 0px">
-                        Jan
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        <div
-          class="bg-white rounded-lg shadow-xs border border-gray-200 p-4 hover:border-bwc-gold transition-colors cursor-pointer"
-        >
-          <div class="flex items-center justify-between mb-2">
-            <h3 class="font-medium text-bwc-charcoal">View Applications</h3>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-file-text h-5 w-5 text-bwc-gold"
-            >
-              <path
-                d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"
-              ></path>
-              <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
-              <path d="M10 9H8"></path>
-              <path d="M16 13H8"></path>
-              <path d="M16 17H8"></path>
-            </svg>
-          </div>
-          <p class="text-sm text-bwc-charcoal-light">5 pending applications</p>
-        </div>
-        <div
-          class="bg-white rounded-lg shadow-xs border border-gray-200 p-4 hover:border-bwc-gold transition-colors cursor-pointer"
-        >
-          <div class="flex items-center justify-between mb-2">
-            <h3 class="font-medium text-bwc-charcoal">Add Influencer</h3>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-user-plus h-5 w-5 text-bwc-gold"
-            >
-              <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
-              <circle cx="9" cy="7" r="4"></circle>
-              <line x1="19" x2="19" y1="8" y2="14"></line>
-              <line x1="22" x2="16" y1="11" y2="11"></line>
-            </svg>
-          </div>
-          <p class="text-sm text-bwc-charcoal-light">
-            Create new influencer account
-          </p>
-        </div>
-        <div
-          class="bg-white rounded-lg shadow-xs border border-gray-200 p-4 hover:border-bwc-gold transition-colors cursor-pointer"
-        >
-          <div class="flex items-center justify-between mb-2">
-            <h3 class="font-medium text-bwc-charcoal">Manage Invoices</h3>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-receipt h-5 w-5 text-bwc-gold"
-            >
-              <path
-                d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z"
-              ></path>
-              <path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"></path>
-              <path d="M12 17.5v-11"></path>
-            </svg>
-          </div>
-          <p class="text-sm text-bwc-charcoal-light">
-            Review and process payments
-          </p>
-        </div>
-        <div
-          class="bg-white rounded-lg shadow-xs border border-gray-200 p-4 hover:border-bwc-gold transition-colors cursor-pointer"
-        >
-          <div class="flex items-center justify-between mb-2">
-            <h3 class="font-medium text-bwc-charcoal">All Influencers</h3>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-users h-5 w-5 text-bwc-gold"
-            >
-              <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
-              <circle cx="9" cy="7" r="4"></circle>
-              <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
-              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-            </svg>
-          </div>
-          <p class="text-sm text-bwc-charcoal-light">
-            View and manage influencers
-          </p>
-        </div>
-      </div>
+<div class="p-8">
+  <div class="flex flex-col gap-8">
+    <div class="flex flex-col md:flex-row md:items-center md:justify-between">
       <div>
-        <div class="p-6 rounded-xl glass-card">
-          <h3 class="text-lg font-semibold text-bwc-charcoal mb-4">
-            Recent Code Usage
-          </h3>
-          <div class="overflow-x-auto">
-            <table class="w-full">
-              <thead>
-                <tr
-                  class="text-left text-xs font-medium text-bwc-charcoal-light uppercase tracking-wider"
-                >
-                  <th class="px-4 py-3">Date</th>
-                  <th class="px-4 py-3">Status</th>
-                  <th class="px-4 py-3 text-right">Amount</th>
-                </tr>
-              </thead>
-              <tbody class="divide-y divide-gray-100">
-                <tr class="hover:bg-bwc-cream/30 transition-colors">
-                  <td class="px-4 py-3 text-sm text-bwc-charcoal-light">
-                    Jul 25, 2023
-                  </td>
-                  <td class="px-4 py-3">
-                    <div
-                      class="flex items-center text-green-600 bg-green-50 px-2.5 py-0.5 rounded-full text-xs font-medium"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="12"
-                        height="12"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="lucide lucide-circle-check mr-1"
-                      >
-                        <circle cx="12" cy="12" r="10"></circle>
-                        <path d="m9 12 2 2 4-4"></path>
-                      </svg>
-                      Completed
-                    </div>
-                  </td>
-                  <td
-                    class="px-4 py-3 text-right font-medium text-bwc-charcoal"
-                  >
-                    £45.00
-                  </td>
-                </tr>
-                <tr class="hover:bg-bwc-cream/30 transition-colors">
-                  <td class="px-4 py-3 text-sm text-bwc-charcoal-light">
-                    Jul 23, 2023
-                  </td>
-                  <td class="px-4 py-3">
-                    <div
-                      class="flex items-center text-green-600 bg-green-50 px-2.5 py-0.5 rounded-full text-xs font-medium"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="12"
-                        height="12"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="lucide lucide-circle-check mr-1"
-                      >
-                        <circle cx="12" cy="12" r="10"></circle>
-                        <path d="m9 12 2 2 4-4"></path>
-                      </svg>
-                      Completed
-                    </div>
-                  </td>
-                  <td
-                    class="px-4 py-3 text-right font-medium text-bwc-charcoal"
-                  >
-                    £45.00
-                  </td>
-                </tr>
-                <tr class="hover:bg-bwc-cream/30 transition-colors">
-                  <td class="px-4 py-3 text-sm text-bwc-charcoal-light">
-                    Jul 20, 2023
-                  </td>
-                  <td class="px-4 py-3">
-                    <div
-                      class="flex items-center text-amber-600 bg-amber-50 px-2.5 py-0.5 rounded-full text-xs font-medium"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="12"
-                        height="12"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="lucide lucide-clock mr-1"
-                      >
-                        <circle cx="12" cy="12" r="10"></circle>
-                        <polyline points="12 6 12 12 16 14"></polyline>
-                      </svg>
-                      Pending
-                    </div>
-                  </td>
-                  <td
-                    class="px-4 py-3 text-right font-medium text-bwc-charcoal"
-                  >
-                    £45.00
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+        <h1 class="text-3xl font-bold text-bwc-charcoal mb-2">
+          Admin Overview
+        </h1>
+        <p class="text-bwc-charcoal-light">
+          Monitor your influencer program performance
+        </p>
+      </div>
+      <div class="mt-4 md:mt-0">
+        <button
+          class="inline-flex items-center gap-2 whitespace-nowrap rounded-md text-sm ring-offset-background transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 justify-start text-left font-normal"
+          type="button"
+          aria-haspopup="dialog"
+          aria-expanded="false"
+          aria-controls="radix-:r1:"
+          data-state="closed"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-calendar mr-2 h-4 w-4"
+          >
+            <path d="M8 2v4"></path>
+            <path d="M16 2v4"></path>
+            <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+            <path d="M3 10h18"></path>
+          </svg>
+          Mar 01, 2025 - Apr 19, 2025
+        </button>
+      </div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div
+        class="p-6 rounded-xl glass-card hover-lift flex items-center relative"
+        style="transform: none"
+      >
+        <div class="mr-4 p-3 rounded-lg bg-bwc-gold-light/50 text-bwc-gold">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-users"
+          >
+            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+            <circle cx="9" cy="7" r="4"></circle>
+            <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+          </svg>
+        </div>
+        <div class="relative">
+          <div class="flex items-center">
+            <h3 class="text-sm font-medium text-bwc-charcoal-light">
+              Total Influencers
+            </h3>
+            <button
+              class="ml-1 text-bwc-charcoal-light/70 hover:text-bwc-gold transition-colors"
+              data-state="closed"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-info"
+              >
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M12 16v-4"></path>
+                <path d="M12 8h.01"></path>
+              </svg>
+            </button>
+          </div>
+          <div class="flex items-baseline mt-1">
+            <p class="text-2xl font-semibold text-bwc-charcoal">24</p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="p-6 rounded-xl glass-card hover-lift flex items-center relative"
+        style="transform: none"
+      >
+        <div class="mr-4 p-3 rounded-lg bg-bwc-gold-light/50 text-bwc-gold">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-pound-sterling"
+          >
+            <path d="M18 7c0-5.333-8-5.333-8 0"></path>
+            <path d="M10 7v14"></path>
+            <path d="M6 21h12"></path>
+            <path d="M6 13h10"></path>
+          </svg>
+        </div>
+        <div class="relative">
+          <div class="flex items-center">
+            <h3 class="text-sm font-medium text-bwc-charcoal-light">
+              Total Earnings
+            </h3>
+            <button
+              class="ml-1 text-bwc-charcoal-light/70 hover:text-bwc-gold transition-colors"
+              data-state="closed"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-info"
+              >
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M12 16v-4"></path>
+                <path d="M12 8h.01"></path>
+              </svg>
+            </button>
+          </div>
+          <div class="flex items-baseline mt-1">
+            <p class="text-2xl font-semibold text-bwc-charcoal">£12,450.00</p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="p-6 rounded-xl glass-card hover-lift flex items-center relative"
+        style="transform: none"
+      >
+        <div class="mr-4 p-3 rounded-lg bg-bwc-gold-light/50 text-bwc-gold">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-receipt"
+          >
+            <path
+              d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z"
+            ></path>
+            <path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"></path>
+            <path d="M12 17.5v-11"></path>
+          </svg>
+        </div>
+        <div class="relative">
+          <div class="flex items-center">
+            <h3 class="text-sm font-medium text-bwc-charcoal-light">
+              Pending Payments
+            </h3>
+            <button
+              class="ml-1 text-bwc-charcoal-light/70 hover:text-bwc-gold transition-colors"
+              data-state="closed"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-info"
+              >
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M12 16v-4"></path>
+                <path d="M12 8h.01"></path>
+              </svg>
+            </button>
+          </div>
+          <div class="flex items-baseline mt-1">
+            <p class="text-2xl font-semibold text-bwc-charcoal">£3,280.00</p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="p-6 rounded-xl glass-card hover-lift flex items-center relative"
+        style="transform: none"
+      >
+        <div class="mr-4 p-3 rounded-lg bg-bwc-gold-light/50 text-bwc-gold">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-trending-up"
+          >
+            <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+            <polyline points="16 7 22 7 22 13"></polyline>
+          </svg>
+        </div>
+        <div class="relative">
+          <div class="flex items-center">
+            <h3 class="text-sm font-medium text-bwc-charcoal-light">
+              Conversion Rate
+            </h3>
+            <button
+              class="ml-1 text-bwc-charcoal-light/70 hover:text-bwc-gold transition-colors"
+              data-state="closed"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-info"
+              >
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M12 16v-4"></path>
+                <path d="M12 8h.01"></path>
+              </svg>
+            </button>
+          </div>
+          <div class="flex items-baseline mt-1">
+            <p class="text-2xl font-semibold text-bwc-charcoal">68%</p>
           </div>
         </div>
       </div>
     </div>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+      <div
+        class="border bg-card text-card-foreground shadow-xs z-1 p-6 rounded-xl glass-card"
+      >
+        <div class="space-y-1.5 p-6 flex flex-row items-center justify-between">
+          <h3 class="tracking-tight text-lg font-semibold">
+            Monthly Referrals
+          </h3>
+          <button
+            type="button"
+            role="combobox"
+            aria-controls="radix-:r2:"
+            aria-expanded="false"
+            aria-autocomplete="none"
+            dir="ltr"
+            data-state="closed"
+            class="flex h-10 items-center justify-between rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus:outline-hidden focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 [&amp;>span]:line-clamp-1 w-[120px]"
+          >
+            <span style="pointer-events: none">Monthly</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-chevron-down h-4 w-4 opacity-50"
+              aria-hidden="true"
+            >
+              <path d="m6 9 6 6 6-6"></path>
+            </svg>
+          </button>
+        </div>
+        <div class="p-6 pt-0">
+          <div class="h-[300px]">
+            <div
+              class="recharts-responsive-container"
+              style="width: 100%; height: 100%; min-width: 0px"
+            >
+              <div
+                class="recharts-wrapper"
+                style="
+                  position: relative;
+                  cursor: default;
+                  width: 100%;
+                  height: 100%;
+                  max-height: 300px;
+                  max-width: 499px;
+                "
+              >
+                <svg
+                  class="recharts-surface"
+                  width="499"
+                  height="300"
+                  viewBox="0 0 499 300"
+                  style="width: 100%; height: 100%"
+                >
+                  <title></title>
+                  <desc></desc>
+                  <defs>
+                    <clipPath id="recharts1-clip">
+                      <rect x="65" y="5" height="260" width="429"></rect>
+                    </clipPath>
+                  </defs>
+                  <g class="recharts-cartesian-grid">
+                    <g class="recharts-cartesian-grid-horizontal">
+                      <line
+                        stroke-dasharray="3 3"
+                        stroke="#ccc"
+                        fill="none"
+                        x="65"
+                        y="5"
+                        width="429"
+                        height="260"
+                        x1="65"
+                        y1="265"
+                        x2="494"
+                        y2="265"
+                      ></line>
+                      <line
+                        stroke-dasharray="3 3"
+                        stroke="#ccc"
+                        fill="none"
+                        x="65"
+                        y="5"
+                        width="429"
+                        height="260"
+                        x1="65"
+                        y1="200"
+                        x2="494"
+                        y2="200"
+                      ></line>
+                      <line
+                        stroke-dasharray="3 3"
+                        stroke="#ccc"
+                        fill="none"
+                        x="65"
+                        y="5"
+                        width="429"
+                        height="260"
+                        x1="65"
+                        y1="135"
+                        x2="494"
+                        y2="135"
+                      ></line>
+                      <line
+                        stroke-dasharray="3 3"
+                        stroke="#ccc"
+                        fill="none"
+                        x="65"
+                        y="5"
+                        width="429"
+                        height="260"
+                        x1="65"
+                        y1="70"
+                        x2="494"
+                        y2="70"
+                      ></line>
+                      <line
+                        stroke-dasharray="3 3"
+                        stroke="#ccc"
+                        fill="none"
+                        x="65"
+                        y="5"
+                        width="429"
+                        height="260"
+                        x1="65"
+                        y1="5"
+                        x2="494"
+                        y2="5"
+                      ></line>
+                    </g>
+                    <g class="recharts-cartesian-grid-vertical">
+                      <line
+                        stroke-dasharray="3 3"
+                        stroke="#ccc"
+                        fill="none"
+                        x="65"
+                        y="5"
+                        width="429"
+                        height="260"
+                        x1="82.875"
+                        y1="5"
+                        x2="82.875"
+                        y2="265"
+                      ></line>
+                      <line
+                        stroke-dasharray="3 3"
+                        stroke="#ccc"
+                        fill="none"
+                        x="65"
+                        y="5"
+                        width="429"
+                        height="260"
+                        x1="118.625"
+                        y1="5"
+                        x2="118.625"
+                        y2="265"
+                      ></line>
+                      <line
+                        stroke-dasharray="3 3"
+                        stroke="#ccc"
+                        fill="none"
+                        x="65"
+                        y="5"
+                        width="429"
+                        height="260"
+                        x1="154.375"
+                        y1="5"
+                        x2="154.375"
+                        y2="265"
+                      ></line>
+                      <line
+                        stroke-dasharray="3 3"
+                        stroke="#ccc"
+                        fill="none"
+                        x="65"
+                        y="5"
+                        width="429"
+                        height="260"
+                        x1="190.125"
+                        y1="5"
+                        x2="190.125"
+                        y2="265"
+                      ></line>
+                      <line
+                        stroke-dasharray="3 3"
+                        stroke="#ccc"
+                        fill="none"
+                        x="65"
+                        y="5"
+                        width="429"
+                        height="260"
+                        x1="225.875"
+                        y1="5"
+                        x2="225.875"
+                        y2="265"
+                      ></line>
+                      <line
+                        stroke-dasharray="3 3"
+                        stroke="#ccc"
+                        fill="none"
+                        x="65"
+                        y="5"
+                        width="429"
+                        height="260"
+                        x1="261.625"
+                        y1="5"
+                        x2="261.625"
+                        y2="265"
+                      ></line>
+                      <line
+                        stroke-dasharray="3 3"
+                        stroke="#ccc"
+                        fill="none"
+                        x="65"
+                        y="5"
+                        width="429"
+                        height="260"
+                        x1="297.375"
+                        y1="5"
+                        x2="297.375"
+                        y2="265"
+                      ></line>
+                      <line
+                        stroke-dasharray="3 3"
+                        stroke="#ccc"
+                        fill="none"
+                        x="65"
+                        y="5"
+                        width="429"
+                        height="260"
+                        x1="333.125"
+                        y1="5"
+                        x2="333.125"
+                        y2="265"
+                      ></line>
+                      <line
+                        stroke-dasharray="3 3"
+                        stroke="#ccc"
+                        fill="none"
+                        x="65"
+                        y="5"
+                        width="429"
+                        height="260"
+                        x1="368.875"
+                        y1="5"
+                        x2="368.875"
+                        y2="265"
+                      ></line>
+                      <line
+                        stroke-dasharray="3 3"
+                        stroke="#ccc"
+                        fill="none"
+                        x="65"
+                        y="5"
+                        width="429"
+                        height="260"
+                        x1="404.625"
+                        y1="5"
+                        x2="404.625"
+                        y2="265"
+                      ></line>
+                      <line
+                        stroke-dasharray="3 3"
+                        stroke="#ccc"
+                        fill="none"
+                        x="65"
+                        y="5"
+                        width="429"
+                        height="260"
+                        x1="440.375"
+                        y1="5"
+                        x2="440.375"
+                        y2="265"
+                      ></line>
+                      <line
+                        stroke-dasharray="3 3"
+                        stroke="#ccc"
+                        fill="none"
+                        x="65"
+                        y="5"
+                        width="429"
+                        height="260"
+                        x1="476.125"
+                        y1="5"
+                        x2="476.125"
+                        y2="265"
+                      ></line>
+                      <line
+                        stroke-dasharray="3 3"
+                        stroke="#ccc"
+                        fill="none"
+                        x="65"
+                        y="5"
+                        width="429"
+                        height="260"
+                        x1="65"
+                        y1="5"
+                        x2="65"
+                        y2="265"
+                      ></line>
+                      <line
+                        stroke-dasharray="3 3"
+                        stroke="#ccc"
+                        fill="none"
+                        x="65"
+                        y="5"
+                        width="429"
+                        height="260"
+                        x1="494"
+                        y1="5"
+                        x2="494"
+                        y2="265"
+                      ></line>
+                    </g>
+                  </g>
+                  <g
+                    class="recharts-layer recharts-cartesian-axis recharts-xAxis xAxis"
+                  >
+                    <g class="recharts-cartesian-axis-ticks">
+                      <g class="recharts-layer recharts-cartesian-axis-tick">
+                        <text
+                          orientation="bottom"
+                          width="429"
+                          height="30"
+                          font-size="12"
+                          stroke="none"
+                          x="82.875"
+                          y="273"
+                          class="recharts-text recharts-cartesian-axis-tick-value"
+                          text-anchor="middle"
+                          fill="#666"
+                        >
+                          <tspan x="82.875" dy="0.71em">Jan</tspan>
+                        </text>
+                      </g>
+                      <g class="recharts-layer recharts-cartesian-axis-tick">
+                        <text
+                          orientation="bottom"
+                          width="429"
+                          height="30"
+                          font-size="12"
+                          stroke="none"
+                          x="118.625"
+                          y="273"
+                          class="recharts-text recharts-cartesian-axis-tick-value"
+                          text-anchor="middle"
+                          fill="#666"
+                        >
+                          <tspan x="118.625" dy="0.71em">Feb</tspan>
+                        </text>
+                      </g>
+                      <g class="recharts-layer recharts-cartesian-axis-tick">
+                        <text
+                          orientation="bottom"
+                          width="429"
+                          height="30"
+                          font-size="12"
+                          stroke="none"
+                          x="154.375"
+                          y="273"
+                          class="recharts-text recharts-cartesian-axis-tick-value"
+                          text-anchor="middle"
+                          fill="#666"
+                        >
+                          <tspan x="154.375" dy="0.71em">Mar</tspan>
+                        </text>
+                      </g>
+                      <g class="recharts-layer recharts-cartesian-axis-tick">
+                        <text
+                          orientation="bottom"
+                          width="429"
+                          height="30"
+                          font-size="12"
+                          stroke="none"
+                          x="190.125"
+                          y="273"
+                          class="recharts-text recharts-cartesian-axis-tick-value"
+                          text-anchor="middle"
+                          fill="#666"
+                        >
+                          <tspan x="190.125" dy="0.71em">Apr</tspan>
+                        </text>
+                      </g>
+                      <g class="recharts-layer recharts-cartesian-axis-tick">
+                        <text
+                          orientation="bottom"
+                          width="429"
+                          height="30"
+                          font-size="12"
+                          stroke="none"
+                          x="225.875"
+                          y="273"
+                          class="recharts-text recharts-cartesian-axis-tick-value"
+                          text-anchor="middle"
+                          fill="#666"
+                        >
+                          <tspan x="225.875" dy="0.71em">May</tspan>
+                        </text>
+                      </g>
+                      <g class="recharts-layer recharts-cartesian-axis-tick">
+                        <text
+                          orientation="bottom"
+                          width="429"
+                          height="30"
+                          font-size="12"
+                          stroke="none"
+                          x="261.625"
+                          y="273"
+                          class="recharts-text recharts-cartesian-axis-tick-value"
+                          text-anchor="middle"
+                          fill="#666"
+                        >
+                          <tspan x="261.625" dy="0.71em">Jun</tspan>
+                        </text>
+                      </g>
+                      <g class="recharts-layer recharts-cartesian-axis-tick">
+                        <text
+                          orientation="bottom"
+                          width="429"
+                          height="30"
+                          font-size="12"
+                          stroke="none"
+                          x="297.375"
+                          y="273"
+                          class="recharts-text recharts-cartesian-axis-tick-value"
+                          text-anchor="middle"
+                          fill="#666"
+                        >
+                          <tspan x="297.375" dy="0.71em">Jul</tspan>
+                        </text>
+                      </g>
+                      <g class="recharts-layer recharts-cartesian-axis-tick">
+                        <text
+                          orientation="bottom"
+                          width="429"
+                          height="30"
+                          font-size="12"
+                          stroke="none"
+                          x="333.125"
+                          y="273"
+                          class="recharts-text recharts-cartesian-axis-tick-value"
+                          text-anchor="middle"
+                          fill="#666"
+                        >
+                          <tspan x="333.125" dy="0.71em">Aug</tspan>
+                        </text>
+                      </g>
+                      <g class="recharts-layer recharts-cartesian-axis-tick">
+                        <text
+                          orientation="bottom"
+                          width="429"
+                          height="30"
+                          font-size="12"
+                          stroke="none"
+                          x="368.875"
+                          y="273"
+                          class="recharts-text recharts-cartesian-axis-tick-value"
+                          text-anchor="middle"
+                          fill="#666"
+                        >
+                          <tspan x="368.875" dy="0.71em">Sep</tspan>
+                        </text>
+                      </g>
+                      <g class="recharts-layer recharts-cartesian-axis-tick">
+                        <text
+                          orientation="bottom"
+                          width="429"
+                          height="30"
+                          font-size="12"
+                          stroke="none"
+                          x="404.625"
+                          y="273"
+                          class="recharts-text recharts-cartesian-axis-tick-value"
+                          text-anchor="middle"
+                          fill="#666"
+                        >
+                          <tspan x="404.625" dy="0.71em">Oct</tspan>
+                        </text>
+                      </g>
+                      <g class="recharts-layer recharts-cartesian-axis-tick">
+                        <text
+                          orientation="bottom"
+                          width="429"
+                          height="30"
+                          font-size="12"
+                          stroke="none"
+                          x="440.375"
+                          y="273"
+                          class="recharts-text recharts-cartesian-axis-tick-value"
+                          text-anchor="middle"
+                          fill="#666"
+                        >
+                          <tspan x="440.375" dy="0.71em">Nov</tspan>
+                        </text>
+                      </g>
+                      <g class="recharts-layer recharts-cartesian-axis-tick">
+                        <text
+                          orientation="bottom"
+                          width="429"
+                          height="30"
+                          font-size="12"
+                          stroke="none"
+                          x="476.125"
+                          y="273"
+                          class="recharts-text recharts-cartesian-axis-tick-value"
+                          text-anchor="middle"
+                          fill="#666"
+                        >
+                          <tspan x="476.125" dy="0.71em">Dec</tspan>
+                        </text>
+                      </g>
+                    </g>
+                  </g>
+                  <g
+                    class="recharts-layer recharts-cartesian-axis recharts-yAxis yAxis"
+                  >
+                    <g class="recharts-cartesian-axis-ticks">
+                      <g class="recharts-layer recharts-cartesian-axis-tick">
+                        <text
+                          orientation="left"
+                          width="60"
+                          height="260"
+                          font-size="12"
+                          stroke="none"
+                          x="57"
+                          y="265"
+                          class="recharts-text recharts-cartesian-axis-tick-value"
+                          text-anchor="end"
+                          fill="#666"
+                        >
+                          <tspan x="57" dy="0.355em">0</tspan>
+                        </text>
+                      </g>
+                      <g class="recharts-layer recharts-cartesian-axis-tick">
+                        <text
+                          orientation="left"
+                          width="60"
+                          height="260"
+                          font-size="12"
+                          stroke="none"
+                          x="57"
+                          y="200"
+                          class="recharts-text recharts-cartesian-axis-tick-value"
+                          text-anchor="end"
+                          fill="#666"
+                        >
+                          <tspan x="57" dy="0.355em">60</tspan>
+                        </text>
+                      </g>
+                      <g class="recharts-layer recharts-cartesian-axis-tick">
+                        <text
+                          orientation="left"
+                          width="60"
+                          height="260"
+                          font-size="12"
+                          stroke="none"
+                          x="57"
+                          y="135"
+                          class="recharts-text recharts-cartesian-axis-tick-value"
+                          text-anchor="end"
+                          fill="#666"
+                        >
+                          <tspan x="57" dy="0.355em">120</tspan>
+                        </text>
+                      </g>
+                      <g class="recharts-layer recharts-cartesian-axis-tick">
+                        <text
+                          orientation="left"
+                          width="60"
+                          height="260"
+                          font-size="12"
+                          stroke="none"
+                          x="57"
+                          y="70"
+                          class="recharts-text recharts-cartesian-axis-tick-value"
+                          text-anchor="end"
+                          fill="#666"
+                        >
+                          <tspan x="57" dy="0.355em">180</tspan>
+                        </text>
+                      </g>
+                      <g class="recharts-layer recharts-cartesian-axis-tick">
+                        <text
+                          orientation="left"
+                          width="60"
+                          height="260"
+                          font-size="12"
+                          stroke="none"
+                          x="57"
+                          y="9"
+                          class="recharts-text recharts-cartesian-axis-tick-value"
+                          text-anchor="end"
+                          fill="#666"
+                        >
+                          <tspan x="57" dy="0.355em">240</tspan>
+                        </text>
+                      </g>
+                    </g>
+                  </g>
+                  <g class="recharts-layer recharts-bar">
+                    <g class="recharts-layer recharts-bar-rectangles">
+                      <g class="recharts-layer">
+                        <g class="recharts-layer recharts-bar-rectangle">
+                          <path
+                            x="68.575"
+                            y="216.25"
+                            width="28"
+                            height="48.75"
+                            radius="4,4,0,0"
+                            fill="#2563EB"
+                            name="Jan"
+                            class="recharts-rectangle"
+                            d="M68.575,220.25A 4,4,0,0,1,72.575,216.25L 92.575,216.25A 4,4,0,0,1,
+        96.575,220.25L 96.575,265L 68.575,265Z"
+                          ></path>
+                        </g>
+                        <g class="recharts-layer recharts-bar-rectangle">
+                          <path
+                            x="104.325"
+                            y="197.83333333333334"
+                            width="28"
+                            height="67.16666666666666"
+                            radius="4,4,0,0"
+                            fill="#2563EB"
+                            name="Feb"
+                            class="recharts-rectangle"
+                            d="M104.325,201.83333333333334A 4,4,0,0,1,108.325,197.83333333333334L 128.325,197.83333333333334A 4,4,0,0,1,
+        132.325,201.83333333333334L 132.325,265L 104.325,265Z"
+                          ></path>
+                        </g>
+                        <g class="recharts-layer recharts-bar-rectangle">
+                          <path
+                            x="140.075"
+                            y="180.5"
+                            width="28"
+                            height="84.5"
+                            radius="4,4,0,0"
+                            fill="#2563EB"
+                            name="Mar"
+                            class="recharts-rectangle"
+                            d="M140.075,184.5A 4,4,0,0,1,144.075,180.5L 164.075,180.5A 4,4,0,0,1,
+        168.075,184.5L 168.075,265L 140.075,265Z"
+                          ></path>
+                        </g>
+                        <g class="recharts-layer recharts-bar-rectangle">
+                          <path
+                            x="175.825"
+                            y="162.08333333333334"
+                            width="28"
+                            height="102.91666666666666"
+                            radius="4,4,0,0"
+                            fill="#2563EB"
+                            name="Apr"
+                            class="recharts-rectangle"
+                            d="M175.825,166.08333333333334A 4,4,0,0,1,179.825,162.08333333333334L 199.825,162.08333333333334A 4,4,0,0,1,
+        203.825,166.08333333333334L 203.825,265L 175.825,265Z"
+                          ></path>
+                        </g>
+                        <g class="recharts-layer recharts-bar-rectangle">
+                          <path
+                            x="211.575"
+                            y="145.83333333333334"
+                            width="28"
+                            height="119.16666666666666"
+                            radius="4,4,0,0"
+                            fill="#2563EB"
+                            name="May"
+                            class="recharts-rectangle"
+                            d="M211.575,149.83333333333334A 4,4,0,0,1,215.575,145.83333333333334L 235.575,145.83333333333334A 4,4,0,0,1,
+        239.575,149.83333333333334L 239.575,265L 211.575,265Z"
+                          ></path>
+                        </g>
+                        <g class="recharts-layer recharts-bar-rectangle">
+                          <path
+                            x="247.325"
+                            y="121.99999999999999"
+                            width="28"
+                            height="143"
+                            radius="4,4,0,0"
+                            fill="#2563EB"
+                            name="Jun"
+                            class="recharts-rectangle"
+                            d="M247.325,125.99999999999999A 4,4,0,0,1,251.325,121.99999999999999L 271.325,121.99999999999999A 4,4,0,0,1,
+        275.325,125.99999999999999L 275.325,265L 247.325,265Z"
+                          ></path>
+                        </g>
+                        <g class="recharts-layer recharts-bar-rectangle">
+                          <path
+                            x="283.075"
+                            y="104.66666666666666"
+                            width="28"
+                            height="160.33333333333334"
+                            radius="4,4,0,0"
+                            fill="#2563EB"
+                            name="Jul"
+                            class="recharts-rectangle"
+                            d="M283.075,108.66666666666666A 4,4,0,0,1,287.075,104.66666666666666L 307.075,104.66666666666666A 4,4,0,0,1,
+        311.075,108.66666666666666L 311.075,265L 283.075,265Z"
+                          ></path>
+                        </g>
+                        <g class="recharts-layer recharts-bar-rectangle">
+                          <path
+                            x="318.825"
+                            y="86.25"
+                            width="28"
+                            height="178.75"
+                            radius="4,4,0,0"
+                            fill="#2563EB"
+                            name="Aug"
+                            class="recharts-rectangle"
+                            d="M318.825,90.25A 4,4,0,0,1,322.825,86.25L 342.825,86.25A 4,4,0,0,1,
+        346.825,90.25L 346.825,265L 318.825,265Z"
+                          ></path>
+                        </g>
+                        <g class="recharts-layer recharts-bar-rectangle">
+                          <path
+                            x="354.575"
+                            y="70"
+                            width="28"
+                            height="195"
+                            radius="4,4,0,0"
+                            fill="#2563EB"
+                            name="Sep"
+                            class="recharts-rectangle"
+                            d="M354.575,74A 4,4,0,0,1,358.575,70L 378.575,70A 4,4,0,0,1,
+        382.575,74L 382.575,265L 354.575,265Z"
+                          ></path>
+                        </g>
+                        <g class="recharts-layer recharts-bar-rectangle">
+                          <path
+                            x="390.325"
+                            y="53.75"
+                            width="28"
+                            height="211.25"
+                            radius="4,4,0,0"
+                            fill="#2563EB"
+                            name="Oct"
+                            class="recharts-rectangle"
+                            d="M390.325,57.75A 4,4,0,0,1,394.325,53.75L 414.325,53.75A 4,4,0,0,1,
+        418.325,57.75L 418.325,265L 390.325,265Z"
+                          ></path>
+                        </g>
+                        <g class="recharts-layer recharts-bar-rectangle">
+                          <path
+                            x="426.075"
+                            y="37.5"
+                            width="28"
+                            height="227.5"
+                            radius="4,4,0,0"
+                            fill="#2563EB"
+                            name="Nov"
+                            class="recharts-rectangle"
+                            d="M426.075,41.5A 4,4,0,0,1,430.075,37.5L 450.075,37.5A 4,4,0,0,1,
+        454.075,41.5L 454.075,265L 426.075,265Z"
+                          ></path>
+                        </g>
+                        <g class="recharts-layer recharts-bar-rectangle">
+                          <path
+                            x="461.825"
+                            y="21.25"
+                            width="28"
+                            height="243.75"
+                            radius="4,4,0,0"
+                            fill="#2563EB"
+                            name="Dec"
+                            class="recharts-rectangle"
+                            d="M461.825,25.25A 4,4,0,0,1,465.825,21.25L 485.825,21.25A 4,4,0,0,1,
+        489.825,25.25L 489.825,265L 461.825,265Z"
+                          ></path>
+                        </g>
+                      </g>
+                    </g>
+                    <g class="recharts-layer"></g>
+                  </g>
+                </svg>
+                <div
+                  tabindex="-1"
+                  class="recharts-tooltip-wrapper recharts-tooltip-wrapper-right recharts-tooltip-wrapper-bottom"
+                  style="
+                    visibility: hidden;
+                    pointer-events: none;
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    transform: translate(164.583px, 18px);
+                  "
+                >
+                  <div
+                    class="recharts-default-tooltip"
+                    style="
+                      margin: 0px;
+                      padding: 10px;
+                      background-color: rgb(255, 255, 255);
+                      border: 1px solid rgb(204, 204, 204);
+                      white-space: nowrap;
+                    "
+                  >
+                    <p class="recharts-tooltip-label" style="margin: 0px">
+                      Mar
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="border bg-card text-card-foreground shadow-xs z-1 p-6 rounded-xl glass-card"
+      >
+        <div class="space-y-1.5 p-6 flex flex-row items-center justify-between">
+          <h3 class="tracking-tight text-lg font-semibold">Monthly Revenue</h3>
+          <button
+            type="button"
+            role="combobox"
+            aria-controls="radix-:r3:"
+            aria-expanded="false"
+            aria-autocomplete="none"
+            dir="ltr"
+            data-state="closed"
+            class="flex h-10 items-center justify-between rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus:outline-hidden focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 [&amp;>span]:line-clamp-1 w-[120px]"
+          >
+            <span style="pointer-events: none">Monthly</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-chevron-down h-4 w-4 opacity-50"
+              aria-hidden="true"
+            >
+              <path d="m6 9 6 6 6-6"></path>
+            </svg>
+          </button>
+        </div>
+        <div class="p-6 pt-0">
+          <div class="h-[300px]">
+            <div
+              class="recharts-responsive-container"
+              style="width: 100%; height: 100%; min-width: 0px"
+            >
+              <div
+                class="recharts-wrapper"
+                style="
+                  position: relative;
+                  cursor: default;
+                  width: 100%;
+                  height: 100%;
+                  max-height: 300px;
+                  max-width: 499px;
+                "
+              >
+                <svg
+                  class="recharts-surface"
+                  width="499"
+                  height="300"
+                  viewBox="0 0 499 300"
+                  style="width: 100%; height: 100%"
+                >
+                  <title></title>
+                  <desc></desc>
+                  <defs>
+                    <clipPath id="recharts4-clip">
+                      <rect x="65" y="5" height="260" width="429"></rect>
+                    </clipPath>
+                  </defs>
+                  <g class="recharts-cartesian-grid">
+                    <g class="recharts-cartesian-grid-horizontal">
+                      <line
+                        stroke-dasharray="3 3"
+                        stroke="#ccc"
+                        fill="none"
+                        x="65"
+                        y="5"
+                        width="429"
+                        height="260"
+                        x1="65"
+                        y1="265"
+                        x2="494"
+                        y2="265"
+                      ></line>
+                      <line
+                        stroke-dasharray="3 3"
+                        stroke="#ccc"
+                        fill="none"
+                        x="65"
+                        y="5"
+                        width="429"
+                        height="260"
+                        x1="65"
+                        y1="200"
+                        x2="494"
+                        y2="200"
+                      ></line>
+                      <line
+                        stroke-dasharray="3 3"
+                        stroke="#ccc"
+                        fill="none"
+                        x="65"
+                        y="5"
+                        width="429"
+                        height="260"
+                        x1="65"
+                        y1="135"
+                        x2="494"
+                        y2="135"
+                      ></line>
+                      <line
+                        stroke-dasharray="3 3"
+                        stroke="#ccc"
+                        fill="none"
+                        x="65"
+                        y="5"
+                        width="429"
+                        height="260"
+                        x1="65"
+                        y1="70"
+                        x2="494"
+                        y2="70"
+                      ></line>
+                      <line
+                        stroke-dasharray="3 3"
+                        stroke="#ccc"
+                        fill="none"
+                        x="65"
+                        y="5"
+                        width="429"
+                        height="260"
+                        x1="65"
+                        y1="5"
+                        x2="494"
+                        y2="5"
+                      ></line>
+                    </g>
+                    <g class="recharts-cartesian-grid-vertical">
+                      <line
+                        stroke-dasharray="3 3"
+                        stroke="#ccc"
+                        fill="none"
+                        x="65"
+                        y="5"
+                        width="429"
+                        height="260"
+                        x1="82.875"
+                        y1="5"
+                        x2="82.875"
+                        y2="265"
+                      ></line>
+                      <line
+                        stroke-dasharray="3 3"
+                        stroke="#ccc"
+                        fill="none"
+                        x="65"
+                        y="5"
+                        width="429"
+                        height="260"
+                        x1="118.625"
+                        y1="5"
+                        x2="118.625"
+                        y2="265"
+                      ></line>
+                      <line
+                        stroke-dasharray="3 3"
+                        stroke="#ccc"
+                        fill="none"
+                        x="65"
+                        y="5"
+                        width="429"
+                        height="260"
+                        x1="154.375"
+                        y1="5"
+                        x2="154.375"
+                        y2="265"
+                      ></line>
+                      <line
+                        stroke-dasharray="3 3"
+                        stroke="#ccc"
+                        fill="none"
+                        x="65"
+                        y="5"
+                        width="429"
+                        height="260"
+                        x1="190.125"
+                        y1="5"
+                        x2="190.125"
+                        y2="265"
+                      ></line>
+                      <line
+                        stroke-dasharray="3 3"
+                        stroke="#ccc"
+                        fill="none"
+                        x="65"
+                        y="5"
+                        width="429"
+                        height="260"
+                        x1="225.875"
+                        y1="5"
+                        x2="225.875"
+                        y2="265"
+                      ></line>
+                      <line
+                        stroke-dasharray="3 3"
+                        stroke="#ccc"
+                        fill="none"
+                        x="65"
+                        y="5"
+                        width="429"
+                        height="260"
+                        x1="261.625"
+                        y1="5"
+                        x2="261.625"
+                        y2="265"
+                      ></line>
+                      <line
+                        stroke-dasharray="3 3"
+                        stroke="#ccc"
+                        fill="none"
+                        x="65"
+                        y="5"
+                        width="429"
+                        height="260"
+                        x1="297.375"
+                        y1="5"
+                        x2="297.375"
+                        y2="265"
+                      ></line>
+                      <line
+                        stroke-dasharray="3 3"
+                        stroke="#ccc"
+                        fill="none"
+                        x="65"
+                        y="5"
+                        width="429"
+                        height="260"
+                        x1="333.125"
+                        y1="5"
+                        x2="333.125"
+                        y2="265"
+                      ></line>
+                      <line
+                        stroke-dasharray="3 3"
+                        stroke="#ccc"
+                        fill="none"
+                        x="65"
+                        y="5"
+                        width="429"
+                        height="260"
+                        x1="368.875"
+                        y1="5"
+                        x2="368.875"
+                        y2="265"
+                      ></line>
+                      <line
+                        stroke-dasharray="3 3"
+                        stroke="#ccc"
+                        fill="none"
+                        x="65"
+                        y="5"
+                        width="429"
+                        height="260"
+                        x1="404.625"
+                        y1="5"
+                        x2="404.625"
+                        y2="265"
+                      ></line>
+                      <line
+                        stroke-dasharray="3 3"
+                        stroke="#ccc"
+                        fill="none"
+                        x="65"
+                        y="5"
+                        width="429"
+                        height="260"
+                        x1="440.375"
+                        y1="5"
+                        x2="440.375"
+                        y2="265"
+                      ></line>
+                      <line
+                        stroke-dasharray="3 3"
+                        stroke="#ccc"
+                        fill="none"
+                        x="65"
+                        y="5"
+                        width="429"
+                        height="260"
+                        x1="476.125"
+                        y1="5"
+                        x2="476.125"
+                        y2="265"
+                      ></line>
+                      <line
+                        stroke-dasharray="3 3"
+                        stroke="#ccc"
+                        fill="none"
+                        x="65"
+                        y="5"
+                        width="429"
+                        height="260"
+                        x1="65"
+                        y1="5"
+                        x2="65"
+                        y2="265"
+                      ></line>
+                      <line
+                        stroke-dasharray="3 3"
+                        stroke="#ccc"
+                        fill="none"
+                        x="65"
+                        y="5"
+                        width="429"
+                        height="260"
+                        x1="494"
+                        y1="5"
+                        x2="494"
+                        y2="265"
+                      ></line>
+                    </g>
+                  </g>
+                  <g
+                    class="recharts-layer recharts-cartesian-axis recharts-xAxis xAxis"
+                  >
+                    <g class="recharts-cartesian-axis-ticks">
+                      <g class="recharts-layer recharts-cartesian-axis-tick">
+                        <text
+                          orientation="bottom"
+                          width="429"
+                          height="30"
+                          font-size="12"
+                          stroke="none"
+                          x="82.875"
+                          y="273"
+                          class="recharts-text recharts-cartesian-axis-tick-value"
+                          text-anchor="middle"
+                          fill="#666"
+                        >
+                          <tspan x="82.875" dy="0.71em">Jan</tspan>
+                        </text>
+                      </g>
+                      <g class="recharts-layer recharts-cartesian-axis-tick">
+                        <text
+                          orientation="bottom"
+                          width="429"
+                          height="30"
+                          font-size="12"
+                          stroke="none"
+                          x="118.625"
+                          y="273"
+                          class="recharts-text recharts-cartesian-axis-tick-value"
+                          text-anchor="middle"
+                          fill="#666"
+                        >
+                          <tspan x="118.625" dy="0.71em">Feb</tspan>
+                        </text>
+                      </g>
+                      <g class="recharts-layer recharts-cartesian-axis-tick">
+                        <text
+                          orientation="bottom"
+                          width="429"
+                          height="30"
+                          font-size="12"
+                          stroke="none"
+                          x="154.375"
+                          y="273"
+                          class="recharts-text recharts-cartesian-axis-tick-value"
+                          text-anchor="middle"
+                          fill="#666"
+                        >
+                          <tspan x="154.375" dy="0.71em">Mar</tspan>
+                        </text>
+                      </g>
+                      <g class="recharts-layer recharts-cartesian-axis-tick">
+                        <text
+                          orientation="bottom"
+                          width="429"
+                          height="30"
+                          font-size="12"
+                          stroke="none"
+                          x="190.125"
+                          y="273"
+                          class="recharts-text recharts-cartesian-axis-tick-value"
+                          text-anchor="middle"
+                          fill="#666"
+                        >
+                          <tspan x="190.125" dy="0.71em">Apr</tspan>
+                        </text>
+                      </g>
+                      <g class="recharts-layer recharts-cartesian-axis-tick">
+                        <text
+                          orientation="bottom"
+                          width="429"
+                          height="30"
+                          font-size="12"
+                          stroke="none"
+                          x="225.875"
+                          y="273"
+                          class="recharts-text recharts-cartesian-axis-tick-value"
+                          text-anchor="middle"
+                          fill="#666"
+                        >
+                          <tspan x="225.875" dy="0.71em">May</tspan>
+                        </text>
+                      </g>
+                      <g class="recharts-layer recharts-cartesian-axis-tick">
+                        <text
+                          orientation="bottom"
+                          width="429"
+                          height="30"
+                          font-size="12"
+                          stroke="none"
+                          x="261.625"
+                          y="273"
+                          class="recharts-text recharts-cartesian-axis-tick-value"
+                          text-anchor="middle"
+                          fill="#666"
+                        >
+                          <tspan x="261.625" dy="0.71em">Jun</tspan>
+                        </text>
+                      </g>
+                      <g class="recharts-layer recharts-cartesian-axis-tick">
+                        <text
+                          orientation="bottom"
+                          width="429"
+                          height="30"
+                          font-size="12"
+                          stroke="none"
+                          x="297.375"
+                          y="273"
+                          class="recharts-text recharts-cartesian-axis-tick-value"
+                          text-anchor="middle"
+                          fill="#666"
+                        >
+                          <tspan x="297.375" dy="0.71em">Jul</tspan>
+                        </text>
+                      </g>
+                      <g class="recharts-layer recharts-cartesian-axis-tick">
+                        <text
+                          orientation="bottom"
+                          width="429"
+                          height="30"
+                          font-size="12"
+                          stroke="none"
+                          x="333.125"
+                          y="273"
+                          class="recharts-text recharts-cartesian-axis-tick-value"
+                          text-anchor="middle"
+                          fill="#666"
+                        >
+                          <tspan x="333.125" dy="0.71em">Aug</tspan>
+                        </text>
+                      </g>
+                      <g class="recharts-layer recharts-cartesian-axis-tick">
+                        <text
+                          orientation="bottom"
+                          width="429"
+                          height="30"
+                          font-size="12"
+                          stroke="none"
+                          x="368.875"
+                          y="273"
+                          class="recharts-text recharts-cartesian-axis-tick-value"
+                          text-anchor="middle"
+                          fill="#666"
+                        >
+                          <tspan x="368.875" dy="0.71em">Sep</tspan>
+                        </text>
+                      </g>
+                      <g class="recharts-layer recharts-cartesian-axis-tick">
+                        <text
+                          orientation="bottom"
+                          width="429"
+                          height="30"
+                          font-size="12"
+                          stroke="none"
+                          x="404.625"
+                          y="273"
+                          class="recharts-text recharts-cartesian-axis-tick-value"
+                          text-anchor="middle"
+                          fill="#666"
+                        >
+                          <tspan x="404.625" dy="0.71em">Oct</tspan>
+                        </text>
+                      </g>
+                      <g class="recharts-layer recharts-cartesian-axis-tick">
+                        <text
+                          orientation="bottom"
+                          width="429"
+                          height="30"
+                          font-size="12"
+                          stroke="none"
+                          x="440.375"
+                          y="273"
+                          class="recharts-text recharts-cartesian-axis-tick-value"
+                          text-anchor="middle"
+                          fill="#666"
+                        >
+                          <tspan x="440.375" dy="0.71em">Nov</tspan>
+                        </text>
+                      </g>
+                      <g class="recharts-layer recharts-cartesian-axis-tick">
+                        <text
+                          orientation="bottom"
+                          width="429"
+                          height="30"
+                          font-size="12"
+                          stroke="none"
+                          x="476.125"
+                          y="273"
+                          class="recharts-text recharts-cartesian-axis-tick-value"
+                          text-anchor="middle"
+                          fill="#666"
+                        >
+                          <tspan x="476.125" dy="0.71em">Dec</tspan>
+                        </text>
+                      </g>
+                    </g>
+                  </g>
+                  <g
+                    class="recharts-layer recharts-cartesian-axis recharts-yAxis yAxis"
+                  >
+                    <g class="recharts-cartesian-axis-ticks">
+                      <g class="recharts-layer recharts-cartesian-axis-tick">
+                        <text
+                          orientation="left"
+                          width="60"
+                          height="260"
+                          font-size="12"
+                          stroke="none"
+                          x="57"
+                          y="265"
+                          class="recharts-text recharts-cartesian-axis-tick-value"
+                          text-anchor="end"
+                          fill="#666"
+                        >
+                          <tspan x="57" dy="0.355em">0</tspan>
+                        </text>
+                      </g>
+                      <g class="recharts-layer recharts-cartesian-axis-tick">
+                        <text
+                          orientation="left"
+                          width="60"
+                          height="260"
+                          font-size="12"
+                          stroke="none"
+                          x="57"
+                          y="200"
+                          class="recharts-text recharts-cartesian-axis-tick-value"
+                          text-anchor="end"
+                          fill="#666"
+                        >
+                          <tspan x="57" dy="0.355em">6000</tspan>
+                        </text>
+                      </g>
+                      <g class="recharts-layer recharts-cartesian-axis-tick">
+                        <text
+                          orientation="left"
+                          width="60"
+                          height="260"
+                          font-size="12"
+                          stroke="none"
+                          x="57"
+                          y="135"
+                          class="recharts-text recharts-cartesian-axis-tick-value"
+                          text-anchor="end"
+                          fill="#666"
+                        >
+                          <tspan x="57" dy="0.355em">12000</tspan>
+                        </text>
+                      </g>
+                      <g class="recharts-layer recharts-cartesian-axis-tick">
+                        <text
+                          orientation="left"
+                          width="60"
+                          height="260"
+                          font-size="12"
+                          stroke="none"
+                          x="57"
+                          y="70"
+                          class="recharts-text recharts-cartesian-axis-tick-value"
+                          text-anchor="end"
+                          fill="#666"
+                        >
+                          <tspan x="57" dy="0.355em">18000</tspan>
+                        </text>
+                      </g>
+                      <g class="recharts-layer recharts-cartesian-axis-tick">
+                        <text
+                          orientation="left"
+                          width="60"
+                          height="260"
+                          font-size="12"
+                          stroke="none"
+                          x="57"
+                          y="9"
+                          class="recharts-text recharts-cartesian-axis-tick-value"
+                          text-anchor="end"
+                          fill="#666"
+                        >
+                          <tspan x="57" dy="0.355em">24000</tspan>
+                        </text>
+                      </g>
+                    </g>
+                  </g>
+                  <g class="recharts-layer recharts-bar">
+                    <g class="recharts-layer recharts-bar-rectangles">
+                      <g class="recharts-layer">
+                        <g class="recharts-layer recharts-bar-rectangle">
+                          <path
+                            x="68.575"
+                            y="216.25"
+                            width="28"
+                            height="48.75"
+                            radius="4,4,0,0"
+                            fill="#4CAF50"
+                            name="Jan"
+                            class="recharts-rectangle"
+                            d="M68.575,220.25A 4,4,0,0,1,72.575,216.25L 92.575,216.25A 4,4,0,0,1,
+        96.575,220.25L 96.575,265L 68.575,265Z"
+                          ></path>
+                        </g>
+                        <g class="recharts-layer recharts-bar-rectangle">
+                          <path
+                            x="104.325"
+                            y="197.83333333333334"
+                            width="28"
+                            height="67.16666666666666"
+                            radius="4,4,0,0"
+                            fill="#4CAF50"
+                            name="Feb"
+                            class="recharts-rectangle"
+                            d="M104.325,201.83333333333334A 4,4,0,0,1,108.325,197.83333333333334L 128.325,197.83333333333334A 4,4,0,0,1,
+        132.325,201.83333333333334L 132.325,265L 104.325,265Z"
+                          ></path>
+                        </g>
+                        <g class="recharts-layer recharts-bar-rectangle">
+                          <path
+                            x="140.075"
+                            y="180.5"
+                            width="28"
+                            height="84.5"
+                            radius="4,4,0,0"
+                            fill="#4CAF50"
+                            name="Mar"
+                            class="recharts-rectangle"
+                            d="M140.075,184.5A 4,4,0,0,1,144.075,180.5L 164.075,180.5A 4,4,0,0,1,
+        168.075,184.5L 168.075,265L 140.075,265Z"
+                          ></path>
+                        </g>
+                        <g class="recharts-layer recharts-bar-rectangle">
+                          <path
+                            x="175.825"
+                            y="162.08333333333334"
+                            width="28"
+                            height="102.91666666666666"
+                            radius="4,4,0,0"
+                            fill="#4CAF50"
+                            name="Apr"
+                            class="recharts-rectangle"
+                            d="M175.825,166.08333333333334A 4,4,0,0,1,179.825,162.08333333333334L 199.825,162.08333333333334A 4,4,0,0,1,
+        203.825,166.08333333333334L 203.825,265L 175.825,265Z"
+                          ></path>
+                        </g>
+                        <g class="recharts-layer recharts-bar-rectangle">
+                          <path
+                            x="211.575"
+                            y="145.83333333333334"
+                            width="28"
+                            height="119.16666666666666"
+                            radius="4,4,0,0"
+                            fill="#4CAF50"
+                            name="May"
+                            class="recharts-rectangle"
+                            d="M211.575,149.83333333333334A 4,4,0,0,1,215.575,145.83333333333334L 235.575,145.83333333333334A 4,4,0,0,1,
+        239.575,149.83333333333334L 239.575,265L 211.575,265Z"
+                          ></path>
+                        </g>
+                        <g class="recharts-layer recharts-bar-rectangle">
+                          <path
+                            x="247.325"
+                            y="121.99999999999999"
+                            width="28"
+                            height="143"
+                            radius="4,4,0,0"
+                            fill="#4CAF50"
+                            name="Jun"
+                            class="recharts-rectangle"
+                            d="M247.325,125.99999999999999A 4,4,0,0,1,251.325,121.99999999999999L 271.325,121.99999999999999A 4,4,0,0,1,
+        275.325,125.99999999999999L 275.325,265L 247.325,265Z"
+                          ></path>
+                        </g>
+                        <g class="recharts-layer recharts-bar-rectangle">
+                          <path
+                            x="283.075"
+                            y="104.66666666666666"
+                            width="28"
+                            height="160.33333333333334"
+                            radius="4,4,0,0"
+                            fill="#4CAF50"
+                            name="Jul"
+                            class="recharts-rectangle"
+                            d="M283.075,108.66666666666666A 4,4,0,0,1,287.075,104.66666666666666L 307.075,104.66666666666666A 4,4,0,0,1,
+        311.075,108.66666666666666L 311.075,265L 283.075,265Z"
+                          ></path>
+                        </g>
+                        <g class="recharts-layer recharts-bar-rectangle">
+                          <path
+                            x="318.825"
+                            y="86.25"
+                            width="28"
+                            height="178.75"
+                            radius="4,4,0,0"
+                            fill="#4CAF50"
+                            name="Aug"
+                            class="recharts-rectangle"
+                            d="M318.825,90.25A 4,4,0,0,1,322.825,86.25L 342.825,86.25A 4,4,0,0,1,
+        346.825,90.25L 346.825,265L 318.825,265Z"
+                          ></path>
+                        </g>
+                        <g class="recharts-layer recharts-bar-rectangle">
+                          <path
+                            x="354.575"
+                            y="70"
+                            width="28"
+                            height="195"
+                            radius="4,4,0,0"
+                            fill="#4CAF50"
+                            name="Sep"
+                            class="recharts-rectangle"
+                            d="M354.575,74A 4,4,0,0,1,358.575,70L 378.575,70A 4,4,0,0,1,
+        382.575,74L 382.575,265L 354.575,265Z"
+                          ></path>
+                        </g>
+                        <g class="recharts-layer recharts-bar-rectangle">
+                          <path
+                            x="390.325"
+                            y="53.75"
+                            width="28"
+                            height="211.25"
+                            radius="4,4,0,0"
+                            fill="#4CAF50"
+                            name="Oct"
+                            class="recharts-rectangle"
+                            d="M390.325,57.75A 4,4,0,0,1,394.325,53.75L 414.325,53.75A 4,4,0,0,1,
+        418.325,57.75L 418.325,265L 390.325,265Z"
+                          ></path>
+                        </g>
+                        <g class="recharts-layer recharts-bar-rectangle">
+                          <path
+                            x="426.075"
+                            y="37.5"
+                            width="28"
+                            height="227.5"
+                            radius="4,4,0,0"
+                            fill="#4CAF50"
+                            name="Nov"
+                            class="recharts-rectangle"
+                            d="M426.075,41.5A 4,4,0,0,1,430.075,37.5L 450.075,37.5A 4,4,0,0,1,
+        454.075,41.5L 454.075,265L 426.075,265Z"
+                          ></path>
+                        </g>
+                        <g class="recharts-layer recharts-bar-rectangle">
+                          <path
+                            x="461.825"
+                            y="21.25"
+                            width="28"
+                            height="243.75"
+                            radius="4,4,0,0"
+                            fill="#4CAF50"
+                            name="Dec"
+                            class="recharts-rectangle"
+                            d="M461.825,25.25A 4,4,0,0,1,465.825,21.25L 485.825,21.25A 4,4,0,0,1,
+        489.825,25.25L 489.825,265L 461.825,265Z"
+                          ></path>
+                        </g>
+                      </g>
+                    </g>
+                    <g class="recharts-layer"></g>
+                  </g>
+                </svg>
+                <div
+                  tabindex="-1"
+                  class="recharts-tooltip-wrapper recharts-tooltip-wrapper-right recharts-tooltip-wrapper-bottom"
+                  style="
+                    visibility: hidden;
+                    pointer-events: none;
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    transform: translate(92.9167px, 10px);
+                  "
+                >
+                  <div
+                    class="recharts-default-tooltip"
+                    style="
+                      margin: 0px;
+                      padding: 10px;
+                      background-color: rgb(255, 255, 255);
+                      border: 1px solid rgb(204, 204, 204);
+                      white-space: nowrap;
+                    "
+                  >
+                    <p class="recharts-tooltip-label" style="margin: 0px">
+                      Jan
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div
+        class="bg-white rounded-lg shadow-xs border border-gray-200 p-4 hover:border-bwc-gold transition-colors cursor-pointer"
+      >
+        <div class="flex items-center justify-between mb-2">
+          <h3 class="font-medium text-bwc-charcoal">View Applications</h3>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-file-text h-5 w-5 text-bwc-gold"
+          >
+            <path
+              d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"
+            ></path>
+            <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
+            <path d="M10 9H8"></path>
+            <path d="M16 13H8"></path>
+            <path d="M16 17H8"></path>
+          </svg>
+        </div>
+        <p class="text-sm text-bwc-charcoal-light">5 pending applications</p>
+      </div>
+      <div
+        class="bg-white rounded-lg shadow-xs border border-gray-200 p-4 hover:border-bwc-gold transition-colors cursor-pointer"
+      >
+        <div class="flex items-center justify-between mb-2">
+          <h3 class="font-medium text-bwc-charcoal">Add Influencer</h3>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-user-plus h-5 w-5 text-bwc-gold"
+          >
+            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+            <circle cx="9" cy="7" r="4"></circle>
+            <line x1="19" x2="19" y1="8" y2="14"></line>
+            <line x1="22" x2="16" y1="11" y2="11"></line>
+          </svg>
+        </div>
+        <p class="text-sm text-bwc-charcoal-light">
+          Create new influencer account
+        </p>
+      </div>
+      <div
+        class="bg-white rounded-lg shadow-xs border border-gray-200 p-4 hover:border-bwc-gold transition-colors cursor-pointer"
+      >
+        <div class="flex items-center justify-between mb-2">
+          <h3 class="font-medium text-bwc-charcoal">Manage Invoices</h3>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-receipt h-5 w-5 text-bwc-gold"
+          >
+            <path
+              d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z"
+            ></path>
+            <path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"></path>
+            <path d="M12 17.5v-11"></path>
+          </svg>
+        </div>
+        <p class="text-sm text-bwc-charcoal-light">
+          Review and process payments
+        </p>
+      </div>
+      <div
+        class="bg-white rounded-lg shadow-xs border border-gray-200 p-4 hover:border-bwc-gold transition-colors cursor-pointer"
+      >
+        <div class="flex items-center justify-between mb-2">
+          <h3 class="font-medium text-bwc-charcoal">All Influencers</h3>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-users h-5 w-5 text-bwc-gold"
+          >
+            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+            <circle cx="9" cy="7" r="4"></circle>
+            <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+          </svg>
+        </div>
+        <p class="text-sm text-bwc-charcoal-light">
+          View and manage influencers
+        </p>
+      </div>
+    </div>
+    <div>
+      <div class="p-6 rounded-xl glass-card">
+        <h3 class="text-lg font-semibold text-bwc-charcoal mb-4">
+          Recent Code Usage
+        </h3>
+        <div class="overflow-x-auto">
+          <table class="w-full">
+            <thead>
+              <tr
+                class="text-left text-xs font-medium text-bwc-charcoal-light uppercase tracking-wider"
+              >
+                <th class="px-4 py-3">Date</th>
+                <th class="px-4 py-3">Status</th>
+                <th class="px-4 py-3 text-right">Amount</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-100">
+              <tr class="hover:bg-bwc-cream/30 transition-colors">
+                <td class="px-4 py-3 text-sm text-bwc-charcoal-light">
+                  Jul 25, 2023
+                </td>
+                <td class="px-4 py-3">
+                  <div
+                    class="flex items-center text-green-600 bg-green-50 px-2.5 py-0.5 rounded-full text-xs font-medium"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="12"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-circle-check mr-1"
+                    >
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <path d="m9 12 2 2 4-4"></path>
+                    </svg>
+                    Completed
+                  </div>
+                </td>
+                <td class="px-4 py-3 text-right font-medium text-bwc-charcoal">
+                  £45.00
+                </td>
+              </tr>
+              <tr class="hover:bg-bwc-cream/30 transition-colors">
+                <td class="px-4 py-3 text-sm text-bwc-charcoal-light">
+                  Jul 23, 2023
+                </td>
+                <td class="px-4 py-3">
+                  <div
+                    class="flex items-center text-green-600 bg-green-50 px-2.5 py-0.5 rounded-full text-xs font-medium"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="12"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-circle-check mr-1"
+                    >
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <path d="m9 12 2 2 4-4"></path>
+                    </svg>
+                    Completed
+                  </div>
+                </td>
+                <td class="px-4 py-3 text-right font-medium text-bwc-charcoal">
+                  £45.00
+                </td>
+              </tr>
+              <tr class="hover:bg-bwc-cream/30 transition-colors">
+                <td class="px-4 py-3 text-sm text-bwc-charcoal-light">
+                  Jul 20, 2023
+                </td>
+                <td class="px-4 py-3">
+                  <div
+                    class="flex items-center text-amber-600 bg-amber-50 px-2.5 py-0.5 rounded-full text-xs font-medium"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="12"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-clock mr-1"
+                    >
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                    Pending
+                  </div>
+                </td>
+                <td class="px-4 py-3 text-right font-medium text-bwc-charcoal">
+                  £45.00
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
   </div>
-</main>
+</div>

@@ -7,13 +7,13 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'app-dashboard',
+  selector: 'main[app-dashboard]',
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [],
   host: {
-    class: '',
+    class: 'grow pt-24 pb-20',
   },
 })
 export class DashboardComponent implements OnInit {

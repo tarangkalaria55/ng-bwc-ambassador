@@ -1,44 +1,125 @@
-<main class="flex-1 overflow-y-auto bg-gray-50">
-  <div class="p-8">
-    <div class="mb-6">
-      <button
-        class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 mb-4"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="16"
-          height="16"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="lucide lucide-arrow-left mr-2"
-        >
-          <path d="m12 19-7-7 7-7"></path>
-          <path d="M19 12H5"></path>
-        </svg>
-        Back to All Influencers
-      </button>
-    </div>
-    <div
-      class="flex flex-col md:flex-row md:items-center md:justify-between mb-8"
+<div class="p-8">
+  <div class="mb-6">
+    <button
+      class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 mb-4"
     >
-      <div>
-        <h1 class="text-3xl font-display font-bold text-bwc-charcoal">
-          Add New Influencer
-        </h1>
-        <p class="mt-2 text-bwc-charcoal-light">
-          Create a new influencer profile
-        </p>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="lucide lucide-arrow-left mr-2"
+      >
+        <path d="m12 19-7-7 7-7"></path>
+        <path d="M19 12H5"></path>
+      </svg>
+      Back to All Influencers
+    </button>
+  </div>
+  <div
+    class="flex flex-col md:flex-row md:items-center md:justify-between mb-8"
+  >
+    <div>
+      <h1 class="text-3xl font-display font-bold text-bwc-charcoal">
+        Add New Influencer
+      </h1>
+      <p class="mt-2 text-bwc-charcoal-light">
+        Create a new influencer profile
+      </p>
+    </div>
+  </div>
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+    <div class="rounded-lg border bg-card text-card-foreground shadow-xs z-1">
+      <div class="flex flex-col space-y-1.5 p-6">
+        <h3 class="text-2xl font-semibold leading-none tracking-tight">
+          Basic Information
+        </h3>
+      </div>
+      <div class="p-6 pt-0">
+        <form class="space-y-6">
+          <div class="space-y-4">
+            <div class="space-y-2">
+              <label
+                class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                for=":rc:-form-item"
+              >
+                Name
+              </label>
+              <input
+                class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-hidden focus:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm"
+                name="name"
+                placeholder="Enter influencer name"
+                id=":rc:-form-item"
+                aria-describedby=":rc:-form-item-description"
+                aria-invalid="false"
+                value=""
+              />
+            </div>
+            <div class="space-y-2">
+              <label
+                class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                for=":rd:-form-item"
+              >
+                Email
+              </label>
+              <input
+                type="email"
+                class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-hidden focus:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm"
+                name="email"
+                placeholder="Enter email address"
+                id=":rd:-form-item"
+                aria-describedby=":rd:-form-item-description"
+                aria-invalid="false"
+                value=""
+              />
+            </div>
+            <div class="space-y-2">
+              <label
+                class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                for=":re:-form-item"
+              >
+                Phone Number
+              </label>
+              <input
+                class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-hidden focus:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm"
+                name="phone"
+                placeholder="Enter phone number"
+                id=":re:-form-item"
+                aria-describedby=":re:-form-item-description"
+                aria-invalid="false"
+                value=""
+              />
+            </div>
+            <div class="space-y-2">
+              <label
+                class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                for=":rf:-form-item"
+              >
+                Bio
+              </label>
+              <textarea
+                class="flex min-h-[80px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 resize-none"
+                name="bio"
+                placeholder="Enter influencer bio"
+                id=":rf:-form-item"
+                aria-describedby=":rf:-form-item-description"
+                aria-invalid="false"
+              ></textarea>
+            </div>
+          </div>
+        </form>
       </div>
     </div>
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+    <div class="space-y-8">
       <div class="rounded-lg border bg-card text-card-foreground shadow-xs z-1">
         <div class="flex flex-col space-y-1.5 p-6">
           <h3 class="text-2xl font-semibold leading-none tracking-tight">
-            Basic Information
+            Social Media
           </h3>
         </div>
         <div class="p-6 pt-0">
@@ -47,16 +128,16 @@
               <div class="space-y-2">
                 <label
                   class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                  for=":rc:-form-item"
+                  for=":rg:-form-item"
                 >
-                  Name
+                  Instagram Handle
                 </label>
                 <input
                   class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-hidden focus:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm"
-                  name="name"
-                  placeholder="Enter influencer name"
-                  id=":rc:-form-item"
-                  aria-describedby=":rc:-form-item-description"
+                  name="instagram"
+                  placeholder="@username"
+                  id=":rg:-form-item"
+                  aria-describedby=":rg:-form-item-description"
                   aria-invalid="false"
                   value=""
                 />
@@ -64,282 +145,193 @@
               <div class="space-y-2">
                 <label
                   class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                  for=":rd:-form-item"
+                  for=":rh:-form-item"
                 >
-                  Email
-                </label>
-                <input
-                  type="email"
-                  class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-hidden focus:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm"
-                  name="email"
-                  placeholder="Enter email address"
-                  id=":rd:-form-item"
-                  aria-describedby=":rd:-form-item-description"
-                  aria-invalid="false"
-                  value=""
-                />
-              </div>
-              <div class="space-y-2">
-                <label
-                  class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                  for=":re:-form-item"
-                >
-                  Phone Number
+                  TikTok Handle
                 </label>
                 <input
                   class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-hidden focus:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm"
-                  name="phone"
-                  placeholder="Enter phone number"
-                  id=":re:-form-item"
-                  aria-describedby=":re:-form-item-description"
+                  name="tiktok"
+                  placeholder="@username"
+                  id=":rh:-form-item"
+                  aria-describedby=":rh:-form-item-description"
                   aria-invalid="false"
                   value=""
                 />
-              </div>
-              <div class="space-y-2">
-                <label
-                  class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                  for=":rf:-form-item"
-                >
-                  Bio
-                </label>
-                <textarea
-                  class="flex min-h-[80px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 resize-none"
-                  name="bio"
-                  placeholder="Enter influencer bio"
-                  id=":rf:-form-item"
-                  aria-describedby=":rf:-form-item-description"
-                  aria-invalid="false"
-                ></textarea>
               </div>
             </div>
           </form>
         </div>
       </div>
-      <div class="space-y-8">
-        <div
-          class="rounded-lg border bg-card text-card-foreground shadow-xs z-1"
-        >
-          <div class="flex flex-col space-y-1.5 p-6">
-            <h3 class="text-2xl font-semibold leading-none tracking-tight">
-              Social Media
-            </h3>
-          </div>
-          <div class="p-6 pt-0">
-            <form class="space-y-6">
-              <div class="space-y-4">
-                <div class="space-y-2">
-                  <label
-                    class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                    for=":rg:-form-item"
-                  >
-                    Instagram Handle
-                  </label>
-                  <input
-                    class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-hidden focus:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm"
-                    name="instagram"
-                    placeholder="@username"
-                    id=":rg:-form-item"
-                    aria-describedby=":rg:-form-item-description"
-                    aria-invalid="false"
-                    value=""
-                  />
-                </div>
-                <div class="space-y-2">
-                  <label
-                    class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                    for=":rh:-form-item"
-                  >
-                    TikTok Handle
-                  </label>
-                  <input
-                    class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-hidden focus:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm"
-                    name="tiktok"
-                    placeholder="@username"
-                    id=":rh:-form-item"
-                    aria-describedby=":rh:-form-item-description"
-                    aria-invalid="false"
-                    value=""
-                  />
-                </div>
-              </div>
-            </form>
-          </div>
+      <div class="rounded-lg border bg-card text-card-foreground shadow-xs z-1">
+        <div class="flex flex-col space-y-1.5 p-6">
+          <h3 class="text-2xl font-semibold leading-none tracking-tight">
+            Commission Settings
+          </h3>
         </div>
-        <div
-          class="rounded-lg border bg-card text-card-foreground shadow-xs z-1"
-        >
-          <div class="flex flex-col space-y-1.5 p-6">
-            <h3 class="text-2xl font-semibold leading-none tracking-tight">
-              Commission Settings
-            </h3>
-          </div>
-          <div class="p-6 pt-0">
-            <form class="space-y-6">
-              <div class="space-y-4">
-                <div class="space-y-2">
-                  <label
-                    class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                    for=":ri:-form-item"
-                  >
-                    Commission Tier
-                  </label>
-                  <button
-                    type="button"
-                    role="combobox"
-                    aria-controls="radix-:rj:"
-                    aria-expanded="false"
-                    aria-autocomplete="none"
-                    dir="ltr"
-                    data-state="closed"
-                    class="flex h-10 w-full items-center justify-between rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus:outline-hidden focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 [&amp;>span]:line-clamp-1"
-                    id=":ri:-form-item"
-                    aria-describedby=":ri:-form-item-description"
-                    aria-invalid="false"
-                  >
-                    <span style="pointer-events: none">
-                      Tin (0-1,000) - 5% Total
-                    </span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="lucide lucide-chevron-down h-4 w-4 opacity-50"
-                      aria-hidden="true"
-                    >
-                      <path d="m6 9 6 6 6-6"></path>
-                    </svg>
-                  </button>
-                  <select
+        <div class="p-6 pt-0">
+          <form class="space-y-6">
+            <div class="space-y-4">
+              <div class="space-y-2">
+                <label
+                  class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                  for=":ri:-form-item"
+                >
+                  Commission Tier
+                </label>
+                <button
+                  type="button"
+                  role="combobox"
+                  aria-controls="radix-:rj:"
+                  aria-expanded="false"
+                  aria-autocomplete="none"
+                  dir="ltr"
+                  data-state="closed"
+                  class="flex h-10 w-full items-center justify-between rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus:outline-hidden focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 [&amp;>span]:line-clamp-1"
+                  id=":ri:-form-item"
+                  aria-describedby=":ri:-form-item-description"
+                  aria-invalid="false"
+                >
+                  <span style="pointer-events: none">
+                    Tin (0-1,000) - 5% Total
+                  </span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-down h-4 w-4 opacity-50"
                     aria-hidden="true"
-                    tabindex="-1"
-                    style="
-                      position: absolute;
-                      border: 0px;
-                      width: 1px;
-                      height: 1px;
-                      padding: 0px;
-                      margin: -1px;
-                      overflow: hidden;
-                      clip: rect(0px, 0px, 0px, 0px);
-                      white-space: nowrap;
-                      overflow-wrap: normal;
-                    "
                   >
-                    <option value="TIN" selected="">
-                      Tin (0-1,000) - 5% Total
-                    </option>
-                    <option value="BRONZE">
-                      Bronze (1,000-5,000) - 7% Total
-                    </option>
-                    <option value="SILVER">
-                      Silver (5,000-10,000) - 10% Total
-                    </option>
-                    <option value="GOLD">
-                      Gold (10,000-25,000) - 12% Total
-                    </option>
-                    <option value="PLATINUM">
-                      Platinum (25,000-50,000) - 15% Total
-                    </option>
-                    <option value="DIAMOND">
-                      Diamond (50,000-∞) - 20% Total
-                    </option>
-                    <option value="CUSTOM">Custom Rates</option>
-                  </select>
-                </div>
-                <div class="grid grid-cols-2 gap-4">
-                  <div
-                    class="rounded-lg border bg-card text-card-foreground shadow-xs z-1 p-4"
+                    <path d="m6 9 6 6 6-6"></path>
+                  </svg>
+                </button>
+                <select
+                  aria-hidden="true"
+                  tabindex="-1"
+                  style="
+                    position: absolute;
+                    border: 0px;
+                    width: 1px;
+                    height: 1px;
+                    padding: 0px;
+                    margin: -1px;
+                    overflow: hidden;
+                    clip: rect(0px, 0px, 0px, 0px);
+                    white-space: nowrap;
+                    overflow-wrap: normal;
+                  "
+                >
+                  <option value="TIN" selected="">
+                    Tin (0-1,000) - 5% Total
+                  </option>
+                  <option value="BRONZE">
+                    Bronze (1,000-5,000) - 7% Total
+                  </option>
+                  <option value="SILVER">
+                    Silver (5,000-10,000) - 10% Total
+                  </option>
+                  <option value="GOLD">Gold (10,000-25,000) - 12% Total</option>
+                  <option value="PLATINUM">
+                    Platinum (25,000-50,000) - 15% Total
+                  </option>
+                  <option value="DIAMOND">
+                    Diamond (50,000-∞) - 20% Total
+                  </option>
+                  <option value="CUSTOM">Custom Rates</option>
+                </select>
+              </div>
+              <div class="grid grid-cols-2 gap-4">
+                <div
+                  class="rounded-lg border bg-card text-card-foreground shadow-xs z-1 p-4"
+                >
+                  <label
+                    class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 mb-2 block"
+                    for="undefined-form-item"
                   >
-                    <label
-                      class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 mb-2 block"
-                      for="undefined-form-item"
-                    >
-                      Ambassador Commission
-                    </label>
-                    <div class="text-2xl font-semibold text-bwc-gold">3.0%</div>
-                    <p class="text-sm text-muted-foreground mt-1">
-                      Commission rate for the ambassador
-                    </p>
-                  </div>
-                  <div
-                    class="rounded-lg border bg-card text-card-foreground shadow-xs z-1 p-4"
-                  >
-                    <label
-                      class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 mb-2 block"
-                      for="undefined-form-item"
-                    >
-                      Customer Discount
-                    </label>
-                    <div class="text-2xl font-semibold text-bwc-gold">2.0%</div>
-                    <p class="text-sm text-muted-foreground mt-1">
-                      Discount rate for the customer
-                    </p>
-                  </div>
+                    Ambassador Commission
+                  </label>
+                  <div class="text-2xl font-semibold text-bwc-gold">3.0%</div>
+                  <p class="text-sm text-muted-foreground mt-1">
+                    Commission rate for the ambassador
+                  </p>
                 </div>
                 <div
-                  class="space-y-2 flex flex-row items-center justify-between rounded-lg border p-4"
+                  class="rounded-lg border bg-card text-card-foreground shadow-xs z-1 p-4"
                 >
-                  <div class="space-y-0.5">
-                    <label
-                      class="font-medium peer-disabled:cursor-not-allowed peer-disabled:opacity-70 text-base"
-                      for=":rk:-form-item"
-                    >
-                      Welcome Email
-                    </label>
-                  </div>
-                  <button
-                    type="button"
-                    role="switch"
-                    aria-checked="true"
-                    data-state="checked"
-                    value="on"
-                    class="peer inline-flex h-6 w-11 shrink-0 cursor-pointer items-center rounded-full border-2 border-transparent transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-primary data-[state=unchecked]:bg-input"
-                    id=":rk:-form-item"
-                    aria-describedby=":rk:-form-item-description"
-                    aria-invalid="false"
+                  <label
+                    class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 mb-2 block"
+                    for="undefined-form-item"
                   >
-                    <span
-                      data-state="checked"
-                      class="pointer-events-none block h-5 w-5 rounded-full bg-background shadow-lg ring-0 transition-transform data-[state=checked]:translate-x-5 data-[state=unchecked]:translate-x-0"
-                    ></span>
-                  </button>
-                  <input
-                    type="checkbox"
-                    aria-hidden="true"
-                    tabindex="-1"
-                    value="on"
-                    checked=""
-                    style="
-                      transform: translateX(-100%);
-                      position: absolute;
-                      pointer-events: none;
-                      opacity: 0;
-                      margin: 0px;
-                      width: 44px;
-                      height: 24px;
-                    "
-                  />
+                    Customer Discount
+                  </label>
+                  <div class="text-2xl font-semibold text-bwc-gold">2.0%</div>
+                  <p class="text-sm text-muted-foreground mt-1">
+                    Discount rate for the customer
+                  </p>
                 </div>
               </div>
-            </form>
-          </div>
+              <div
+                class="space-y-2 flex flex-row items-center justify-between rounded-lg border p-4"
+              >
+                <div class="space-y-0.5">
+                  <label
+                    class="font-medium peer-disabled:cursor-not-allowed peer-disabled:opacity-70 text-base"
+                    for=":rk:-form-item"
+                  >
+                    Welcome Email
+                  </label>
+                </div>
+                <button
+                  type="button"
+                  role="switch"
+                  aria-checked="true"
+                  data-state="checked"
+                  value="on"
+                  class="peer inline-flex h-6 w-11 shrink-0 cursor-pointer items-center rounded-full border-2 border-transparent transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-primary data-[state=unchecked]:bg-input"
+                  id=":rk:-form-item"
+                  aria-describedby=":rk:-form-item-description"
+                  aria-invalid="false"
+                >
+                  <span
+                    data-state="checked"
+                    class="pointer-events-none block h-5 w-5 rounded-full bg-background shadow-lg ring-0 transition-transform data-[state=checked]:translate-x-5 data-[state=unchecked]:translate-x-0"
+                  ></span>
+                </button>
+                <input
+                  type="checkbox"
+                  aria-hidden="true"
+                  tabindex="-1"
+                  value="on"
+                  checked=""
+                  style="
+                    transform: translateX(-100%);
+                    position: absolute;
+                    pointer-events: none;
+                    opacity: 0;
+                    margin: 0px;
+                    width: 44px;
+                    height: 24px;
+                  "
+                />
+              </div>
+            </div>
+          </form>
         </div>
-        <div class="flex justify-end">
-          <button
-            class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-10 px-4 py-2 bg-bwc-gold hover:bg-bwc-gold/90 text-white"
-            type="submit"
-          >
-            Add Influencer
-          </button>
-        </div>
+      </div>
+      <div class="flex justify-end">
+        <button
+          class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-10 px-4 py-2 bg-bwc-gold hover:bg-bwc-gold/90 text-white"
+          type="submit"
+        >
+          Add Influencer
+        </button>
       </div>
     </div>
   </div>
-</main>
+</div>

@@ -7,13 +7,13 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'app-influencer-add',
+  selector: 'main[app-influencer-add]',
   templateUrl: './influencer-add.component.html',
   styleUrl: './influencer-add.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [],
   host: {
-    class: '',
+    class: 'flex-1 overflow-y-auto bg-gray-50',
   },
 })
 export class InfluencerAddComponent implements OnInit {

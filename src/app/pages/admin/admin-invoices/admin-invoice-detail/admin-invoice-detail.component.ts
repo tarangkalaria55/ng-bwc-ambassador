@@ -7,13 +7,13 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'app-admin-invoice-detail',
+  selector: 'main[app-admin-invoice-detail]',
   templateUrl: './admin-invoice-detail.component.html',
   styleUrl: './admin-invoice-detail.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [],
   host: {
-    class: '',
+    class: 'flex-1 overflow-y-auto bg-gray-50',
   },
 })
 export class AdminInvoiceDetailComponent implements OnInit {

@@ -7,13 +7,13 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'app-influencer-performance',
+  selector: 'main[app-influencer-performance]',
   templateUrl: './influencer-performance.component.html',
   styleUrl: './influencer-performance.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [],
   host: {
-    class: '',
+    class: 'grow pt-24 pb-20',
   },
 })
 export class InfluencerPerformanceComponent implements OnInit {

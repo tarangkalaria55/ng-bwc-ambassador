@@ -7,13 +7,13 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'app-applications',
+  selector: 'main[app-applications]',
   templateUrl: './applications.component.html',
   styleUrl: './applications.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [],
   host: {
-    class: '',
+    class: 'flex-1 overflow-y-auto bg-gray-50',
   },
 })
 export class ApplicationsComponent implements OnInit {
