@@ -9,6 +9,9 @@ import {
 import { OwlDateTimeModule } from '@danielmoncada/angular-datetime-picker';
 import { OwlMomentDateTimeModule } from '@danielmoncada/angular-datetime-picker-moment-adapter';
 
+import { ClipboardModule } from '@angular/cdk/clipboard';
+import { NgSelectModule } from '@ng-select/ng-select';
+
 import {
   NgApexchartsModule,
   ApexAxisChartSeries,
@@ -37,7 +40,13 @@ export interface ChartOptions {
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [OwlDateTimeModule, OwlMomentDateTimeModule, NgApexchartsModule],
+  imports: [
+    OwlDateTimeModule,
+    OwlMomentDateTimeModule,
+    NgApexchartsModule,
+    ClipboardModule,
+    NgSelectModule,
+  ],
   host: {
     class: 'flex-grow pt-24 pb-20',
   },
@@ -158,4 +167,8 @@ export class DashboardComponent implements OnInit {
   }
 
   ngOnInit(): void {}
+
+  onCopied($event: boolean) {
+    alert(`${$event}`);
+  }
 }

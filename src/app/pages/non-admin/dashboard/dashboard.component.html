@@ -368,9 +368,12 @@
           class="flex h-10 w-full rounded-md border px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm bg-bwc-cream border-bwc-gold/20 focus-visible:ring-bwc-gold/30"
           readonly=""
           value="emma-XY12Z"
+          #referalCode
         />
         <button
           class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border hover:text-accent-foreground h-10 w-10 bg-bwc-cream text-bwc-charcoal border-bwc-gold/20 hover:bg-bwc-gold-light/50"
+          [cdkCopyToClipboard]="referalCode.value"
+          (cdkCopyToClipboardCopied)="onCopied($event)"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -419,33 +422,11 @@
     >
       <div class="space-y-1.5 p-6 flex flex-row items-center justify-between">
         <h3 class="tracking-tight text-lg font-semibold">Monthly Referrals</h3>
-        <button
-          type="button"
-          role="combobox"
-          aria-controls="radix-:r5:"
-          aria-expanded="false"
-          aria-autocomplete="none"
-          dir="ltr"
-          data-state="closed"
-          class="flex h-10 items-center justify-between rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1 w-[120px]"
-        >
-          <span style="pointer-events: none">Monthly</span>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-chevron-down h-4 w-4 opacity-50"
-            aria-hidden="true"
-          >
-            <path d="m6 9 6 6 6-6"></path>
-          </svg>
-        </button>
+        <ng-select class="w-[120px]" placeholder="Select">
+          <ng-option [value]="1">Weeklly</ng-option>
+          <ng-option [value]="2">Monthly</ng-option>
+          <ng-option [value]="3">Yearly</ng-option>
+        </ng-select>
       </div>
       <div class="p-6 pt-0">
         <div class="h-[300px]">
@@ -467,33 +448,11 @@
     >
       <div class="space-y-1.5 p-6 flex flex-row items-center justify-between">
         <h3 class="tracking-tight text-lg font-semibold">Monthly Earnings</h3>
-        <button
-          type="button"
-          role="combobox"
-          aria-controls="radix-:r6:"
-          aria-expanded="false"
-          aria-autocomplete="none"
-          dir="ltr"
-          data-state="closed"
-          class="flex h-10 items-center justify-between rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1 w-[120px]"
-        >
-          <span style="pointer-events: none">Monthly</span>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-chevron-down h-4 w-4 opacity-50"
-            aria-hidden="true"
-          >
-            <path d="m6 9 6 6 6-6"></path>
-          </svg>
-        </button>
+        <ng-select class="w-[120px]" placeholder="Select">
+          <ng-option [value]="1">Weeklly</ng-option>
+          <ng-option [value]="2">Monthly</ng-option>
+          <ng-option [value]="3">Yearly</ng-option>
+        </ng-select>
       </div>
       <div class="p-6 pt-0">
         <div class="h-[300px]">

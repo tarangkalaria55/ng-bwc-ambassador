@@ -22,6 +22,7 @@
     "@angular/router": "^19.2.0",
     "@danielmoncada/angular-datetime-picker": "^19.1.1",
     "@danielmoncada/angular-datetime-picker-moment-adapter": "^6.0.2",
+    "@ng-select/ng-select": "^14.7.0",
     "@radix-ng/primitives": "^0.33.0",
     "apexcharts": "^4.5.0",
     "lodash-es": "^4.17.21",
