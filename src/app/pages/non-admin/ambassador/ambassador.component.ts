@@ -7,6 +7,7 @@ import {
 } from '@angular/core';
 
 @Component({
+  // eslint-disable-next-line @angular-eslint/component-selector
   selector: 'main[app-ambassador]',
   templateUrl: './ambassador.component.html',
   styleUrl: './ambassador.component.scss',

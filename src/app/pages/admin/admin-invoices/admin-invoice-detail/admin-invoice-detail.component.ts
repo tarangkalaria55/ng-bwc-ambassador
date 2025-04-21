@@ -7,6 +7,7 @@ import {
 } from '@angular/core';
 
 @Component({
+  // eslint-disable-next-line @angular-eslint/component-selector
   selector: 'main[app-admin-invoice-detail]',
   templateUrl: './admin-invoice-detail.component.html',
   styleUrl: './admin-invoice-detail.component.scss',

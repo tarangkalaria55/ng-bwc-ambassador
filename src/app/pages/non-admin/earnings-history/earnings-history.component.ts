@@ -7,6 +7,7 @@ import {
 } from '@angular/core';
 
 @Component({
+  // eslint-disable-next-line @angular-eslint/component-selector
   selector: 'main[app-earnings-history]',
   templateUrl: './earnings-history.component.html',
   styleUrl: './earnings-history.component.scss',

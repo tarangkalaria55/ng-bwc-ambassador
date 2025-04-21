@@ -7,6 +7,7 @@ import {
 } from '@angular/core';
 
 @Component({
+  // eslint-disable-next-line @angular-eslint/component-selector
   selector: 'main[app-applications]',
   templateUrl: './applications.component.html',
   styleUrl: './applications.component.scss',

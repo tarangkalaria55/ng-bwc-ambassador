@@ -7,6 +7,7 @@ import {
 } from '@angular/core';
 
 @Component({
+  // eslint-disable-next-line @angular-eslint/component-selector
   selector: 'footer[app-non-admin-footer]',
   templateUrl: './non-admin-footer.component.html',
   styleUrl: './non-admin-footer.component.scss',

@@ -7,6 +7,7 @@ import {
 } from '@angular/core';
 
 @Component({
+  // eslint-disable-next-line @angular-eslint/component-selector
   selector: 'main[app-influencer-code-details]',
   templateUrl: './influencer-code-details.component.html',
   styleUrl: './influencer-code-details.component.scss',

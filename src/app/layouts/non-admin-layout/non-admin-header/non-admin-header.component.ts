@@ -7,6 +7,7 @@ import {
 } from '@angular/core';
 
 @Component({
+  // eslint-disable-next-line @angular-eslint/component-selector
   selector: 'header[app-non-admin-header]',
   templateUrl: './non-admin-header.component.html',
   styleUrl: './non-admin-header.component.scss',

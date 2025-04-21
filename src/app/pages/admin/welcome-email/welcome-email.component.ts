@@ -7,6 +7,7 @@ import {
 } from '@angular/core';
 
 @Component({
+  // eslint-disable-next-line @angular-eslint/component-selector
   selector: 'main[app-welcome-email]',
   templateUrl: './welcome-email.component.html',
   styleUrl: './welcome-email.component.scss',
