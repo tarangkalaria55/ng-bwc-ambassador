@@ -1,26 +1,3 @@
-<button
-  type="button"
-  class="absolute right-4 top-4 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-accent data-[state=open]:text-muted-foreground"
-  (click)="close()"
->
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    stroke-width="2"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-    class="lucide lucide-x h-4 w-4"
-  >
-    <path d="M18 6 6 18"></path>
-    <path d="m6 6 12 12"></path>
-  </svg>
-  <span class="sr-only">Close</span>
-</button>
-
 <div class="flex flex-col space-y-1.5 text-center sm:text-left">
   <h2 id="radix-:r2:" class="text-lg font-semibold leading-none tracking-tight">
     Login to Your Account
@@ -29,6 +6,7 @@
     Sign in to access your ambassador dashboard and track your referrals.
   </p>
 </div>
+
 <form class="space-y-4">
   <div class="space-y-2">
     <label
@@ -73,9 +51,33 @@
     Sign In
   </button>
 </form>
+
 <div class="text-center text-sm text-muted-foreground mt-2">
   <p>Demo Accounts:</p>
   <p class="text-xs mt-1">Admin: admin.example.com / admin123</p>
   <p class="text-xs">Ambassador: ambassador.example.com / ambassador123</p>
   <a href="#" class="underline mt-2 block">Forgot password?</a>
 </div>
+
+<button
+  type="button"
+  class="absolute right-4 top-4 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-accent data-[state=open]:text-muted-foreground"
+  (click)="close()"
+>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    class="lucide lucide-x h-4 w-4"
+  >
+    <path d="M18 6 6 18"></path>
+    <path d="m6 6 12 12"></path>
+  </svg>
+  <span class="sr-only">Close</span>
+</button>
