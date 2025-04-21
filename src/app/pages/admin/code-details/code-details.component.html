@@ -1,7 +1,7 @@
 <div class="p-4">
   <div class="flex items-center gap-4 mb-4">
     <button
-      class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3"
+      class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -74,7 +74,7 @@
             aria-autocomplete="none"
             dir="ltr"
             data-state="closed"
-            class="flex h-10 w-full items-center justify-between rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 [&amp;>span]:line-clamp-1"
+            class="flex h-10 w-full items-center justify-between rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1"
           >
             <span style="pointer-events: none">All Statuses</span>
             <svg
@@ -98,12 +98,12 @@
       <div class="overflow-x-auto">
         <div class="relative w-full overflow-auto">
           <table class="w-full caption-bottom text-sm">
-            <thead class="[&amp;_tr]:border-b">
+            <thead class="[&_tr]:border-b">
               <tr
                 class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
               >
                 <th
-                  class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&amp;:has([role=checkbox])]:pr-0 py-2 text-xs cursor-pointer"
+                  class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&:has([role=checkbox])]:pr-0 py-2 text-xs cursor-pointer"
                 >
                   Date
                   <svg
@@ -125,7 +125,7 @@
                   </svg>
                 </th>
                 <th
-                  class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&amp;:has([role=checkbox])]:pr-0 py-2 text-xs cursor-pointer"
+                  class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&:has([role=checkbox])]:pr-0 py-2 text-xs cursor-pointer"
                 >
                   Booking ID
                   <svg
@@ -147,7 +147,7 @@
                   </svg>
                 </th>
                 <th
-                  class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&amp;:has([role=checkbox])]:pr-0 py-2 text-xs cursor-pointer"
+                  class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&:has([role=checkbox])]:pr-0 py-2 text-xs cursor-pointer"
                 >
                   Status
                   <svg
@@ -169,7 +169,7 @@
                   </svg>
                 </th>
                 <th
-                  class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&amp;:has([role=checkbox])]:pr-0 py-2 text-xs cursor-pointer"
+                  class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&:has([role=checkbox])]:pr-0 py-2 text-xs cursor-pointer"
                 >
                   Amount
                   <svg
@@ -192,23 +192,17 @@
                 </th>
               </tr>
             </thead>
-            <tbody class="[&amp;_tr:last-child]:border-0">
+            <tbody class="[&_tr:last-child]:border-0">
               <tr
                 class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
               >
-                <td
-                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
-                >
+                <td class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0">
                   4/21/2025
                 </td>
-                <td
-                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
-                >
+                <td class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0">
                   979078
                 </td>
-                <td
-                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
-                >
+                <td class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0">
                   <span
                     class="inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium bg-red-100 text-red-800"
                   >
@@ -216,7 +210,7 @@
                   </span>
                 </td>
                 <td
-                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0 text-right"
+                  class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0 text-right"
                 >
                   £0
                 </td>
@@ -224,19 +218,13 @@
               <tr
                 class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
               >
-                <td
-                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
-                >
+                <td class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0">
                   4/20/2025
                 </td>
-                <td
-                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
-                >
+                <td class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0">
                   400576
                 </td>
-                <td
-                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
-                >
+                <td class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0">
                   <span
                     class="inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium bg-yellow-100 text-yellow-800"
                   >
@@ -244,7 +232,7 @@
                   </span>
                 </td>
                 <td
-                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0 text-right"
+                  class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0 text-right"
                 >
                   £0
                 </td>
@@ -252,19 +240,13 @@
               <tr
                 class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
               >
-                <td
-                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
-                >
+                <td class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0">
                   4/19/2025
                 </td>
-                <td
-                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
-                >
+                <td class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0">
                   351199
                 </td>
-                <td
-                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
-                >
+                <td class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0">
                   <span
                     class="inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium bg-red-100 text-red-800"
                   >
@@ -272,7 +254,7 @@
                   </span>
                 </td>
                 <td
-                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0 text-right"
+                  class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0 text-right"
                 >
                   £0
                 </td>
@@ -280,19 +262,13 @@
               <tr
                 class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
               >
-                <td
-                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
-                >
+                <td class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0">
                   4/18/2025
                 </td>
-                <td
-                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
-                >
+                <td class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0">
                   720257
                 </td>
-                <td
-                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
-                >
+                <td class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0">
                   <span
                     class="inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium bg-red-100 text-red-800"
                   >
@@ -300,7 +276,7 @@
                   </span>
                 </td>
                 <td
-                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0 text-right"
+                  class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0 text-right"
                 >
                   £0
                 </td>
@@ -308,19 +284,13 @@
               <tr
                 class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
               >
-                <td
-                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
-                >
+                <td class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0">
                   4/18/2025
                 </td>
-                <td
-                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
-                >
+                <td class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0">
                   261242
                 </td>
-                <td
-                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
-                >
+                <td class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0">
                   <span
                     class="inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium bg-green-100 text-green-800"
                   >
@@ -328,7 +298,7 @@
                   </span>
                 </td>
                 <td
-                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0 text-right"
+                  class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0 text-right"
                 >
                   £236
                 </td>
@@ -336,19 +306,13 @@
               <tr
                 class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
               >
-                <td
-                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
-                >
+                <td class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0">
                   4/18/2025
                 </td>
-                <td
-                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
-                >
+                <td class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0">
                   606882
                 </td>
-                <td
-                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
-                >
+                <td class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0">
                   <span
                     class="inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium bg-green-100 text-green-800"
                   >
@@ -356,7 +320,7 @@
                   </span>
                 </td>
                 <td
-                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0 text-right"
+                  class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0 text-right"
                 >
                   £244
                 </td>
@@ -364,19 +328,13 @@
               <tr
                 class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
               >
-                <td
-                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
-                >
+                <td class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0">
                   4/17/2025
                 </td>
-                <td
-                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
-                >
+                <td class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0">
                   588419
                 </td>
-                <td
-                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
-                >
+                <td class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0">
                   <span
                     class="inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium bg-green-100 text-green-800"
                   >
@@ -384,7 +342,7 @@
                   </span>
                 </td>
                 <td
-                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0 text-right"
+                  class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0 text-right"
                 >
                   £243
                 </td>
@@ -392,19 +350,13 @@
               <tr
                 class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
               >
-                <td
-                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
-                >
+                <td class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0">
                   4/17/2025
                 </td>
-                <td
-                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
-                >
+                <td class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0">
                   492028
                 </td>
-                <td
-                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
-                >
+                <td class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0">
                   <span
                     class="inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium bg-green-100 text-green-800"
                   >
@@ -412,7 +364,7 @@
                   </span>
                 </td>
                 <td
-                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0 text-right"
+                  class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0 text-right"
                 >
                   £145
                 </td>
@@ -420,19 +372,13 @@
               <tr
                 class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
               >
-                <td
-                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
-                >
+                <td class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0">
                   4/16/2025
                 </td>
-                <td
-                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
-                >
+                <td class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0">
                   721711
                 </td>
-                <td
-                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
-                >
+                <td class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0">
                   <span
                     class="inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium bg-red-100 text-red-800"
                   >
@@ -440,7 +386,7 @@
                   </span>
                 </td>
                 <td
-                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0 text-right"
+                  class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0 text-right"
                 >
                   £0
                 </td>
@@ -448,19 +394,13 @@
               <tr
                 class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
               >
-                <td
-                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
-                >
+                <td class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0">
                   4/15/2025
                 </td>
-                <td
-                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
-                >
+                <td class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0">
                   391627
                 </td>
-                <td
-                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0"
-                >
+                <td class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0">
                   <span
                     class="inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium bg-yellow-100 text-yellow-800"
                   >
@@ -468,7 +408,7 @@
                   </span>
                 </td>
                 <td
-                  class="p-4 px-4 align-middle [&amp;:has([role=checkbox])]:pr-0 text-right"
+                  class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0 text-right"
                 >
                   £0
                 </td>
@@ -482,7 +422,7 @@
           </div>
           <div class="flex items-center gap-2">
             <button
-              class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3"
+              class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3"
               disabled=""
             >
               <svg
@@ -503,7 +443,7 @@
             </button>
             <div class="text-sm text-muted-foreground px-2">Page 1 of 5</div>
             <button
-              class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3"
+              class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3"
             >
               Next
               <svg
