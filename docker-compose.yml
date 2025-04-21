@@ -1,8 +1,8 @@
 version: '3.8'
 
 services:
-  bwc_ambassador:
-    image: bwc_ambassador
+  ng_bwc_ambassador:
+    image: ng_bwc_ambassador
     build:
       context: .
       dockerfile: ./Dockerfile
@@ -10,6 +10,6 @@ services:
     #   NODE_ENV: production
     ports:
       - 3001:4200
-    volumes:
-      - .:/app
-      - /app/node_modules
+    # volumes:
+    #   - .:/app
+    #   - /app/node_modules

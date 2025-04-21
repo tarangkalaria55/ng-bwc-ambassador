@@ -43,3 +43,4 @@ Thumbs.db
 .git
 .angular
 .vscode
+package-*.json
