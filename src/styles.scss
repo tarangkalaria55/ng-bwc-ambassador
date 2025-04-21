@@ -85,3 +85,12 @@ app-root {
 .read-the-docs {
   color: #888;
 }
+
+.cdk-overlay-container {
+  .login-backdrop {
+    @apply bg-black/80;
+  }
+  .login-panel {
+    @apply fixed left-[50%] top-[50%] z-50 max-w-lg border bg-background shadow-lg sm:rounded-lg sm:max-w-md;
+  }
+}
