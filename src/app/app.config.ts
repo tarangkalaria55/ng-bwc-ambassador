@@ -6,10 +6,12 @@ import {
 } from '@angular/router';
 
 import { routes } from './app.routes';
+import { provideRdxDialogConfig } from '@radix-ng/primitives/dialog';
 
 export const appConfig: ApplicationConfig = {
   providers: [
     provideZoneChangeDetection({ eventCoalescing: true }),
     provideRouter(routes, withComponentInputBinding(), withRouterConfig({})),
+    provideRdxDialogConfig(),
   ],
 };
