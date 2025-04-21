@@ -12,7 +12,7 @@
     </div>
     <div class="mt-4 md:mt-0">
       <button
-        class="inline-flex items-center gap-2 whitespace-nowrap rounded-md text-sm ring-offset-background transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 w-[240px] justify-start text-left font-normal"
+        class="inline-flex items-center gap-2 whitespace-nowrap rounded-md text-sm ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 w-[240px] justify-start text-left font-normal"
         type="button"
         aria-haspopup="dialog"
         aria-expanded="false"
@@ -41,7 +41,7 @@
     </div>
   </div>
   <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-    <div class="rounded-lg border bg-card text-card-foreground shadow-xs z-1">
+    <div class="rounded-lg border bg-card text-card-foreground shadow-sm z-[1]">
       <div class="flex flex-col space-y-1.5 p-6">
         <h3 class="font-semibold tracking-tight text-lg">Total Earned</h3>
         <p class="text-sm text-muted-foreground">All time earnings</p>
@@ -50,7 +50,7 @@
         <p class="text-2xl font-bold">£6401.25</p>
       </div>
     </div>
-    <div class="rounded-lg border bg-card text-card-foreground shadow-xs z-1">
+    <div class="rounded-lg border bg-card text-card-foreground shadow-sm z-[1]">
       <div class="flex flex-col space-y-1.5 p-6">
         <h3 class="font-semibold tracking-tight text-lg">Total Paid</h3>
         <p class="text-sm text-muted-foreground">Processed payments</p>
@@ -59,7 +59,7 @@
         <p class="text-2xl font-bold text-green-600">£4600.75</p>
       </div>
     </div>
-    <div class="rounded-lg border bg-card text-card-foreground shadow-xs z-1">
+    <div class="rounded-lg border bg-card text-card-foreground shadow-sm z-[1]">
       <div class="flex flex-col space-y-1.5 p-6">
         <h3 class="font-semibold tracking-tight text-lg">
           Outstanding Balance
@@ -71,7 +71,7 @@
       </div>
     </div>
   </div>
-  <div class="bg-white rounded-lg shadow-sm">
+  <div class="bg-white rounded-lg shadow">
     <div class="relative w-full overflow-auto">
       <table class="w-full caption-bottom text-sm">
         <thead class="[&_tr]:border-b">
@@ -127,7 +127,7 @@
             </td>
             <td class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0">
               <div
-                class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-hidden focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent hover:bg-primary/80 capitalize bg-green-100 text-green-800"
+                class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent hover:bg-primary/80 capitalize bg-green-100 text-green-800"
               >
                 paid
               </div>
@@ -139,7 +139,7 @@
               class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0 text-right"
             >
               <button
-                class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border border-input bg-background hover:bg-accent h-9 rounded-md px-3 text-bwc-charcoal hover:text-bwc-gold"
+                class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border border-input bg-background hover:bg-accent h-9 rounded-md px-3 text-bwc-charcoal hover:text-bwc-gold"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -177,7 +177,7 @@
             </td>
             <td class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0">
               <div
-                class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-hidden focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent hover:bg-primary/80 capitalize bg-amber-100 text-amber-800"
+                class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent hover:bg-primary/80 capitalize bg-amber-100 text-amber-800"
               >
                 pending
               </div>
@@ -189,7 +189,7 @@
               class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0 text-right"
             >
               <button
-                class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border border-input bg-background hover:bg-accent h-9 rounded-md px-3 text-bwc-charcoal hover:text-bwc-gold"
+                class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border border-input bg-background hover:bg-accent h-9 rounded-md px-3 text-bwc-charcoal hover:text-bwc-gold"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -227,7 +227,7 @@
             </td>
             <td class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0">
               <div
-                class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-hidden focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent hover:bg-primary/80 capitalize bg-green-100 text-green-800"
+                class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent hover:bg-primary/80 capitalize bg-green-100 text-green-800"
               >
                 paid
               </div>
@@ -239,7 +239,7 @@
               class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0 text-right"
             >
               <button
-                class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border border-input bg-background hover:bg-accent h-9 rounded-md px-3 text-bwc-charcoal hover:text-bwc-gold"
+                class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border border-input bg-background hover:bg-accent h-9 rounded-md px-3 text-bwc-charcoal hover:text-bwc-gold"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

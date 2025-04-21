@@ -6,12 +6,12 @@
   }
 
   .sidebar-link-btn {
-    @apply inline-flex items-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 hover:text-bwc-gold hover:bg-gray-900 h-10 w-full;
+    @apply inline-flex items-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 h-10 w-full hover:text-bwc-gold hover:bg-gray-900 py-2;
 
     @if $isOpen {
-      @apply px-4 py-2 justify-start;
+      @apply px-4 justify-start;
     } @else {
-      @apply px-2 py-2 justify-center;
+      @apply px-2 justify-center;
       span {
         @apply hidden;
       }
@@ -35,15 +35,3 @@
     @include sidebar-link-style($isOpen: false);
   }
 }
-
-/* .sidebar-link-btn {
-  @apply inline-flex items-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 hover:text-bwc-gold hover:bg-gray-900 h-10 w-full px-4 py-2 justify-start;
-
-  &.active {
-    @apply bg-gray-900 text-bwc-gold;
-  }
-
-  &:not(.active) {
-    @apply text-white;
-  }
-} */

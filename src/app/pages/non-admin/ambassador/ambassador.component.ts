@@ -14,7 +14,7 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [],
   host: {
-    class: 'grow pb-16 px-4',
+    class: 'flex-grow pb-16 px-4',
   },
 })
 export class AmbassadorComponent implements OnInit {

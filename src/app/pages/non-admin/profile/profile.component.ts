@@ -14,7 +14,7 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [],
   host: {
-    class: 'grow pt-24 pb-20',
+    class: 'flex-grow pt-24 pb-20',
   },
 })
 export class ProfileComponent implements OnInit {

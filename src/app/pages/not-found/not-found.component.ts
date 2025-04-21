@@ -13,7 +13,7 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [],
   host: {
-    class: '',
+    class: 'flex-grow pt-24 pb-20',
   },
 })
 export class NotFoundComponent implements OnInit {
