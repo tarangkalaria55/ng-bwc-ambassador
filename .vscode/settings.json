@@ -12,12 +12,12 @@
   "editor.insertSpaces": false,
   "editor.detectIndentation": false,
   "prettier.configPath": ".prettierrc",
-  "tailwindCSS.experimental.configFile": "./src/styles.scss",
+  "tailwindCSS.experimental.configFile": "./src/themes/tailwind.scss",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
+  "css.customData": [".vscode/tailwind.json"],
   "files.associations": {
-    "*.scss": "tailwindcss",
-    "*.css": "tailwindcss",
+    "**/src/themes/tailwind.scss": "tailwindcss",
     "*.json": "json"
   },
   "[json]": {

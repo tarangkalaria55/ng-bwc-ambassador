@@ -1,29 +1,45 @@
 <div class="p-4 flex justify-between items-center border-b border-gray-800">
-  <div class="text-lg font-semibold text-white">BWC Admin</div>
+  <div class="sidebar-heading text-lg font-semibold text-white">BWC Admin</div>
   <button
-    class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-accent h-8 w-8 text-white hover:text-bwc-gold"
+    class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 hover:bg-accent h-8 w-8 text-white hover:text-bwc-gold"
+    (click)="toggleMenu()"
   >
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      class="lucide lucide-chevron-left h-4 w-4"
-    >
-      <path d="m15 18-6-6 6-6"></path>
-    </svg>
+    @if (isOpen()) {
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="lucide lucide-chevron-left h-4 w-4"
+      >
+        <path d="m15 18-6-6 6-6"></path>
+      </svg>
+    } @else {
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="lucide lucide-chevron-right h-4 w-4"
+      >
+        <path d="m9 18 6-6-6-6"></path>
+      </svg>
+    }
   </button>
 </div>
 <div class="flex-1 overflow-y-auto">
   <div class="space-y-2 py-4">
-    <button
-      class="inline-flex items-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-10 w-full justify-start px-4 py-2 hover:text-bwc-gold hover:bg-gray-900 bg-gray-900 text-bwc-gold"
-    >
+    <button class="sidebar-link-btn">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="24"
@@ -43,9 +59,7 @@
       </svg>
       <span>Dashboard</span>
     </button>
-    <button
-      class="inline-flex items-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-10 w-full justify-start px-4 py-2 text-white hover:text-bwc-gold hover:bg-gray-900"
-    >
+    <button class="sidebar-link-btn">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="24"
@@ -65,9 +79,7 @@
       </svg>
       <span>All Influencers</span>
     </button>
-    <button
-      class="inline-flex items-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-10 w-full justify-start px-4 py-2 text-white hover:text-bwc-gold hover:bg-gray-900"
-    >
+    <button class="sidebar-link-btn">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="24"
@@ -89,9 +101,7 @@
       </svg>
       <span>Active Codes</span>
     </button>
-    <button
-      class="inline-flex items-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-10 w-full justify-start px-4 py-2 text-white hover:text-bwc-gold hover:bg-gray-900"
-    >
+    <button class="sidebar-link-btn">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="24"
@@ -114,9 +124,7 @@
       </svg>
       <span>Applications</span>
     </button>
-    <button
-      class="inline-flex items-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-10 w-full justify-start px-4 py-2 text-white hover:text-bwc-gold hover:bg-gray-900"
-    >
+    <button class="sidebar-link-btn">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="24"
@@ -136,9 +144,7 @@
       </svg>
       <span>Earnings</span>
     </button>
-    <button
-      class="inline-flex items-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-10 w-full justify-start px-4 py-2 text-white hover:text-bwc-gold hover:bg-gray-900"
-    >
+    <button class="sidebar-link-btn">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="24"
@@ -158,9 +164,7 @@
       </svg>
       <span>Settings</span>
     </button>
-    <button
-      class="inline-flex items-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-10 w-full justify-start px-4 py-2 text-white hover:text-bwc-gold hover:bg-gray-900"
-    >
+    <button class="sidebar-link-btn">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="24"
@@ -181,9 +185,7 @@
   </div>
 </div>
 <div class="border-t border-gray-800 p-4">
-  <button
-    class="inline-flex items-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-10 px-4 py-2 w-full justify-start text-white hover:text-bwc-gold hover:bg-gray-900"
-  >
+  <button class="sidebar-link-btn">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="24"
