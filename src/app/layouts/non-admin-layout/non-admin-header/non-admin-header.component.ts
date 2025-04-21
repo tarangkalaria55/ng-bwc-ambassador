@@ -30,9 +30,7 @@ export class NonAdminHeaderComponent implements OnInit {
 
   #dialog = inject(RdxDialogService);
 
-  ngOnInit(): void {
-    this.openDialog();
-  }
+  ngOnInit(): void {}
 
   openDialog() {
     this.#dialog.open({
