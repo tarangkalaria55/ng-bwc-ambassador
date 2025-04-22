@@ -39,7 +39,11 @@
 </div>
 <div class="flex-1 overflow-y-auto">
   <div class="space-y-2 py-4">
-    <button class="sidebar-link-btn">
+    <a
+      class="sidebar-link-btn"
+      [routerLink]="['/', 'admin', 'dashboard']"
+      routerLinkActive="active"
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="24"
@@ -58,8 +62,12 @@
         <rect width="7" height="5" x="3" y="16" rx="1"></rect>
       </svg>
       <span>Dashboard</span>
-    </button>
-    <button class="sidebar-link-btn">
+    </a>
+    <a
+      class="sidebar-link-btn"
+      [routerLink]="['/', 'admin', 'influencers']"
+      routerLinkActive="active"
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="24"
@@ -78,8 +86,12 @@
         <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
       </svg>
       <span>All Influencers</span>
-    </button>
-    <button class="sidebar-link-btn">
+    </a>
+    <a
+      class="sidebar-link-btn"
+      [routerLink]="['/', 'admin', 'active-codes']"
+      routerLinkActive="active"
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="24"
@@ -100,8 +112,12 @@
         <path d="M13 11v2"></path>
       </svg>
       <span>Active Codes</span>
-    </button>
-    <button class="sidebar-link-btn">
+    </a>
+    <a
+      class="sidebar-link-btn"
+      [routerLink]="['/', 'admin', 'applications']"
+      routerLinkActive="active"
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="24"
@@ -123,8 +139,12 @@
         <path d="M16 17H8"></path>
       </svg>
       <span>Applications</span>
-    </button>
-    <button class="sidebar-link-btn">
+    </a>
+    <a
+      class="sidebar-link-btn"
+      [routerLink]="['/', 'admin', 'admin-invoices']"
+      routerLinkActive="active"
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="24"
@@ -143,8 +163,8 @@
         <path d="M6 13h10"></path>
       </svg>
       <span>Earnings</span>
-    </button>
-    <button class="sidebar-link-btn">
+    </a>
+    <a class="sidebar-link-btn" href="javascript:void(0);">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="24"
@@ -163,8 +183,12 @@
         <circle cx="12" cy="12" r="3"></circle>
       </svg>
       <span>Settings</span>
-    </button>
-    <button class="sidebar-link-btn">
+    </a>
+    <a
+      class="sidebar-link-btn"
+      [routerLink]="['/', 'admin', 'welcome-email']"
+      routerLinkActive="active"
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="24"
@@ -181,7 +205,7 @@
         <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
       </svg>
       <span>Welcome Email</span>
-    </button>
+    </a>
   </div>
 </div>
 <div class="border-t border-gray-800 p-4">

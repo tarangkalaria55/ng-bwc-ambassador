@@ -10,13 +10,14 @@ import {
   signal,
   type OnInit,
 } from '@angular/core';
+import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'app-admin-sidebar',
   templateUrl: './admin-sidebar.component.html',
   styleUrl: './admin-sidebar.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  // imports: [NgClass],
+  imports: [RouterLink, RouterLinkActive],
   host: {
     class:
       'sidebar relative flex flex-col h-screen bg-[#111111] border-r border-gray-800 text-white transition-all duration-300',
