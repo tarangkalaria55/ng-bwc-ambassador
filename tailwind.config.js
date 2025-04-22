@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: ['class'],
-  content: ['./src/**/*.{html,ts}'],
+  content: ['./src/**/*.{html,ts}', './node_modules/flowbite/**/*.js'],
   theme: {
     container: {
       center: true,
@@ -130,5 +130,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require('tailwindcss-animate')],
+  plugins: [require('tailwindcss-animate'), require('flowbite/plugin')],
 };

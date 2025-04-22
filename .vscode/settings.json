@@ -6,6 +6,7 @@
     "**/.DS_Store": true,
     "**/Thumbs.db": true
   },
+  "typescript.updateImportsOnPaste.enabled": false,
   "hide-files.files": [],
   "editor.tabSize": 2,
   "editor.indentSize": "tabSize",
