@@ -21,5 +21,7 @@ import { RouterLink } from '@angular/router';
 export class NonAdminFooterComponent implements OnInit {
   readonly #destroyRef = inject(DestroyRef);
 
+  year = new Date().getFullYear();
+
   ngOnInit(): void {}
 }

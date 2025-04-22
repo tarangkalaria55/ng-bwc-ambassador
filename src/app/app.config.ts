@@ -6,7 +6,7 @@ import {
 import {
   provideRouter,
   withComponentInputBinding,
-  withRouterConfig,
+  withInMemoryScrolling,
 } from '@angular/router';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { routes } from './app.routes';
@@ -17,7 +17,11 @@ export const appConfig: ApplicationConfig = {
   providers: [
     provideAnimationsAsync(),
     provideZoneChangeDetection({ eventCoalescing: true }),
-    provideRouter(routes, withComponentInputBinding(), withRouterConfig({})),
+    provideRouter(
+      routes,
+      withComponentInputBinding(),
+      withInMemoryScrolling({ anchorScrolling: 'enabled' }),
+    ),
     provideHttpClient(),
     provideRdxDialogConfig(),
     // importProvidersFrom(),
