@@ -32,7 +32,7 @@ export class NonAdminHeaderComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  openDialog() {
+  openLoginModal() {
     this.#dialog.open({
       content: LoginModalComponent,
       backdropClass: 'login-backdrop',

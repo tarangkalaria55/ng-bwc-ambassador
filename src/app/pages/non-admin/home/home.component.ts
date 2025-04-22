@@ -9,6 +9,8 @@ import { RouterLink } from '@angular/router';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { RdxAspectRatioDirective } from '@radix-ng/primitives/aspect-ratio';
+import { RdxDialogService } from '@radix-ng/primitives/dialog';
+import { LoginModalComponent } from '../../../components/login-modal/login-modal.component';
 
 @Component({
   // selector: 'app-home',
@@ -22,6 +24,8 @@ import { RdxAspectRatioDirective } from '@radix-ng/primitives/aspect-ratio';
 })
 export class HomeComponent implements OnInit {
   readonly #destroyRef = inject(DestroyRef);
+
+  #dialog = inject(RdxDialogService);
 
   customOptions: OwlOptions = {
     loop: true,
@@ -52,4 +56,12 @@ export class HomeComponent implements OnInit {
   };
 
   ngOnInit(): void {}
+
+  openLoginModal() {
+    this.#dialog.open({
+      content: LoginModalComponent,
+      backdropClass: 'login-backdrop',
+      panelClasses: ['login-panel'],
+    });
+  }
 }
