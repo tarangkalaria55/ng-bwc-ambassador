@@ -3,6 +3,8 @@ import {
   Component,
   DestroyRef,
   inject,
+  input,
+  numberAttribute,
   OnInit,
 } from '@angular/core';
 
@@ -19,6 +21,8 @@ import {
 })
 export class InfluencerEditComponent implements OnInit {
   readonly #destroyRef = inject(DestroyRef);
+
+  influencerID = input.required({ transform: numberAttribute });
 
   ngOnInit(): void {}
 }

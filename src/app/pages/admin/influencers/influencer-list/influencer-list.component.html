@@ -10,8 +10,9 @@
         Manage and view all influencer profiles
       </p>
     </div>
-    <button
+    <a
       class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 h-10 px-4 py-2 bg-bwc-gold hover:bg-bwc-gold/90 text-white"
+      [routerLink]="['/', 'admin', 'influencers', 'add']"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -29,7 +30,7 @@
         <path d="M12 5v14"></path>
       </svg>
       Add Influencer
-    </button>
+    </a>
   </div>
   <div class="rounded-lg border bg-card text-card-foreground shadow-sm z-[1]">
     <div class="flex flex-col space-y-1.5 p-6">
@@ -96,156 +97,43 @@
             </tr>
           </thead>
           <tbody class="[&_tr:last-child]:border-0">
-            <tr
-              class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
-            >
-              <td
-                class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0 font-medium cursor-pointer hover:text-bwc-gold hover:underline"
+            @for (item of influencers; track $index) {
+              <tr
+                class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
               >
-                Emma Rodriguez
-              </td>
-              <td class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0">
-                emma.example.com
-              </td>
-              <td class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0">
-                <div
-                  class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground hover:bg-primary/80"
+                <td
+                  class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0 font-medium cursor-pointer hover:text-bwc-gold hover:underline"
+                  (click)="onClickDetail(item.id)"
                 >
-                  active
-                </div>
-              </td>
-              <td class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0">
-                32
-              </td>
-              <td class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0">
-                £960
-              </td>
-            </tr>
-            <tr
-              class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
-            >
-              <td
-                class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0 font-medium cursor-pointer hover:text-bwc-gold hover:underline"
-              >
-                James Wilson
-              </td>
-              <td class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0">
-                james.example.com
-              </td>
-              <td class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0">
-                <div
-                  class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground hover:bg-primary/80"
-                >
-                  active
-                </div>
-              </td>
-              <td class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0">
-                28
-              </td>
-              <td class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0">
-                £840
-              </td>
-            </tr>
-            <tr
-              class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
-            >
-              <td
-                class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0 font-medium cursor-pointer hover:text-bwc-gold hover:underline"
-              >
-                Sophie Anderson
-              </td>
-              <td class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0">
-                sophie.example.com
-              </td>
-              <td class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0">
-                <div
-                  class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground hover:bg-primary/80"
-                >
-                  active
-                </div>
-              </td>
-              <td class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0">
-                24
-              </td>
-              <td class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0">
-                £720
-              </td>
-            </tr>
-            <tr
-              class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
-            >
-              <td
-                class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0 font-medium cursor-pointer hover:text-bwc-gold hover:underline"
-              >
-                Michael Brown
-              </td>
-              <td class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0">
-                michael.example.com
-              </td>
-              <td class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0">
-                <div
-                  class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80"
-                >
-                  inactive
-                </div>
-              </td>
-              <td class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0">
-                18
-              </td>
-              <td class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0">
-                £540
-              </td>
-            </tr>
-            <tr
-              class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
-            >
-              <td
-                class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0 font-medium cursor-pointer hover:text-bwc-gold hover:underline"
-              >
-                Olivia Davis
-              </td>
-              <td class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0">
-                olivia.example.com
-              </td>
-              <td class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0">
-                <div
-                  class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground hover:bg-primary/80"
-                >
-                  active
-                </div>
-              </td>
-              <td class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0">
-                15
-              </td>
-              <td class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0">
-                £450
-              </td>
-            </tr>
-            <tr
-              class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
-            >
-              <td
-                class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0 font-medium cursor-pointer hover:text-bwc-gold hover:underline"
-              >
-                David Johnson
-              </td>
-              <td class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0">
-                david.example.com
-              </td>
-              <td class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0">
-                <div
-                  class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground hover:bg-primary/80"
-                >
-                  active
-                </div>
-              </td>
-              <td class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0">
-                12
-              </td>
-              <td class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0">
-                £360
-              </td>
-            </tr>
+                  {{ item.name }}
+                </td>
+                <td class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0">
+                  {{ item.email }}
+                </td>
+                <td class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0">
+                  @if (item.status === 'active') {
+                    <div
+                      class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground hover:bg-primary/80"
+                    >
+                      active
+                    </div>
+                  } @else {
+                    <div
+                      class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80"
+                    >
+                      inactive
+                    </div>
+                  }
+                </td>
+                <td class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0">
+                  32
+                  {{ item.referrals }}
+                </td>
+                <td class="p-4 px-4 align-middle [&:has([role=checkbox])]:pr-0">
+                  {{ item.earnings }}
+                </td>
+              </tr>
+            }
           </tbody>
         </table>
       </div>

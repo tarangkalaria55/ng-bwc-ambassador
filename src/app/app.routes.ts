@@ -102,7 +102,7 @@ export const routes: Routes = [
               ).then(m => m.InfluencerAddComponent),
           },
           {
-            path: ':id',
+            path: ':influencerID',
             title: 'Influencer detail',
             children: [
               {
