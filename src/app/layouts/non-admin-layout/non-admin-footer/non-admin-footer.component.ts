@@ -5,6 +5,7 @@ import {
   inject,
   type OnInit,
 } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   // eslint-disable-next-line @angular-eslint/component-selector
@@ -12,7 +13,7 @@ import {
   templateUrl: './non-admin-footer.component.html',
   styleUrl: './non-admin-footer.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [],
+  imports: [RouterLink],
   host: {
     class: 'bg-bwc-black text-white py-12',
   },
