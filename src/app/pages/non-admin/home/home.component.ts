@@ -9,7 +9,10 @@ import { RouterLink } from '@angular/router';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { RdxAspectRatioDirective } from '@radix-ng/primitives/aspect-ratio';
-import { RdxDialogService } from '@radix-ng/primitives/dialog';
+import {
+  provideRdxDialog,
+  RdxDialogService,
+} from '@radix-ng/primitives/dialog';
 import { LoginModalComponent } from '../../../components/login-modal/login-modal.component';
 
 @Component({
@@ -18,6 +21,7 @@ import { LoginModalComponent } from '../../../components/login-modal/login-modal
   styleUrl: './home.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [RouterLink, CarouselModule, RdxAspectRatioDirective],
+  providers: [provideRdxDialog()],
   host: {
     class: '',
   },
