@@ -4,7 +4,6 @@ import {
   DestroyRef,
   inject,
   input,
-  numberAttribute,
   OnInit,
 } from '@angular/core';
 import { RouterLink } from '@angular/router';
@@ -23,7 +22,7 @@ import { RouterLink } from '@angular/router';
 export class InfluencerDetailComponent implements OnInit {
   readonly #destroyRef = inject(DestroyRef);
 
-  influencerID = input.required({ transform: numberAttribute });
+  influencerID = input.required<string>();
 
   ngOnInit(): void {}
 }

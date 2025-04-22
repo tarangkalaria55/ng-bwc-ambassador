@@ -3,6 +3,7 @@ import {
   Component,
   DestroyRef,
   inject,
+  input,
   OnInit,
 } from '@angular/core';
 
@@ -19,6 +20,8 @@ import {
 })
 export class CodeDetailsComponent implements OnInit {
   readonly #destroyRef = inject(DestroyRef);
+
+  code = input.required<string>();
 
   ngOnInit(): void {}
 }
